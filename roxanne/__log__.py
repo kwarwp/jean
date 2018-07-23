@@ -77,3 +77,10 @@ RuntimeError: too much recursion
   module '$exec_2707' line 50
 Museu()
 '''},
+{'date': 'Mon Jul 23 2018 11:17:48.62 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 58
+  sala_0.norte.meio = sala_1.norte
+                    ^
+SyntaxError: keyword can't be an expression
+'''},
