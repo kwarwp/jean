@@ -137,3 +137,7 @@ AttributeError: 'Codigo' object has no attribute 'scorer'
     self._code.innerHtml = window.hljs.highlightPython(codigo)
 AttributeError: no attribute highlightPython for [object Object]
 '''},
+{'date': 'Mon Jul 23 2018 19:26:27.926 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: e is undefined>
+'''},
