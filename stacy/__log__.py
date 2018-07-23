@@ -91,3 +91,7 @@ KeyError: sala_10
     self._auto_score = self.score if score else self._auto_score
 NameError: name 'score' is not defined
 '''},
+{'date': 'Mon Jul 23 2018 14:54:01.833 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: textarea.parentNode is null>
+'''},
