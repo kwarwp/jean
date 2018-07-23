@@ -48,7 +48,7 @@ class Museu:
         C7_SUL = C7_LESTE
         sala_0 = Sala(R_NORTE, R_LESTE,R_SUL, R_OESTE)
         sala_1 = Sala(C1_NORTE, C1_LESTE, C_SUL, C1_OESTE)
-        Sala_2 = Sala(C2_NORTE, C2_LESTE, C2_SUL, C2_OESTE)
+        sala_2 = Sala(C2_NORTE, C2_LESTE, C2_SUL, C2_OESTE)
         sala_3 = Sala(C3_NORTE, C3_LESTE, C3_SUL , C3_OESTE)
         sala_4 = Sala(C4_NORTE,C4_LESTE, C4_SUL, C4_OESTE)
         sala_5 = Sala(C5_NORTE, C5_LESTE, C5_SUL, C5_OESTE) 
