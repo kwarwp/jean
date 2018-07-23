@@ -25,7 +25,7 @@ C6_LESTE = "https://i.imgur.com/aqAllvM.jpg"
 C6_OESTE = "https://i.imgur.com/GonsqOz.jpg"
 C7_NORTE = "https://i.imgur.com/GwKkapl.jpg"
 C7_LESTE = "https://i.imgur.com/AXT4Zcl.jpg"
-C9_OESTE = "https://i.imgur.com/PAk5ZH1.jpg"
+C7_LESTE= "https://i.imgur.com/PAk5ZH1.jpg"
 C9_SUL = "https://i.imgur.com/2kCYcjs.jpg"
 C9_NORTE = "https://i.imgur.com/0DAX1Yq.jpg"
 C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
@@ -40,11 +40,25 @@ class Museu:
     def __init__(self):
         R_SUL = R_OESTE
         C_SUL = C1_OESTE
+        C2_SUL = C2_OESTE
+        C3_SUL = C3_OESTE
+        C4_SUL = C4_OESTE
+        C5_SUL = C5_OESTE
+        C6_SUL = C6_OESTE
+        C7_SUL = C7_LESTE
         sala_0 = Sala(R_NORTE, R_LESTE,R_SUL, R_OESTE)
         sala_1 = Sala(C1_NORTE, C1_LESTE, C_SUL, C1_OESTE)
+        Sala_2 = Sala(C2_NORTE, C2_LESTE, C2_SUL, C2_OESTE)
+        sala_3 = Sala(C3_NORTE, C3_LESTE, C3_SUL , C3_OESTE)
+        sala_4 = Sala(C4_NORTE,C4_LESTE, C4_SUL, C4_OESTE)
+        sala_5 = Sala(C5_NORTE, C5_LESTE, C5_SUL, C5_OESTE) 
+        sala_6 = Sala(C6_NORTE, C6_LESTE, C6_SUL, C6_OESTE)
+        sala_7 = Sala(C7_NORTE, C7_LESTE, C7_SUL , C7_LESTE)
+        sala_8 = Sala(
         sala_0.norte.meio = sala_1.norte
         #sala_0.norte.vai = sala_1.norte.vai()
         sala_0.norte.vai()
+        
         
         
 Museu()
