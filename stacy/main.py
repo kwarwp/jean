@@ -37,6 +37,9 @@ C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
 )
 from _spy.vitollino.main import Sala, STYLE, NADA, Elemento, INVENTARIO, PSTYLE, EIMGSTY, NS
 from browser import window, html
+PKEYS = ['False', 'None', 'True', ' and ', ' as ', 'assert', 'break', 'class ', 'continue', 'def ',
+         'del', 'elif', 'else', 'except', 'finally', 'for ', 'from ', 'global ', 'if ', 'import ',
+         ' in ', ' is ', 'lambda', 'nonlocal', ' not ', ' or ', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 EDTST = {'position': 'relative', 'padding': '10px', 'margin': '0px',
          'width': '100%', 'resize': 'none', 'borderColor': 'darkslategrey',
          'color': 'navajowhite', 'border': 0, 'background-color': 'rgba(76, 175, 80, 0.3)'}
@@ -46,9 +49,8 @@ STYLE["height"] = "650px"
 RUMOS = "NORTE LESTE SUL OESTE".split()
 CART = [(-1, 0), (0, 1), (1, 0), (0, -1)]  # [(i, j) for j, i in CART]
 
-CODE_0 = """
-from _spy.vitollino.main import Cena
-C9_OESTE = "https://i.imgur.com/cOVZAln.jpg",
+CODE_0 = """from _spy.vitollino.main import Cena
+C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 cena = Cena(C9_OESTE)
 cena.vai()
 """
@@ -85,10 +87,17 @@ class Codigo(Elemento):
             self.elt <= self.img
         self.elt.onclick = self._click
         self.scorer = dict(ponto=1, valor=cena.nome, carta=img, casa=self.xy, move=None)
-        self._code = html.PRE(codigo)
-        self._area = html.DIV(self._code, Class="python", style=dict(position='absolute', top=0, left=0))
+        self._code = html.CODE(codigo)
+        self._area = html.PRE(self._code, Class="python", style=dict(
+            position='absolute', top=0, left=0, backgroundColor='rgba(210, 150, 120, 0.85)'))
         self.elt <= self._area
-        self._code.innerHtml = window.hljs.highlight("python", codigo)
+        codigo = window.hljs.highlight("python", codigo)
+        def rp(cod, keys=PKEYS[:], mark='<span class="hljs-keyword">{}</span>'):
+            key = keys.pop()
+            cod = cod.replace(key, mark.format(key))
+            return rp(cod, keys, mark) if keys else cod
+        # codigo = rp(codigo)
+        self._code.html = codigo.value
 
 
 
@@ -129,7 +138,7 @@ class Museu:
         mapa = [[museu["sala_{}".format((j+i) %10)] for i in range(4)] for j in range(0, 16, 4)]
         Labirinto.m(mapa)
         entrada = museu["sala_0"].norte
-        cod = Codigo(cena=entrada, codigo=CODE_0, img=WHITE, style=dict(width=400, height="300px", left=500, top=100))
+        cod = Codigo(cena=entrada, codigo=CODE_0, style=dict(width=400, height="300px", left=500, top=100))
         entrada.vai()
         
         
