@@ -64,5 +64,6 @@ class Museu:
         
         
         
-Museu()
+if __name__ == '__main__':
+     Museu()
                            
