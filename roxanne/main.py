@@ -31,3 +31,18 @@ C9_NORTE = "https://i.imgur.com/0DAX1Yq.jpg"
 C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
+from _spy.vitollino.main import Sala, STYLE
+
+STYLE["width"] = 850
+STYLE["height"] = "650px"
+
+class Museu:
+    def __init__(self):
+        R_SUL = R_OESTE
+        sala_0 = Sala(R_NORTE, R_LESTE,R_SUL, R_OESTE)
+        sala_1 = Sala(C1_NORTE, C1_LESTE, C1_OESTE)
+        sala_0.norte = sala_1.norte
+        sala_0.norte.vai = sala_1.norte.vai
+        
+        
+Museu()
