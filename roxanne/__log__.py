@@ -116,3 +116,10 @@ NameError: name 'sala_2' is not defined
                        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Jul 23 2018 11:31:24.305 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 67
+  if __name__ == '__main__'
+                            ^
+SyntaxError: invalid syntax
+'''},
