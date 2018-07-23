@@ -117,3 +117,23 @@ Exception: <TypeError: textarea.parentNode is null>
     self.scorer.update(valor=cena.nome, move=self.xy,
 AttributeError: 'Codigo' object has no attribute 'scorer'
 '''},
+{'date': 'Mon Jul 23 2018 16:42:47.72 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 139
+    Museu()
+  module <module> line 133
+    cod = Codigo(cena=entrada, codigo=CODE_0, img=WHITE, style=dict(width=400, height="300px", left=500, top=100))
+  module <module> line 93
+    self._code.innerHtml = window.hljs.highlightPython(codigo)
+AttributeError: no attribute highlightPython for [object Object]
+'''},
