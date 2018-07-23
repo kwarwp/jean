@@ -141,3 +141,12 @@ AttributeError: no attribute highlightPython for [object Object]
 'error': '''
 Exception: <TypeError: e is undefined>
 '''},
+{'date': 'Mon Jul 23 2018 19:26:41.101 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: <Error: Unknown language: "
+from _spy.vitollino.main import Cena
+C9_OESTE = "https://i.imgur.com/cOVZAln.jpg",
+cena = Cena(C9_OESTE)
+cena.vai()
+">
+'''},
