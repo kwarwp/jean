@@ -40,7 +40,7 @@ from browser import window, html
 PKEYS = ['False', 'None', 'True', ' and ', ' as ', 'assert', 'break', 'class ', 'continue', 'def ',
          'del', 'elif', 'else', 'except', 'finally', 'for ', 'from ', 'global ', 'if ', 'import ',
          ' in ', ' is ', 'lambda', 'nonlocal', ' not ', ' or ', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
-EDTST = {'position': 'relative', 'padding': '10px', 'margin': '0px',
+EDTST = {'position': 'relative', 'padding': '5px', 'margin': '0px',
          'width': '100%', 'resize': 'none', 'borderColor': 'darkslategrey',
          'color': 'navajowhite', 'border': 0, 'background-color': 'rgba(76, 175, 80, 0.3)'}
 
@@ -52,8 +52,7 @@ CART = [(-1, 0), (0, 1), (1, 0), (0, -1)]  # [(i, j) for j, i in CART]
 CODE_0 = """from _spy.vitollino.main import Cena
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 cena = Cena(C9_OESTE)
-cena.vai()
-"""
+cena.vai()"""
 
 class Codigo(Elemento):
     """
@@ -70,14 +69,14 @@ class Codigo(Elemento):
     :param score: determina o score para este elemento
     :param kwargs: lista de parametros nome=URL que geram elementos com este nome e a dada imagem
     """
-    def __init__(self, codigo="", cena=INVENTARIO, img="", vai=None, style=NS):
+    def __init__(self, codigo="", topo="", cena=INVENTARIO, img="", vai=None, style=NS):
         self.img = img
         self.vai = vai if vai else lambda _=0: None
         self.cena = cena
         self.opacity = 0
         self.style = dict(**PSTYLE)
         # self.style["min-width"], self.style["min-height"] = w, h
-        self.style.update(**style)
+        self.style.update(backgroundColor='rgba(210, 220, 220, 0.85)', **style)
         self.elt = html.DIV(style=self.style)
         self.xy = (-111, -111)
         istyle = dict(EIMGSTY)
@@ -85,11 +84,14 @@ class Codigo(Elemento):
         if img:
             self.img = html.IMG(src=img, style=istyle)  # width=self.style["width"])
             self.elt <= self.img
+        if topo:
+            self.topo = html.DIV(topo, color="black", style=dict(padding="15px"))  # width=self.style["width"])
+            self.elt <= self.topo
         self.elt.onclick = self._click
         self.scorer = dict(ponto=1, valor=cena.nome, carta=img, casa=self.xy, move=None)
         self._code = html.CODE(codigo)
         self._area = html.PRE(self._code, Class="python", style=dict(
-            position='absolute', top=0, left=0, backgroundColor='rgba(210, 150, 120, 0.85)'))
+            position='relative', top=0, left=0, backgroundColor='transparent'))
         self.elt <= self._area
         codigo = window.hljs.highlight("python", codigo)
         def rp(cod, keys=PKEYS[:], mark='<span class="hljs-keyword">{}</span>'):
@@ -138,7 +140,10 @@ class Museu:
         mapa = [[museu["sala_{}".format((j+i) %10)] for i in range(4)] for j in range(0, 16, 4)]
         Labirinto.m(mapa)
         entrada = museu["sala_0"].norte
-        cod = Codigo(cena=entrada, codigo=CODE_0, style=dict(width=400, height="300px", left=500, top=100))
+        topo = "Este é o código inicial para se construir a primeira cena. Cria-se uma referência à uma imagem na internet"+\
+        "e atribui-se à Cena"
+
+        cod = Codigo(cena=entrada, topo=topo, codigo=CODE_0, style=dict(width=400, height="250px", left=500, top=100))
         entrada.vai()
         
         
