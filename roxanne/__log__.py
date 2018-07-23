@@ -41,3 +41,9 @@ RuntimeError: too much recursion
   module '$exec_2443' line 47
         sala_1.norte.vai()
 '''},
+{'date': 'Mon Jul 23 2018 10:47:05.15 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: too much recursion
+  module '$exec_2487' line 50
+Museu()
+'''},
