@@ -74,7 +74,7 @@ class Museu:
             *[PAREDES["C{}_{}".format(indice, rumo)] for rumo in RUMOS], nome="sala_{}".format(indice))
         for indice in range(10)}
         museu["sala_0"].norte.vai()
-        mapa = [[museu[(j %10)+i] for i in range(4)] for j in range(0, 16, 4)]
+        mapa = [[museu["sala_{}".format((j %10)+i)] for i in range(4)] for j in range(0, 16, 4)]
         Labirinto.m(mapa)
         
         
