@@ -84,3 +84,10 @@ Museu()
                     ^
 SyntaxError: keyword can't be an expression
 '''},
+{'date': 'Mon Jul 23 2018 11:17:59.756 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 58
+  sala_0.norte.meio = sala_1.norte
+                    ^
+SyntaxError: keyword can't be an expression
+'''},
