@@ -109,3 +109,10 @@ SyntaxError: keyword can't be an expression
     sala_1.norte.meio = sala_2.norte
 NameError: name 'sala_2' is not defined
 '''},
+{'date': 'Mon Jul 23 2018 11:28:08.86 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 68
+  (__name__="__main__"))
+                       ^
+SyntaxError: invalid syntax
+'''},
