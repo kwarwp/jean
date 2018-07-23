@@ -35,3 +35,9 @@ SyntaxError: EOL while scanning string literal
     self.cenas[cena_a_direita].esquerda = self.cenas[esquerda]
 AttributeError: 'NoneType' object has no attribute 'esquerda'
 '''},
+{'date': 'Mon Jul 23 2018 10:46:50.967 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: too much recursion
+  module '$exec_2443' line 47
+        sala_1.norte.vai()
+'''},
