@@ -8,9 +8,9 @@ C1_SUL = "https://i.imgur.com/1fMjUFO.jpg"
 C2_NORTE = "https://i.imgur.com/FlwvTzi.jpg"
 C2_LESTE = "https://i.imgur.com/9uub4QD.jpg"
 C2_OESTE = "https://i.imgur.com/vJZ7pKJ.jpg"
-C2a_NORTE = "https://i.imgur.com/hxZUIOf.jpg"
-C2a_LESTE = "https://i.imgur.com/MCEVdWU.jpg"
-C2a_OESTE = "https://i.imgur.com/ozE3Qhg.jpg"
+CA_NORTE = "https://i.imgur.com/hxZUIOf.jpg"
+CA_LESTE = "https://i.imgur.com/MCEVdWU.jpg"
+CA_OESTE = "https://i.imgur.com/ozE3Qhg.jpg"
 C3_NORTE = "https://i.imgur.com/rRzsYT8.jpg"
 C3_LESTE = "https://i.imgur.com/uy7BGaZ.jpg"
 C3_OESTE = "https://i.imgur.com/ZxC1zBd.jpg"
@@ -46,6 +46,7 @@ class Museu:
         C5_SUL = C5_OESTE
         C6_SUL = C6_OESTE
         C7_SUL = C7_LESTE
+        CA_SUL = CA_LESTE
         sala_0 = Sala(R_NORTE, R_LESTE,R_SUL, R_OESTE)
         sala_1 = Sala(C1_NORTE, C1_LESTE, C_SUL, C1_OESTE)
         sala_2 = Sala(C2_NORTE, C2_LESTE, C2_SUL, C2_OESTE)
@@ -55,6 +56,7 @@ class Museu:
         sala_6 = Sala(C6_NORTE, C6_LESTE, C6_SUL, C6_OESTE)
         sala_7 = Sala(C7_NORTE, C7_LESTE, C7_SUL , C7_LESTE)
         sala_9 = Sala(C9_NORTE,C9_LESTE,C9_OESTE, C9_SUL)
+        sala_A = Sala(CA_NORTE,CA_LESTE,CA_OESTE, CA_SUL)
         # TEM DOIS SUL DA C9 QUE NÁ VERDADE ERA PARA SER C8
         sala_0.norte.meio = sala_1.norte
         sala_1.norte.meio = sala_2.norte
