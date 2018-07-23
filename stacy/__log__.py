@@ -150,3 +150,12 @@ cena = Cena(C9_OESTE)
 cena.vai()
 ">
 '''},
+{'date': 'Mon Jul 23 2018 19:29:56.278 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: <Error: Unknown language: "
+from _spy.vitollino.main import Cena
+C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
+cena = Cena(C9_OESTE)
+cena.vai()
+">
+'''},
