@@ -85,8 +85,11 @@ class Codigo(Elemento):
             self.elt <= self.img
         self.elt.onclick = self._click
         self.scorer = dict(ponto=1, valor=cena.nome, carta=img, casa=self.xy, move=None)
-        self._area = html.DIV(html.PRE(codigo), Class="w3-code pythonHigh", style=dict(position='absolute', top=0, left=0))
+        self._code = html.PRE(codigo)
+        self._area = html.DIV(self._code, Class="python", style=dict(position='absolute', top=0, left=0))
         self.elt <= self._area
+        self._code.innerHtml = window.hljs.highlight("python", codigo)
+
 
 
         _ = self.entra(cena) if cena and (cena != INVENTARIO) else None
