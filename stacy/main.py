@@ -85,18 +85,11 @@ class Codigo(Elemento):
             self.elt <= self.img
         self.elt.onclick = self._click
         self.scorer = dict(ponto=1, valor=cena.nome, carta=img, casa=self.xy, move=None)
-        self._area = html.TEXTAREA(codigo, autofocus=True, style=dict(position='absolute', top=0))
+        self._area = html.DIV(html.PRE(codigo), Class="w3-code pythonHigh", style=dict(position='absolute', top=0, left=0))
         self.elt <= self._area
-        
-        self.__area = window.CodeMirror.fromTextArea(
-            self._area, dict(
-                mode="python", theme="solarized", lineNumbers=False, indentUnit=4,
-                tabSize=4, smartIndent=False, matchBracket=True, indentWithTabs=False))
 
 
         _ = self.entra(cena) if cena and (cena != INVENTARIO) else None
-        self._area.value = codigo
-        self.__area.focus()
 
 
 class Labirinto:
