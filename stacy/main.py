@@ -56,18 +56,15 @@ cena.vai()"""
 
 class Codigo(Elemento):
     """
-    Um objeto de interação que é representado por uma imagem em uma cena.
-            papel = Elemento(
-             img="papel.png", tit="caderno de notas",
-             vai=pega_papel, style=dict(left=350, top=550, width=60))
-    :param img: URL de uma imagem
+    Um objeto de interação que é representado por uma trecho de código em uma cena.
+            exemplo = Codigo(
+             codigo="from anna import main", topo="Importando um módulo",
+             vai=testa_codigo, style=dict(left=350, top=550, width=60))
+    :param codigo: O código de programa
     :param vai: função executada quando se clica no objeto
     :param style: dicionário com dimensões do objeto {"left": ..., "top": ..., width: ..., height: ...}
-    :param tit: Texto que aparece quando se passa o mouse sobre o objeto
-    :param alt: Texto para leitores de tela
-    :param cena: cena alternativa onde o objeto vai ser colocado
-    :param score: determina o score para este elemento
-    :param kwargs: lista de parametros nome=URL que geram elementos com este nome e a dada imagem
+    :param topo: Texto que aparece no topo do bloco
+    :param cena: cena onde o objeto vai ser colocado
     """
     def __init__(self, codigo="", topo="", cena=INVENTARIO, img="", vai=None, style=NS):
         self.img = img
@@ -82,10 +79,10 @@ class Codigo(Elemento):
         istyle = dict(EIMGSTY)
         istyle.update(opacity=0.3)
         if img:
-            self.img = html.IMG(src=img, style=istyle)  # width=self.style["width"])
+            self.img = html.IMG(src=img, style=istyle)
             self.elt <= self.img
         if topo:
-            self.topo = html.DIV(topo, color="black", style=dict(padding="15px"))  # width=self.style["width"])
+            self.topo = html.DIV(topo, color="black", style=dict(padding="15px"))
             self.elt <= self.topo
         self.elt.onclick = self._click
         self.scorer = dict(ponto=1, valor=cena.nome, carta=img, casa=self.xy, move=None)
@@ -100,9 +97,6 @@ class Codigo(Elemento):
             return rp(cod, keys, mark) if keys else cod
         # codigo = rp(codigo)
         self._code.html = codigo.value
-
-
-
         _ = self.entra(cena) if cena and (cena != INVENTARIO) else None
 
 
@@ -115,8 +109,6 @@ class Labirinto:
 
         def vizinhos(jj, ii, cns=cenas):
             return [(kk, cns[jj + m][ii + n]) for kk, (m, n) in enumerate(CART) if valid(cns, jj, ii, m, n)]
-            # return [(kk, cns[jj + m][ii + n]) for kk, (m, n) in enumerate(CART)
-            #  if 0 <= jj + m < len(cns) and 0 <= ii + n < len(cns[jj+m])and cns[jj + m][ii + n]]
 
         for j, linha in enumerate(cenas):
             if isinstance(linha, list):
