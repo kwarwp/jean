@@ -41,8 +41,8 @@ class Museu:
         R_SUL = R_OESTE
         sala_0 = Sala(R_NORTE, R_LESTE,R_SUL, R_OESTE)
         sala_1 = Sala(C1_NORTE, C1_LESTE, C1_OESTE)
-        sala_0.norte = sala_1.norte
-        sala_0.norte.vai = sala_1.norte.vai()
+        sala_0.norte.meio = sala_1.norte
+        sala_0.norte.vai()
         
         
 Museu()
