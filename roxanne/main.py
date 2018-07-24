@@ -38,7 +38,7 @@ STYLE["height"] = "650px"
 
 class Museu:
     def __init__(self):
-        R_SUL = R_OESTE
+        R_SUL = C1_LESTE
         C_SUL = C1_OESTE
         C2_SUL = C2_OESTE
         C3_SUL = C3_OESTE
@@ -57,7 +57,7 @@ class Museu:
         sala_7 = Sala(C7_NORTE, C7_LESTE, C7_SUL , C7_LESTE)
         sala_9 = Sala(C9_NORTE,C9_LESTE,C9_OESTE, C9_SUL)
         sala_A = Sala(CA_NORTE,CA_LESTE,CA_OESTE, CA_SUL)
-        # TEM DOIS SUL DA C9 QUE NÃ VERDADE ERA PARA SER C8
+        # TEM DOIS SUL DA C9 QUE NÃÂ VERDADE ERA PARA SER C8
         sala_0.norte.meio = sala_1.norte
         sala_1.norte.meio = sala_2.norte
         sala_2.norte.meio = sala_3.norte
