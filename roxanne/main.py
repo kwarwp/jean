@@ -23,6 +23,12 @@ C5_LESTE =  "https://i.imgur.com/VSU2JRi.jpg"
 C6_NORTE = "https://i.imgur.com/fQjnFkR.jpg"
 C6_LESTE = "https://i.imgur.com/aqAllvM.jpg"
 C6_OESTE = "https://i.imgur.com/GonsqOz.jpg"
+CB_NORTE = "https://i.imgur.com/8lDTJl7.jpg"
+CB_OESTE = "https://i.imgur.com/MGsIsD7.jpg"
+CB_LESTE = "https://i.imgur.com/iSGp4fP.jpg"
+CC_NORTE = "https://i.imgur.com/l9nUTnj.jpg"
+CC_LESTE = "https://i.imgur.com/NzvDlCL.jpg"
+CC_OESTE = "https://i.imgur.com/sniTfY8.jpg"
 C7_NORTE = "https://i.imgur.com/GwKkapl.jpg"
 C7_LESTE = "https://i.imgur.com/AXT4Zcl.jpg"
 C7_LESTE= "https://i.imgur.com/PAk5ZH1.jpg"
@@ -39,10 +45,10 @@ STYLE["height"] = "650px"
 class Museu:
     def __init__(self):
         R_SUL = C1_LESTE
-        C_SUL = C1_OESTE
-        C2_SUL = C1_SUL
+        C_SUL = C1_SUL
+        C2_SUL = C1_LESTE
         C3_SUL = C3_OESTE
-        C4_SUL = C4_OESTE
+        C4_SUL = C4_LESTE
         C5_SUL = C5_OESTE
         C6_SUL = C6_OESTE
         C7_SUL = C7_LESTE
