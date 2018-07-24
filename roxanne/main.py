@@ -1,10 +1,10 @@
 R_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
 R_LESTE = "https://i.imgur.com/rHzbmtM.jpg"
 R_NORTE = "https://i.imgur.com/IPa06hM.jpg"
-C1_LESTE = "https://i.imgur.com/YYuRyQR.jpg"
-C1_OESTE = "https://i.imgur.com/ryMwKc8.jpg"
-C1_NORTE = "https://i.imgur.com/uTIO2tN.jpg"
-C1_SUL = "https://i.imgur.com/1fMjUFO.jpg"
+C1_NORTE = "https://i.imgur.com/YYuRyQR.jpg"
+C1_SUL = "https://i.imgur.com/ryMwKc8.jpg"
+C1_OESTE = "https://i.imgur.com/uTIO2tN.jpg"
+C1_LESTE = "https://i.imgur.com/1fMjUFO.jpg"
 C2_NORTE = "https://i.imgur.com/FlwvTzi.jpg"
 C2_LESTE = "https://i.imgur.com/9uub4QD.jpg"
 C2_OESTE = "https://i.imgur.com/vJZ7pKJ.jpg"
@@ -40,7 +40,7 @@ class Museu:
     def __init__(self):
         R_SUL = C1_LESTE
         C_SUL = C1_OESTE
-        C2_SUL = C2_OESTE
+        C2_SUL = C1_SUL
         C3_SUL = C3_OESTE
         C4_SUL = C4_OESTE
         C5_SUL = C5_OESTE
