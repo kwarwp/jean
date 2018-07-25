@@ -70,7 +70,7 @@ class Museu:
         sala_C = Sala(CC_NORTE, CC_LESTE, CC_OESTE)
         sala_D = Sala(CD_NORTE, CD_LESTE, CD_OESTE)
         # TEM DOIS SUL DA C9 QUE NÃÂÃÂÃÂÃÂ VERDADE ERA PARA SER C8
-        sala_0.norte.meio = sala_1.norte
+        sala_0.norte.meio = sala_9.oeste
         sala_1.norte.meio = sala_2.norte
         sala_2.norte.meio = sala_3.norte
         sala_3.norte.meio = sala_4.norte
