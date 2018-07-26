@@ -56,9 +56,7 @@ class Museu:
     def __init__(self):
         R_SUL = C1_NORTE
         C_SUL = C1_SUL
-        C2_SUL = C1_LESTE
-        C3_SUL = C3_OESTE
-        C4_SUL = C4_LESTE        
+        C2_SUL = C1_LESTE                        
         C6_SUL = C6_OESTE        
         sala_0 = Sala(R_NORTE, R_LESTE, R_OESTE)
         sala_1 = Sala(C1_NORTE, C1_LESTE, C_SUL, C1_OESTE)
@@ -81,6 +79,7 @@ class Museu:
         sala_A.norte.meio = sala_3.norte
         sala_A.sul.meio = sala_1.leste
         sala_3.norte.meio = sala_4.norte
+        sala_3.sul.meio = sala_A.sul
         sala_4.oeste.meio = sala_5.norte
         sala_4.sul.meio = sala_3.sul
         sala_5.leste.meio = sala_6.norte
