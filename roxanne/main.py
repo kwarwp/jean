@@ -34,8 +34,8 @@ CD_NORTE = "https://i.imgur.com/XfOGsRK.jpg"
 CD_OESTE = "https://i.imgur.com/VThND2I.jpg"
 C7_NORTE = "https://i.imgur.com/GwKkapl.jpg"
 C7_LESTE = "https://i.imgur.com/AXT4Zcl.jpg"
-C7_LESTE= "https://i.imgur.com/PAk5ZH1.jpg"
-C9_SUL = "https://i.imgur.com/2kCYcjs.jpg"
+C7_OESTE= "https://i.imgur.com/PAk5ZH1.jpg"
+C7_SUL = "https://i.imgur.com/2kCYcjs.jpg"
 C9_NORTE = "https://i.imgur.com/0DAX1Yq.jpg"
 C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
@@ -53,8 +53,7 @@ class Museu:
         C3_SUL = C3_OESTE
         C4_SUL = C4_LESTE
         C5_SUL = C5_OESTE
-        C6_SUL = C6_OESTE
-        C7_SUL = C7_LESTE
+        C6_SUL = C6_OESTE        
         CA_SUL = CA_LESTE
         sala_0 = Sala(R_NORTE, R_LESTE, R_OESTE)
         sala_1 = Sala(C1_NORTE, C1_LESTE, C_SUL, C1_OESTE)
@@ -63,13 +62,13 @@ class Museu:
         sala_4 = Sala(C4_NORTE,C4_LESTE, C4_SUL, C4_OESTE)
         sala_5 = Sala(C5_NORTE, C5_LESTE, C5_SUL, C5_OESTE) 
         sala_6 = Sala(C6_NORTE, C6_LESTE, C6_SUL, C6_OESTE)
-        sala_7 = Sala(C7_NORTE, C7_LESTE, C7_SUL , C7_LESTE)
+        sala_7 = Sala(C7_NORTE, C7_LESTE, C7_SUL , C7_OESTE)
         sala_9 = Sala(C9_NORTE,C9_LESTE,C9_OESTE, C9_SUL)
-        sala_A = Sala(CA_NORTE,CA_LESTE,CA_OESTE, CA_SUL)
+        sala_A = Sala(CA_NORTE,CA_LESTE,CA_SUL, CA_OESTE)
         sala_B = Sala(CB_NORTE, CB_LESTE, CB_OESTE)
         sala_C = Sala(CC_NORTE, CC_LESTE, CC_OESTE)
         sala_D = Sala(CD_NORTE, CD_LESTE, CD_OESTE)
-        # TEM DOIS SUL DA C9 QUE NÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ VERDADE ERA PARA SER C8
+        # TEM DOIS SUL DA C9 QUE NÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ VERDADE ERA PARA SER C8
         sala_0.norte.meio = sala_9.norte
         sala_0.leste.meio = sala_1.norte      
         sala_1.oeste.meio = sala_2.norte
@@ -82,6 +81,8 @@ class Museu:
         sala_C.norte.meio = sala_7.norte
         sala_6.leste.meio = sala_B.norte        
         sala_7.norte.meio = sala_9.norte
+        sala_9.leste.meio = sala_7.sul
+        
         #sala_0.norte.vai = sala_1.norte.vai()
         sala_0.norte.vai()
         
