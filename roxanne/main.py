@@ -87,6 +87,7 @@ class Museu:
         sala_5.leste.meio = sala_6.norte
         sala_5.oeste.meio = sala_C.norte 
         sala_5.sul.meio = sala_4.leste
+        sala_6.sul.meio = sala_5.oeste
         sala_C.norte.meio = sala_D.norte
         sala_C.sul.meio = sala_5.leste
         sala_D.norte.meio = sala_7.norte
