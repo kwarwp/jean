@@ -116,7 +116,7 @@ class Museu:
         sala_E.sul.meio = sala_D.sul
         
         #sala_0.norte.vai = sala_1.norte.vai()
-        sala_E.norte.vai()
+        sala_0.norte.vai()
         
         
         
