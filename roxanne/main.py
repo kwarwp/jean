@@ -2,7 +2,7 @@ R_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
 R_LESTE = "https://i.imgur.com/rHzbmtM.jpg"
 R_NORTE = "https://i.imgur.com/IPa06hM.jpg"
 C1_NORTE = "https://i.imgur.com/YYuRyQR.jpg"
-C1_SUL = "https://i.imgur.com/ryMwKc8.jpg"
+C1_SUL = "https://i.imgur.com/hF4Cmjp.jpg"
 C1_OESTE = "https://i.imgur.com/NQc4pT8.jpg"
 C1_LESTE = "https://i.imgur.com/1fMjUFO.jpg"
 C2_NORTE = "https://i.imgur.com/FlwvTzi.jpg"
@@ -75,6 +75,7 @@ class Museu:
         sala_0.norte.meio = sala_9.norte
         sala_0.leste.meio = sala_1.norte      
         sala_1.oeste.meio = sala_2.norte
+        sala_1.sul.meio = sala_0.oeste
         sala_2.norte.meio = sala_A.norte
         sala_A.norte.meio = sala_3.norte
         sala_A.sul.meio = sala_1.leste
@@ -86,7 +87,9 @@ class Museu:
         sala_5.oeste.meio = sala_C.norte 
         sala_5.sul.meio = sala_4.leste
         sala_C.norte.meio = sala_D.norte
+        sala_C.sul.meio = sala_5.leste
         sala_D.norte.meio = sala_7.norte
+        sala_D.sul.meio = sala_C.sul
         sala_6.leste.meio = sala_B.norte
         sala_B.sul.meio = sala_6.oeste
         sala_7.norte.meio = sala_9.norte
