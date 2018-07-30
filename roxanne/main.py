@@ -1,6 +1,7 @@
 R_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
 R_LESTE = "https://i.imgur.com/rHzbmtM.jpg"
 R_NORTE = "https://i.imgur.com/IPa06hM.jpg"
+R_SUL = "https://i.imgur.com/NnVA765.jpg"
 C1_NORTE = "https://i.imgur.com/YYuRyQR.jpg"
 C1_SUL = "https://i.imgur.com/hF4Cmjp.jpg"
 C1_OESTE = "https://i.imgur.com/NQc4pT8.jpg"
@@ -59,7 +60,7 @@ class Museu:
         C_SUL = C1_SUL
         C2_SUL = C1_LESTE                        
         C6_SUL = C6_OESTE        
-        sala_0 = Sala(R_NORTE, R_LESTE, R_OESTE)
+        sala_0 = Sala(R_NORTE, R_LESTE, R_SUL, R_OESTE)
         sala_1 = Sala(C1_NORTE, C1_LESTE, C_SUL, C1_OESTE)
         sala_2 = Sala(C2_NORTE, C2_LESTE, C2_SUL, C2_OESTE)
         sala_3 = Sala(C3_NORTE, C3_LESTE, C3_SUL , C3_OESTE)
