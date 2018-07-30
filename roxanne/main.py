@@ -32,13 +32,14 @@ CB_NORTE = "https://i.imgur.com/8lDTJl7.jpg"
 CB_OESTE = "https://i.imgur.com/MGsIsD7.jpg"
 CB_SUL = "https://i.imgur.com/Q0PR8Hy.jpg"
 CB_LESTE = "https://i.imgur.com/iSGp4fP.jpg"
-CC_NORTE = "https://i.imgur.com/l9nUTnj.jpg"
+CC_NORTE = "https://i.imgur.com/AWmKBuA.jpg"
 CC_LESTE = "https://i.imgur.com/NzvDlCL.jpg"
 CC_OESTE = "https://i.imgur.com/sniTfY8.jpg"
-CD_LESTE = "https://i.imgur.com/XbuhUbz.jpg"
-CD_NORTE = "https://i.imgur.com/XfOGsRK.jpg"
+CC_SUL = "https://i.imgur.com/M61ZyN8.jpg"
+CD_LESTE = "https://i.imgur.com/1Yd1evR.jpg"
+CD_NORTE = "https://i.imgur.com/dyADxoS.jpg"
 CD_OESTE = "https://i.imgur.com/VThND2I.jpg"
-CD_SUL = "https://i.imgur.com/XbuhUbz.jpg"
+CD_SUL = "https://i.imgur.com/M61ZyN8.jpg"
 C7_NORTE = "https://i.imgur.com/GwKkapl.jpg"
 C7_LESTE = "https://i.imgur.com/ZKS7lBM.jpg"
 C7_OESTE= "https://i.imgur.com/PAk5ZH1.jpg"
@@ -53,8 +54,7 @@ STYLE["width"] = 850
 STYLE["height"] = "650px"
 
 class Museu:
-    def __init__(self):
-        R_SUL = C1_NORTE
+    def __init__(self):        
         C_SUL = C1_SUL
         C2_SUL = C1_LESTE                        
         C6_SUL = C6_OESTE        
@@ -71,7 +71,7 @@ class Museu:
         sala_B = Sala(CB_NORTE, CB_LESTE, CB_SUL, CB_OESTE)
         sala_C = Sala(CC_NORTE, CC_LESTE, CC_OESTE)
         sala_D = Sala(CD_NORTE, CD_LESTE, CD_SUL, CD_OESTE)
-        # TEM DOIS SUL DA C9 QUE NÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ VERDADE ERA PARA SER C8
+        # TEM DOIS SUL DA C9 QUE NA VERDADE ERA PARA SER C8
         sala_0.norte.meio = sala_9.norte
         sala_0.leste.meio = sala_1.norte      
         sala_1.oeste.meio = sala_2.norte
@@ -85,7 +85,8 @@ class Museu:
         sala_5.leste.meio = sala_6.norte
         sala_5.oeste.meio = sala_C.norte 
         sala_5.sul.meio = sala_4.leste
-        sala_C.norte.meio = sala_7.norte
+        sala_C.norte.meio = sala_D.norte
+        sala_D.norte.meio = sala_7.norte
         sala_6.leste.meio = sala_B.norte
         sala_B.sul.meio = sala_6.oeste
         sala_7.norte.meio = sala_9.norte
