@@ -83,7 +83,7 @@ class Museu:
         sala_D = Sala(CD_NORTE, CD_LESTE, CD_SUL, CD_OESTE)
         sala_E = Sala(CE_NORTE, CE_LESTE,CE_SUL, CE_OESTE)
         # TEM DOIS SUL DA C9 QUE NA VERDADE ERA PARA SER C8
-        sala_0.norte.meio = sala_9.norte
+        sala_0.norte.meio = sala_9.leste
         sala_0.leste.meio = sala_1.norte
         sala_1.oeste.meio = sala_2.norte
         sala_1.sul.meio = sala_0.oeste
@@ -108,6 +108,8 @@ class Museu:
         sala_8.leste.meio = sala_9.norte
         sala_8.sul.meio = sala_7.oeste
         sala_9.sul.meio = sala_8.sul
+        sala_9.oeste.meio = sala_0.sul
+        sala_9.sul.meio = sala_8.oeste
         sala_E.oeste.meio = sala_7.norte
         
         #sala_0.norte.vai = sala_1.norte.vai()
