@@ -105,12 +105,14 @@ class Museu:
         sala_6.leste.meio = sala_B.norte
         sala_B.sul.meio = sala_6.oeste
         sala_7.leste.meio = sala_8.norte
+        sala_7.sul.meio = sala_E.leste
         sala_8.leste.meio = sala_9.norte
         sala_8.sul.meio = sala_7.oeste
         sala_9.sul.meio = sala_8.sul
         sala_9.oeste.meio = sala_0.sul
         sala_9.sul.meio = sala_8.oeste
         sala_E.oeste.meio = sala_7.norte
+        sala_E.sul.meio = sala_D.sul
         
         #sala_0.norte.vai = sala_1.norte.vai()
         sala_E.norte.vai()
