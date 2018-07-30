@@ -76,7 +76,7 @@ class Museu:
         sala_6 = Sala(C6_NORTE, C6_LESTE, C6_SUL, C6_OESTE)
         sala_7 = Sala(C7_NORTE, C7_LESTE, C7_SUL , C7_OESTE)
         sala_8 = Sala(C8_NORTE, C8_LESTE, C8_SUL, C8_OESTE)
-        sala_9 = Sala(C9_NORTE,C9_LESTE,C9_OESTE, C9_SUL)
+        sala_9 = Sala(C9_NORTE,C9_LESTE, C9_SUL,C9_OESTE)
         sala_A = Sala(CA_NORTE,CA_LESTE,CA_SUL, CA_OESTE)
         sala_B = Sala(CB_NORTE, CB_LESTE, CB_SUL, CB_OESTE)
         sala_C = Sala(CC_NORTE, CC_LESTE, CC_SUL, CC_OESTE)
@@ -105,7 +105,8 @@ class Museu:
         sala_6.leste.meio = sala_B.norte
         sala_B.sul.meio = sala_6.oeste
         sala_7.leste.meio = sala_8.norte
-        sala_8.norte.meio = sala_9.norte
+        sala_8.leste.meio = sala_9.norte
+        sala_8.sul.meio = sala_7.oeste
         sala_9.sul.meio = sala_8.sul
         sala_E.oeste.meio = sala_7.norte
         
