@@ -117,11 +117,21 @@ class Museu:
         
         #sala_0.norte.vai = sala_1.norte.vai()
         sala_0.norte.vai()
-        cod = Codigo(cena=sala_0.norte ,topo= "ola", codigo = "if True:print('oi')",style = dict(width=400,heigth="250px",left=500,top=100))
-        cod = Codigo(cena=sala_1.oeste, topo = "hello",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
+       # cod = Codigo(cena=sala_0.norte ,topo= "ola", codigo = "if True:print('oi')",style = dict(width=400,heigth="250px",left=500,top=100))
+       # cod = Codigo(cena=sala_1.norte, topo = "hello",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
+       # cod = Codigo(cena=sala_1.leste, topo = "Bonju",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
+       # cod = Codigo(cena=sala_1.oeste, topo = "Buenos dias",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
+       # cod =Codigo(cena=sala_1.sul, topo = "como vai?",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
         
-        
-        
+        MENSAGENS=[
+                  [sala_0.norte ,"ola",  "if True:print('oi')"],
+                  [sala_1.norte ,"Hello",  "if True:print('ooi')"],
+                  [sala_1.leste ,"bonju",  "if True:print(':))"],
+                  [sala_1.este ,"Buenos dias",  "if True:print('oi')"],
+                  [sala_1.sul ,"como vai?",  "if True:print('oi')"],
+        ]
+        STYLE = dict(width=400,heigth="250px",left=500,top=100)
+        [Codigo(Cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 if __name__ == '__main__':
      Museu()
                            
