@@ -312,3 +312,10 @@ SyntaxError: invalid syntax
                                                                                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 06 2018 18:34:04.434 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 126
+  MENSAGENS=[
+                                                                                               ^
+SyntaxError: invalid syntax
+'''},
