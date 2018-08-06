@@ -298,3 +298,10 @@ Traceback (most recent call last):
                                                                                                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 06 2018 18:32:34.623 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 121
+  Mensagens=[
+                                                                                               ^
+SyntaxError: invalid syntax
+'''},
