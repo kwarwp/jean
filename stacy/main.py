@@ -92,11 +92,16 @@ class Museu:
         "e atribui-se à Cena"
         Cena.vai = self.vai
 
-        cod = Codigo(cena=entrada, topo=topo, codigo=CODE_0, style=dict(width=400, height="250px", left=500, top=100))
+        self.cod = Codigo(cena=entrada, topo=topo, codigo=CODE_0, style=dict(width=400, height="250px", left=500, top=100))
         entrada.vai()
+    def instrumenta(self, cena):
+        self.cod.entra(cena)
+        VAI(self)
+        # Cena.vai = VAI
     def vai(self):
-        Museu.CUR.vai()
+        Museu.CUR.instrumenta(self)
         Cena.vai = VAI
+        self.vai()
         
         
         
