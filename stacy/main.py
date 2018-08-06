@@ -75,13 +75,6 @@ class Labirinto:
                         centro.cenas[k].meio = sala.cenas[k]
                         indice_oposto = (k + 2) % 4
                         sala.cenas[indice_oposto].meio = centro.cenas[indice_oposto]
-TUT=[
-    [sala_1.norte, "texto0", "codigo0"],
-    [sala_2.norte, "texto1- aquiaa", "if True:"],
-    [sala_1.norte, "texto0", "codigo0"],
-    [sala_1.norte, "texto0", "codigo0"],
-    [sala_1.norte, "texto0", "codigo0"],
-]
 STYLE = dict(width=400, height="250px", left=500, top=100)
 # [Codigo(cena=c, topo=t, codigo=g, style=STYLE) for c, t, g in TUT]
 VAI = Cena.vai
