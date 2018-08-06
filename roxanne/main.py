@@ -160,7 +160,7 @@ class Museu:
                   [sala_9.norte,"você esta vencendo seus medos",  "if True:print('oi')"],
                   [sala_9.leste ,"está se superando",  "if True:print('oi')"],
                   [sala_9.oeste ,"respire",  "if True:print('oi')"],
-                  [sala_7.oeste ,"acredite em vc",  "if True:print('oi')"],
+                  [sala_9.sul ,"comemore, pois vc venceu",  "if True:print('oi')"]
 
                   
                   
