@@ -81,6 +81,7 @@ VAI = Cena.vai
 class Museu:
     CUR = None
     def __init__(self):
+        self.nome = ""
         [PAREDES.update({"{}_SUL".format(sala[:2]): imagem}) for sala, imagem in PAREDES.items() if "OESTE" in sala]
         museu = {"sala_{}".format(indice): Sala(
             *[PAREDES["C{}_{}".format(indice, rumo)] for rumo in RUMOS], nome="sala_{}".format(indice))
