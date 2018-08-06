@@ -131,7 +131,7 @@ class Museu:
                   [sala_1.sul ,"como vai?",  "if True:print('oi')"],
         ]
         STYLE = dict(width=400,heigth="250px",left=500,top=100)
-        [Codigo(Cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
+        [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 if __name__ == '__main__':
      Museu()
                            
