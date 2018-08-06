@@ -173,6 +173,16 @@ class Museu:
                   [sala_C.leste ,"não desista",  "if True:print('oi')"],
                   [sala_C.oeste ,"não é tão complicado",  "if True:print('oi')"],
                   [sala_C.sul ,"avai sim",  "if True:print('oi')"],
+                  [sala_D.norte ,"tudo vai bem",  "if True:print('oi')"],
+                  [sala_D.leste ,"não desista",  "if True:print('oi')"],
+                  [sala_D.oeste ,"não é tão complicado",  "if True:print('oi')"],
+                  [sala_D.sul ,"avai sim",  "if True:print('oi')"],
+                  [sala_E.norte ,"tudo vai bem",  "if True:print('oi')"],
+                  [sala_E.leste ,"não desista",  "if True:print('oi')"],
+                  [sala_E.oeste ,"não é tão complicado",  "if True:print('oi')"],
+                  [sala_E.sul ,"avai sim",  "if True:print('oi')"],
+
+
 
 
 
