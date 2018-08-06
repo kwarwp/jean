@@ -35,7 +35,7 @@ C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg",
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg",
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
 )
-from _spy.vitollino.main import Sala, STYLE, NADA, Elemento, INVENTARIO, PSTYLE, EIMGSTY, NS
+from _spy.vitollino.main import Sala, STYLE, NADA, Elemento, INVENTARIO, PSTYLE, EIMGSTY, NS, Cena
 from browser import window, html
 PKEYS = ['False', 'None', 'True', ' and ', ' as ', 'assert', 'break', 'class ', 'continue', 'def ',
          'del', 'elif', 'else', 'except', 'finally', 'for ', 'from ', 'global ', 'if ', 'import ',
@@ -53,52 +53,6 @@ CODE_0 = """from _spy.vitollino.main import Cena
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 cena = Cena(C9_OESTE)
 cena.vai()"""
-
-class Codigo(Elemento):
-    """
-    Um objeto de interação que é representado por uma trecho de código em uma cena.
-            exemplo = Codigo(
-             codigo="from anna import main", topo="Importando um módulo",
-             vai=testa_codigo, style=dict(left=350, top=550, width=60))
-    :param codigo: O código de programa
-    :param vai: função executada quando se clica no objeto
-    :param style: dicionário com dimensões do objeto {"left": ..., "top": ..., width: ..., height: ...}
-    :param topo: Texto que aparece no topo do bloco
-    :param cena: cena onde o objeto vai ser colocado
-    """
-    def __init__(self, codigo="", topo="", cena=INVENTARIO, img="", vai=None, style=NS):
-        self.img = img
-        self.vai = vai if vai else lambda _=0: None
-        self.cena = cena
-        self.opacity = 0
-        self.style = dict(**PSTYLE)
-        # self.style["min-width"], self.style["min-height"] = w, h
-        self.style.update(backgroundColor='rgba(210, 220, 220, 0.85)', **style)
-        self.elt = html.DIV(style=self.style)
-        self.xy = (-111, -111)
-        istyle = dict(EIMGSTY)
-        istyle.update(opacity=0.3)
-        if img:
-            self.img = html.IMG(src=img, style=istyle)
-            self.elt <= self.img
-        if topo:
-            self.topo = html.DIV(topo, color="black", style=dict(padding="15px"))
-            self.elt <= self.topo
-        self.elt.onclick = self._click
-        self.scorer = dict(ponto=1, valor=cena.nome, carta=img, casa=self.xy, move=None)
-        self._code = html.CODE(codigo)
-        self._area = html.PRE(self._code, Class="python", style=dict(
-            position='relative', top=0, left=0, backgroundColor='transparent'))
-        self.elt <= self._area
-        codigo = window.hljs.highlight("python", codigo)
-        def rp(cod, keys=PKEYS[:], mark='<span class="hljs-keyword">{}</span>'):
-            key = keys.pop()
-            cod = cod.replace(key, mark.format(key))
-            return rp(cod, keys, mark) if keys else cod
-        # codigo = rp(codigo)
-        self._code.html = codigo.value
-        _ = self.entra(cena) if cena and (cena != INVENTARIO) else None
-
 
 class Labirinto:
 
@@ -121,8 +75,16 @@ class Labirinto:
                         centro.cenas[k].meio = sala.cenas[k]
                         indice_oposto = (k + 2) % 4
                         sala.cenas[indice_oposto].meio = centro.cenas[indice_oposto]
-
-
+TUT=[
+    [sala_1.norte, "texto0", "codigo0"],
+    [sala_2.norte, "texto1- aquiaa", "if True:"],
+    [sala_1.norte, "texto0", "codigo0"],
+    [sala_1.norte, "texto0", "codigo0"],
+    [sala_1.norte, "texto0", "codigo0"],
+]
+STYLE = dict(width=400, height="250px", left=500, top=100)
+# [Codigo(cena=c, topo=t, codigo=g, style=STYLE) for c, t, g in TUT]
+VAI = Cena.vai
 class Museu:
     def __init__(self):
         [PAREDES.update({"{}_SUL".format(sala[:2]): imagem}) for sala, imagem in PAREDES.items() if "OESTE" in sala]
@@ -131,12 +93,17 @@ class Museu:
         for indice in range(10)}
         mapa = [[museu["sala_{}".format((j+i) %10)] for i in range(4)] for j in range(0, 16, 4)]
         Labirinto.m(mapa)
-        entrada = museu["sala_0"].norte
+        self.corrente = entrada = museu["sala_0"].norte
         topo = "Este é o código inicial para se construir a primeira cena. Cria-se uma referência à uma imagem na internet"+\
         "e atribui-se à Cena"
+        Cena.vai = Museu.vai
 
         cod = Codigo(cena=entrada, topo=topo, codigo=CODE_0, style=dict(width=400, height="250px", left=500, top=100))
         entrada.vai()
+    def vai(self):
+        self.corrente.vai()
+        Cena.vai = VAI
+        
         
         
         
