@@ -160,7 +160,7 @@ class Museu:
                   [sala_9.norte,"você esta vencendo seus medos",  "if True:print('oi')"],
                   [sala_9.leste ,"está se superando",  "if True:print('oi')"],
                   [sala_9.oeste ,"respire",  "if True:print('oi')"],
-                  [sala_9.sul ,"comemore, pois vc venceu",  "if True:print('oi')"]
+                  [sala_9.sul ,"comemore, pois vc venceu",  "if True:print('oi')"],
                   [sala_A.norte ,"tudo vai bem",  "if True:print('oi')"],
                   [sala_A.leste ,"não desista",  "if True:print('oi')"],
                   [sala_A.oeste ,"não é tão complicado",  "if True:print('oi')"],
@@ -180,7 +180,7 @@ class Museu:
                   [sala_E.norte ,"tudo vai bem",  "if True:print('oi')"],
                   [sala_E.leste ,"não desista",  "if True:print('oi')"],
                   [sala_E.oeste ,"não é tão complicado",  "if True:print('oi')"],
-                  [sala_E.sul ,"avai sim",  "if True:print('oi')"],
+                  [sala_E.sul ,"avai sim",  "if True:print('oi')"]
 
 
 
