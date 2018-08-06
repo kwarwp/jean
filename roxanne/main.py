@@ -128,7 +128,42 @@ class Museu:
                   [sala_1.norte ,"Hello",  "if True:print('ooi')"],
                   [sala_1.leste ,"bonju",  "if True:print(':)')"],
                   [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
-                  [sala_1.sul ,"como vai?",  "if True:print('oi')"]
+                  [sala_1.sul ,"como vai?",  "if True:print('oi')"],
+                  [sala_2.norte ,"Bora lá?",  "if True:print('oi')"],
+                  [sala_2.leste,"vamos?",  "if True:print('oi')"],
+                  [sala_2.oeste ,"lest go",  "if True:print('oi')"],
+                  [sala_2.sul ,"vamonos",  "if True:print('oi')"],
+                  [sala_3.norte ,"como estas?",  "if True:print('oi')"],
+                  [sala_3.leste ,"e o dia?",  "if True:print('oi')"],
+                  [sala_3.oeste ,"ta calor?",  "if True:print('oi')"],
+                  [sala_3.sul ,"quanto graus está agora?",  "if True:print('oi')"],
+                  [sala_4.norte ,"hey",  "if True:print('oi')"],
+                  [sala_4.leste ,"parabéns",  "if True:print('oi')"],
+                  [sala_4.oeste ,"você chegou até aqui!",  "if True:print('oi')"],
+                  [sala_4.sul ,"tenha muito orgulho de vc",  "if True:print('oi')"],
+                  [sala_5.norte ,"temos que comemorara pequenas vitórias",  "if True:print('oi')"],
+                  [sala_5.leste ,"está indo muito bem",  "if True:print('oi')"],
+                  [sala_5.oeste ,"tudo que fizer coloque amor",  "if True:print('oi')"],
+                  [sala_5.sul ,"se ame",  "if True:print('oi')"],
+                  [sala_6.norte ,"se cuide",  "if True:print('oi')"],
+                  [sala_6.leste ,"hoje o dia esta lindo",  "if True:print('oi')"],
+                  [sala_6.oeste ,"deixe a chuva lavar a alma",  "if True:print('oi')"],
+                  [sala_6.sul ,"hasta la vista",  "if True:print('oi')"],
+                  [sala_7.norte ," you say goodbye",  "if True:print('oi')"],
+                  [sala_7.leste ,"and say Hello",  "if True:print('oi')"],
+                  [sala_7.oeste ,"acredite em vc",  "if True:print('oi')"],
+                  [sala_7.sul ,"vc é capaz",  "if True:print('oi')"],
+                  [sala_8.norte ,"don't worry",  "if True:print('oi')"],
+                  [sala_8.leste ,"vc é capaz",  "if True:print('oi')"],
+                  [sala_8.oeste ," be free",  "if True:print('oi')"],
+                  [sala_8.sul,"está quase acabando",  "if True:print('oi')"],
+                  [sala_9.norte,"você esta vencendo seus medos",  "if True:print('oi')"],
+                  [sala_9.leste ,"está se superando",  "if True:print('oi')"],
+                  [sala_9.oeste ,"respire",  "if True:print('oi')"],
+                  [sala_7.oeste ,"acredite em vc",  "if True:print('oi')"],
+
+                  
+                  
         ]
         STYLE = dict(width=400,heigth="250px",left=500,top=100)
         [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
