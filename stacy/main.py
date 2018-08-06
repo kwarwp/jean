@@ -87,13 +87,14 @@ class Museu:
         for indice in range(10)}
         mapa = [[museu["sala_{}".format((j+i) %10)] for i in range(4)] for j in range(0, 16, 4)]
         Labirinto.m(mapa)
-        Museu.CUR = self.corrente = entrada = museu["sala_0"].norte
+        self.corrente = entrada = museu["sala_0"].norte
         topo = "Este é o código inicial para se construir a primeira cena. Cria-se uma referência à uma imagem na internet"+\
         "e atribui-se à Cena"
         Cena.vai = self.vai
 
         self.cod = Codigo(cena=entrada, topo=topo, codigo=CODE_0, style=dict(width=400, height="250px", left=500, top=100))
         entrada.vai()
+        Museu.CUR = self
     def instrumenta(self, cena):
         self.cod.entra(cena)
         VAI(self)
