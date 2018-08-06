@@ -127,7 +127,7 @@ class Museu:
                   [sala_0.norte ,"ola",  "if True:print('oi')"],
                   [sala_1.norte ,"Hello",  "if True:print('ooi')"],
                   [sala_1.leste ,"bonju",  "if True:print(':)')"],
-                  [sala_1.este ,"Buenos dias",  "if True:print('oi')"],
+                  [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
                   [sala_1.sul ,"como vai?",  "if True:print('oi')"]
         ]
         STYLE = dict(width=400,heigth="250px",left=500,top=100)
