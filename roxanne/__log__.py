@@ -291,3 +291,10 @@ Traceback (most recent call last):
   module <module> line 61
     from _spy.vitollino.main import Sala, STYLE, codigo
 '''},
+{'date': 'Mon Aug 06 2018 17:49:24.82 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 121
+  cod = Codigo(cena=sala_1.oeste, topo = "hello",codigo = "if True:print('ooi'),style = dict(width=400,heigth="250px",left=500,top=100))
+                                                                                                                ^
+SyntaxError: invalid syntax
+'''},
