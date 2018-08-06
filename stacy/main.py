@@ -79,6 +79,7 @@ STYLE = dict(width=400, height="250px", left=500, top=100)
 # [Codigo(cena=c, topo=t, codigo=g, style=STYLE) for c, t, g in TUT]
 VAI = Cena.vai
 class Museu:
+    CUR = None
     def __init__(self):
         [PAREDES.update({"{}_SUL".format(sala[:2]): imagem}) for sala, imagem in PAREDES.items() if "OESTE" in sala]
         museu = {"sala_{}".format(indice): Sala(
@@ -86,15 +87,15 @@ class Museu:
         for indice in range(10)}
         mapa = [[museu["sala_{}".format((j+i) %10)] for i in range(4)] for j in range(0, 16, 4)]
         Labirinto.m(mapa)
-        self.corrente = entrada = museu["sala_0"].norte
+        Museu.CUR = self.corrente = entrada = museu["sala_0"].norte
         topo = "Este é o código inicial para se construir a primeira cena. Cria-se uma referência à uma imagem na internet"+\
         "e atribui-se à Cena"
-        Cena.vai = Museu.vai
+        Cena.vai = self.vai
 
         cod = Codigo(cena=entrada, topo=topo, codigo=CODE_0, style=dict(width=400, height="250px", left=500, top=100))
         entrada.vai()
     def vai(self):
-        self.corrente.vai()
+        Museu.CUR.vai()
         Cena.vai = VAI
         
         
