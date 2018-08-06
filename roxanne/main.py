@@ -58,7 +58,7 @@ C9_NORTE = "https://i.imgur.com/0DAX1Yq.jpg"
 C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
-from _spy.vitollino.main import Sala, STYLE
+from _spy.vitollino.main import Sala, STYLE, Codigo
 
 STYLE["width"] = 850
 STYLE["height"] = "650px"
@@ -117,6 +117,8 @@ class Museu:
         
         #sala_0.norte.vai = sala_1.norte.vai()
         sala_0.norte.vai()
+        cod = Codigo(cena=sala_0.norte ,topo= "ola", codigo = "if True:print('oi')",style = dict(width=400,heigth="250px",left=500,top=100))
+        cod = Codigo(cena=sala_1.oeste, topo = "hello",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
         
         
         
