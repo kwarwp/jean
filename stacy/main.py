@@ -35,7 +35,7 @@ C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg",
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg",
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
 )
-from _spy.vitollino.main import Sala, STYLE, NADA, Elemento, INVENTARIO, PSTYLE, EIMGSTY, NS, Cena
+from _spy.vitollino.main import Sala, STYLE, NADA, Elemento, INVENTARIO, PSTYLE, EIMGSTY, NS, Cena, Codigo
 from browser import window, html
 PKEYS = ['False', 'None', 'True', ' and ', ' as ', 'assert', 'break', 'class ', 'continue', 'def ',
          'del', 'elif', 'else', 'except', 'finally', 'for ', 'from ', 'global ', 'if ', 'import ',
