@@ -319,3 +319,10 @@ SyntaxError: invalid syntax
                                                                                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 06 2018 18:34:28.398 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 133
+  STYLE = dict(width=400,heigth="250px",left=500,top=100))
+                                                         ^
+SyntaxError: invalid syntax
+'''},
