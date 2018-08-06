@@ -165,6 +165,11 @@ class Museu:
                   [sala_A.leste ,"não desista",  "if True:print('oi')"],
                   [sala_A.oeste ,"não é tão complicado",  "if True:print('oi')"],
                   [sala_A.sul ,"avai sim",  "if True:print('oi')"],
+                  [sala_B.norte ,"tudo vai bem",  "if True:print('oi')"],
+                  [sala_B.leste ,"não desista",  "if True:print('oi')"],
+                  [sala_B.oeste ,"não é tão complicado",  "if True:print('oi')"],
+                  [sala_B.sul ,"avai sim",  "if True:print('oi')"],
+
 
                   
                   
