@@ -61,7 +61,7 @@ C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
 MAPA = "https://i.imgur.com/JgqpJkG.png"
 
-MapaMuseu = ""
+MapaMuseu = MAPA
 from _spy.vitollino.main import Sala, STYLE, Codigo
 
 STYLE["width"] = 850
