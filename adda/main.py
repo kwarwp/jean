@@ -66,7 +66,6 @@ from _spy.vitollino.main import Sala, STYLE, Codigo
 STYLE["width"] = 850
 STYLE["height"] = "650px"
 
-mapa = Mapa
 
 class Museu:
     def __init__(self):  
