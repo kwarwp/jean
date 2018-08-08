@@ -67,10 +67,10 @@ STYLE["width"] = 850
 STYLE["height"] = "650px"
 
 class Museu:
-    def __init__(self):        
+    def __init__(self): 
+        mapa = Mapa 
         C_SUL = C1_SUL
         C2_SUL = C1_LESTE
-        mapa = Mapa
         sala_0 = Sala(R_NORTE, R_LESTE, R_SUL, R_OESTE)
         sala_1 = Sala(C1_NORTE, C1_LESTE, C_SUL, C1_OESTE)
         sala_2 = Sala(C2_NORTE, C2_LESTE, C2_SUL, C2_OESTE)
