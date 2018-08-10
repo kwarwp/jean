@@ -62,7 +62,7 @@ C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
 MAPA = "https://i.imgur.com/JgqpJkG.png"
 
 MapaMuseu = MAPA
-from _spy.vitollino.main import Sala, STYLE, Codigo
+from _spy.vitollino.main import Sala, STYLE, Codigo, Labirinto
 
 STYLE["width"] = 850
 STYLE["height"] = "650px"
@@ -198,5 +198,11 @@ class Museu:
         STYLE = dict(width=400,heigth="250px",left=500,top=100)
         [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 if __name__ == '__main__':
-     Museu()
+    #Museu()
+    Mapa()
+    
+class Mapa:
+    def __criarMapa__():
+    
+    Museu()
                            
