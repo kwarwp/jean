@@ -1,4 +1,4 @@
-# jean.grace.mR_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
+R_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
 R_LESTE = "https://i.imgur.com/rHzbmtM.jpg"
 R_NORTE = "https://i.imgur.com/IPa06hM.jpg"
 R_SUL = "https://i.imgur.com/NnVA765.jpg"
@@ -58,7 +58,8 @@ C9_NORTE = "https://i.imgur.com/0DAX1Yq.jpg"
 C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
-from _spy.vitollino.main import Sala, STYLE, Codigo
+DINO = "http://imagem.ongame.com.br/pb/blog/stingrr.png"
+from _spy.vitollino.main import Sala, STYLE, Codigo, Elemento, Texto
 
 STYLE["width"] = 850
 STYLE["height"] = "650px"
@@ -114,6 +115,12 @@ class Museu:
         sala_9.sul.meio = sala_8.oeste
         sala_E.oeste.meio = sala_7.norte
         sala_E.sul.meio = sala_D.sul
+        
+        dino = Elemento(img=DINO, tit="Dino", style=dict(left=150, top=160, width=60, height=200))
+        dino.entra(sala_2.leste)
+        dinotexto = Texto(sala_2.leste, "e ai,colega, tudo tranks?")
+        dino.vai = dinotexto.vai
+
         
         #sala_0.norte.vai = sala_1.norte.vai()
         sala_0.norte.vai()
@@ -193,4 +200,4 @@ class Museu:
         [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 if __name__ == '__main__':
      Museu()
-                           ain.py
+                           
