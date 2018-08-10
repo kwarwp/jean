@@ -77,3 +77,10 @@ SyntaxError: EOL while scanning string literal
                                                                                                                                                                                                                                                                    ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Thu Aug 09 2018 22:00:36.889 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 140
+  [sala_2.leste,"vamos aprender a associar um elemento e um texto? É so seguir as instruçoes",  "A primeira coisa a se fazer é importar do vitollino:Elemento e Texto(caso não tenha no seu código).
+                                                                                                                                                                                                    ^
+SyntaxError: EOL while scanning string literal
+'''},
