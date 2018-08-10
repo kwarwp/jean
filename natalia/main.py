@@ -84,6 +84,8 @@ class Museu:
         sala_D = Sala(CD_NORTE, CD_LESTE, CD_SUL, CD_OESTE)
         sala_E = Sala(CE_NORTE, CE_LESTE,CE_SUL, CE_OESTE)
         Labirinto(sala_0, sala_1,sala_2, sala_3,sala_4)
+        Labirinto(sala_5, sala_6,sala_7,sala_8,sala_9)
+        Labirinto(sala_A,sala_B,sala_C,sala_D,sala_E)
         sala_0.norte.vai()
 if __name__ == '__main__':
     Museu()
