@@ -59,3 +59,10 @@ IndentationError: expected an indented block
     Labirinto(sala_0, sala_1, sala_2, sala_3, sala_4, sala_5)
 TypeError: __init__() takes 6 positional argument but more were given
 '''},
+{'date': 'Fri Aug 10 2018 11:23:56.878 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 87
+  Labirinto(,sala_4,sala_5, sala_6,sala_7,sala_8)
+             ^
+SyntaxError: invalid syntax
+'''},
