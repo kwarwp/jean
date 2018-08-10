@@ -20,3 +20,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Thu Aug 09 2018 23:52:26.242 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 62
+  PEDRA = “https://i.imgur.com/81XKpgM.jpg”
+           ^
+SyntaxError: invalid syntax
+'''},
