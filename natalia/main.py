@@ -1,6 +1,6 @@
 # jean.natalia.main.py
 from _spy.vitollino.main import Sala, STYLE, Codigo, Labirinto
-STYLE["width"] = 850
+STYLE["width"] = "850"
 STYLE["height"] = "650px"
 
 R_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
