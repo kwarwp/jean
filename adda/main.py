@@ -202,7 +202,15 @@ if __name__ == '__main__':
     Mapa()
     
 class Mapa:
-    def __criarMapa__():
+    def __init__(self, c=NADA, n=NADA, l=NADA, s=NADA, o=NADA):
+        self.salas = [sala for sala in [c, n, l, s, o]]
+        self.centro, self.norte, self.leste, self.sul, self.oeste = self.salas
+        for indice, sala in enumerate(self.salas[1:]):
+            self.centro.cenas[indice].portal(N=sala.cenas[indice])
+            indice_oposto = (indice + 2) % 4
+            sala.cenas[indice_oposto].portal(N=self.centro.cenas[indice_oposto])
     
+    def __criar_conexao_salas(m):
+        pass #não sei como reutilizar a função mapa :(
     Museu()
                            
