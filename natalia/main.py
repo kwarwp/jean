@@ -88,6 +88,6 @@ class Museu:
         Labirinto(sala_0, sala_1,sala_2, sala_3,sala_4)
         sala_0.norte.vai()
 if __name__ == '__main__':
-    Labirinto()
+    Museu()
 
 
