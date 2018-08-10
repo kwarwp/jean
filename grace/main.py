@@ -152,7 +152,9 @@ class Museu:
                   "Entao pra voces entenderem o codigo para associar um elemento e uma cena fica assim:"
                   "dinotexto = Texto(sala_2.leste,digite seu texto aqui)-> nao esqueçam que ele precisa estar entre aspas(aqui nao coloquei,mas voces coloquem)"
                   "dino.vai = dinotexto.vai"
-                  "Lembrando que a explicacao de como colocar um elemento, esta em outra cena do tutorial"],
+                  "Lembrando que a explicacao de como colocar um elemento, esta em outra cena do tutorial"
+                  "No final o seu texto aparecera ao clicar no elemento!!"
+                  "Ai e so cair pro abraco"],
                   [sala_2.oeste ,"lest go",  "if True:print('oi')"],
                   [sala_2.sul ,"vamonos",  "if True:print('oi')"],
                   [sala_3.norte ,"como estas?",  "if True:print('oi')"],
