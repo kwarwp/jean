@@ -103,3 +103,10 @@ TypeError: '<=' not supported between instances of 'Sala' and 'Elemento'
     cena <= self
 TypeError: '<=' not supported between instances of 'Sala' and 'Elemento'
 '''},
+{'date': 'Fri Aug 10 2018 00:03:09.791 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 62
+  PEDRA = “https://i.imgur.com/81XKpgM.jpg”
+           ^
+SyntaxError: invalid syntax
+'''},
