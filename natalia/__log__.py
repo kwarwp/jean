@@ -27,3 +27,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Fri Aug 10 2018 10:14:50.376 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 11
+  c9_oeste= c9_sul
+  ^
+IndentationError: expected an indented block
+'''},
