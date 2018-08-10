@@ -116,7 +116,7 @@ class Museu:
         sala_E.oeste.meio = sala_7.norte
         sala_E.sul.meio = sala_D.sul
         
-        dino = Elemento(img=DINO, tit="Dino", style=dict(left=150, top=160, width=60, height=200))
+        dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200))
         dino.entra(sala_2.leste)
         dinotexto = Texto(sala_2.leste, "e ai,colega, tudo tranks?")
         dino.vai = dinotexto.vai
