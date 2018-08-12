@@ -116,7 +116,7 @@ class Museu:
         sala_E.oeste.meio = sala_7.norte
         sala_E.sul.meio = sala_D.sul
         
-        interrogacao_ = Elemento(interrogacao,cena= INVENTARIO, tit = "Help", 
+        interrogacao = Elemento(interrogacao_,cena= INVENTARIO, tit = "Help", 
         x = 460, y = 192, w = 80, h = 90)
         
         #sala_0.norte.vai = sala_1.norte.vai()
