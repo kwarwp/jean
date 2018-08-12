@@ -58,6 +58,7 @@ C9_NORTE = "https://i.imgur.com/0DAX1Yq.jpg"
 C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
+interrogacao="https://publicdomainvectors.org/photos/primary-gnome-question.png"
 from _spy.vitollino.main import Sala, STYLE, Codigo, INVENTARIO
 
 STYLE["width"] = 850
@@ -114,6 +115,9 @@ class Museu:
         sala_9.sul.meio = sala_8.oeste
         sala_E.oeste.meio = sala_7.norte
         sala_E.sul.meio = sala_D.sul
+        
+        interrogacao_ = Elemento(interrogacao,cena= INVENTARIO, tit = "Help", 
+        x = 460, y = 192, w = 80, h = 90)
         
         #sala_0.norte.vai = sala_1.norte.vai()
         sala_0.norte.vai()
@@ -192,5 +196,7 @@ class Museu:
         STYLE = dict(width=400,heigth="250px",left=500,top=100)
         [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 if __name__ == '__main__':
+
+
      Museu()
                            
