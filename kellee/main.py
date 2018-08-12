@@ -58,7 +58,7 @@ C9_NORTE = "https://i.imgur.com/0DAX1Yq.jpg"
 C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
-interrogacao="https://publicdomainvectors.org/photos/primary-gnome-question.png"
+interrogacao_="https://publicdomainvectors.org/photos/primary-gnome-question.png"
 from _spy.vitollino.main import Sala, STYLE, Codigo, INVENTARIO, Elemento
 
 STYLE["width"] = 850
