@@ -146,7 +146,7 @@ class Elemento(Element):
             Texto(self.cena, "Hey, this is not my name: {}.".format(tit)).vai()
             return False
         
-    def do_drop(src_id, x, y):
+    def doit_drop(src_id, x, y):
         Texto(self.cena, "Finally, my correct name: {}.".format(self.tit)).vai()
         doc[src_id].remove()
         self.do_score(tit)
@@ -180,7 +180,7 @@ def natureza():
     abelha = Elemento(ABELHA, tit = "abelha", drag=True,
         x = 610, y = 140, w = 80, h = 90, drop="colmeia",
         cena=fundo)
-    abelha.do_drop = reposiciona_abelha
+    abelha.doit_drop = reposiciona_abelha
     fundo.vai()
 
 natureza()    
