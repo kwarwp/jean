@@ -50,3 +50,10 @@ Exception: origin.equals is not a function
   module '$exec_459' line 85
 Sala3D(IMG_LIST)
 '''},
+{'date': 'Mon Aug 13 2018 12:19:16.49 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 78
+  parede_ = box(pos=(2*POS[direcao][0], 2*POS[direcao][1]), 0, size=(0.2, 2, 2), texture=dict(file=parede, place=["right"]))
+                                                             ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
