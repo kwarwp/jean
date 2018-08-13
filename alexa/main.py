@@ -1,6 +1,6 @@
 from browser import document, html
 from _spy.vitollino.main import Cena, STYLE, Elemento, Droppable, Dragger
-from _spy.vitollino.main import inventario as inv
+
 
 STYLE['width'] = 740
 
@@ -120,21 +120,7 @@ class Bloco:
         for pos, tx in enumerate(desordem):
             Folha(self, pos//4, pos%4, int(tx)//4, int(tx)%4)
 
-    def inicia_de_novo(self):
-        pass
-
-    def conta_pecas(self, valor_peca):
-        self.pecas_colocadas += valor_peca
-        if len(self.pecas_colocadas) == 4:
-            if all(self.pecas_colocadas):
-                input("O texto esta certo.")
-            else:
-                vai = input("Tentar de novo?")
-                if vai == "s":
-                    self.inicia_de_novo()
-
-    def nao_monta(self):
-        pass
+   
 
     def vai(self):
         self.monta()
