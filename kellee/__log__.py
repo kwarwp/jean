@@ -156,3 +156,10 @@ NameError: name 'html' is not defined
                                                                                          ^
 SyntaxError: trailing comma not allowed without surrounding parentheses
 '''},
+{'date': 'Sun Aug 12 2018 21:50:21.110 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 131
+  interrogacao = Elemento(interrogacao_,cena= INVENTARIO, tit = "Help", vai=recobra
+                                                                                             ^
+SyntaxError: invalid syntax
+'''},
