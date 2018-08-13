@@ -137,24 +137,26 @@ class Museu:
                   [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
                   [sala_1.sul ,"como vai?",  "if True:print('oi')"],
                   [sala_2.norte ,"Bora lá?",  "if True:print('oi')"],
-                  [sala_2.leste,"vamos aprender a associar um elemento e um texto? É so seguir as instruçoes",  "A primeira coisa a se fazer é importar do vitollino:Elemento e Texto(caso não tenha no seu código)"
-                  "Vai ficar assim:from _spy.vitollino.main import Elemento, Texto"
-                  "Se tiver dúvidas sobre como colocar um elemento numa cena, e so procurar no tutorial que tera uma cena explicando!!" 
-                  "Apos a definição do elemento para associa-lo a um texto, voce precisa dar um nome ao seu texto(pode ser qualquer nome),no meu caso dei o nome de dinotexto."
-                  "Logo depois, voce vai colocar a classe do vitollino Texto"
-                  "Dai voce abre parenteses e coloca em qual lugar voce quer que apareça esse texto"
-                  "O proximo passo e abrir aspas e escrever o texto que quiser!!(solta a imaginacao meu filho!)"
-                  "Ao terminar o texto voce faz o que? Fecha as aspas e os parenteses!!(isso mesmo, acertou!!"
-                  "Pra finalizar e fazer com que seu texto apareca quando alguem clicar no seu elemento e so dizer isso para o programa"
-                  "No meu caso meu elemento se chama dino e meu texto se chama dinotexto"
-                  "Entao eu preciso juntas os dois dizendo: VAO MEUS FILHOS!"
-                  "Ficando assim: dino.vai = dinotexto.vai"
-                  "Entao pra voces entenderem o codigo para associar um elemento e uma cena fica assim:"
-                  "dinotexto = Texto(sala_2.leste,digite seu texto aqui)-> nao esqueçam que ele precisa estar entre aspas(aqui nao coloquei,mas voces coloquem)"
-                  "dino.vai = dinotexto.vai"
-                  "Lembrando que a explicacao de como colocar um elemento, esta em outra cena do tutorial"
-                  "No final o seu texto aparecera ao clicar no elemento!!"
-                  "Ai e so cair pro abraco"],
+                  [sala_2.leste,"vamos aprender a associar um elemento e um texto? É so seguir as instruçoes",  "A primeira coisa a se fazer é importar do vitollino:Elemento e Texto(caso não tenha no seu código)",
+                  
+ """               Vai ficar assim:from _spy.vitollino.main import Elemento, Texto
+                   Se tiver dúvidas sobre como colocar um elemento numa cena, e so procurar no tutorial que tera uma cena explicando!!
+                   Apos a definição do elemento para associa-lo a um texto, voce precisa dar um nome ao seu texto(pode ser qualquer nome),no meu caso dei o nome de dinotexto.
+                   Logo depois, voce vai colocar a classe do vitollino Texto
+                   Dai voce abre parenteses e coloca em qual lugar voce quer que apareça esse texto
+                   O proximo passo e abrir aspas e escrever o texto que quiser!!(solta a imaginacao meu filho!)
+                   Ao terminar o texto voce faz o que? Fecha as aspas e os parenteses!!(isso mesmo, acertou!!
+                   Pra finalizar e fazer com que seu texto apareca quando alguem clicar no seu elemento e so dizer isso para o programa
+                   No meu caso meu elemento se chama dino e meu texto se chama dinotexto
+                   Entao eu preciso juntas os dois dizendo: VAO MEUS FILHOS!
+                   Ficando assim: dino.vai = dinotexto.vai
+                   Entao pra voces entenderem o codigo para associar um elemento e uma cena fica assim:
+                   dinotexto = Texto(sala_2.leste,"e aí,colega, tudo tranks?")
+                   dino.vai = dinotexto.vai
+                   Lembrando que a explicacao de como colocar um elemento, esta em outra cena do tutorial
+                   No final o seu texto aparecera ao clicar no elemento!!
+                   Ai e so cair pro abraco
+"""],                   
                   [sala_2.oeste ,"lest go",  "if True:print('oi')"],
                   [sala_2.sul ,"vamonos",  "if True:print('oi')"],
                   [sala_3.norte ,"como estas?",  "if True:print('oi')"],
