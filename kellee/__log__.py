@@ -183,3 +183,10 @@ SyntaxError: invalid syntax
     video=html.VIDEO(width=width, height=heigth,autoplay=True, style=dict(position="absolute", top=top, left=left))
 NameError: name 'heigth' is not defined
 '''},
+{'date': 'Sun Aug 12 2018 23:33:03.321 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 168
+  link_para_uma_imagem = "https://i.imgur.com/IPa06hM.jpg""""],
+                                                               ^
+SyntaxError: EOL while scanning string literal
+'''},
