@@ -200,3 +200,10 @@ AttributeError: 'Folha' object has no attribute 'mouse_over'
     self.folha.onmouseover = self.mouse_over
 AttributeError: 'Folha' object has no attribute 'mouse_over'
 '''},
+{'date': 'Mon Aug 13 2018 16:27:18.524 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  Um objeto de interação que é representado por uma imagem em uma cena.
+  ^
+IndentationError: unexpected indent
+'''},
