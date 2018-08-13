@@ -132,3 +132,21 @@ KeyError: CF_NORTE
     Elemento(sala, style = dict(left=i*20, top =j*20, width=18, height="18px")).entra(cena)
 NameError: name 'Elemento' is not defined
 '''},
+{'date': 'Mon Aug 13 2018 18:56:39.310 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 104
+    Museu()
+  module <module> line 91
+    Elemento(prd, style = dict(left=i*20, top =j*20, width=18, height="18px")).entra(cena)
+NameError: name 'Elemento' is not defined
+'''},
