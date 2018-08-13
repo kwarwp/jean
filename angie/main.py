@@ -70,13 +70,14 @@ IMG_LIST = [C0_NORTE, C0_LESTE, C0_SUL, C0_OESTE]
 doc['pydiv'].html = ''
 _gs = Glow('pydiv')
 scene = canvas()
+POS=[(-1,0),(0,1),(1,0),(0,-1),]
 
 class Sala3D:
     def __init__(self, img_list):
         for direcao, parede in enumerate(img_list):
-            parede_ = box(pos=(-2, 0, 0), size=(0.2, 2, 2), texture=dict(file=parede, place=["right"]))
+            parede_ = box(pos=(2*POS[direcao][0], 2*POS[direcao][1], 0), size=(0.2, 2, 2), texture=dict(file=parede, place=["right"]))
             
-            parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,0,1), origin=(0, 0, 0))
+            parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,0,1))
 
 class Museu:
     def __init__(self):  
