@@ -1,86 +1,140 @@
-from browser import document, html
-from _spy.vitollino.main import Cena, STYLE, Elemento, Droppable, Dragger
+from _spy.vitollino.main import Cena, Texto, STYLE, PSTYLE, EIMGSTY, Cena
+from _spy.vitollino.main import Elemento as Element
+from _spy.vitollino.main import INVENTARIO
+from browser import html, doc
 
 
-STYLE['width'] = 740
+STYLE["width"] = 800
+STYLE["height"] = "600px"
+
+COLMEIA = 'https://i.ytimg.com/vi/TUlH5-1qs8I/hqdefault.jpg'
+ABELHA = 'http://www.baldoni.com.br/images/abelha.png'
+FUNDO = "https://imagens.simplo7.net/static/2497/sku/thumb_tricoline-100-algodao-lisa-tricoline-100-algodao-lisa-branca-1474467553683.jpg"
+NDCT = {}
+FIX_COUNT = {}
 
 
-PLANO_FUNDO = "ttps://cdn.simplo7.net/static/7106/sku/tricoline-lisa-100-algodao-tricoline-lisa-100-algodao-cinza-1921-50cm-x-1-50mt--p-1502305300683.jpg"
+class Elemento(Element):
+    _score = None
 
-FLORESTA = "https://imgc.allpostersimages.com/img/print/posters/claude-monet-girassol_a-G-8757317-0.jpg"
+    def __init__(self, img="", vai=None, style=NDCT, tit="", alt="",
+                 x=0, y=0, w=100, h=100, texto='',
+                 cena=INVENTARIO, score=NDCT, drag=False, drop='', **kwargs):
+        self._auto_score = self.score if score else self._auto_score
+        self.img, self.title, self.real, self.alt = img, tit, drop, alt
+        self._drag = self._over = self._drop = self._dover = self.vai = lambda *_: None
+        self.cena = cena
+        self.opacity = 0
+        self.texto = texto
+        self.vai = Texto(cena, texto, foi=self.foi).vai if texto else vai if vai else self.vai
+        # height = style["height"] if "height" in style else style["maxHeight"] if "maxHeigth" in style else 100
+        # height = height[:-2] if isinstance(height, str) and "px" in height else height
+        self.style = dict(**PSTYLE)
+        self.style.update(**{'position': 'absolute', 'overflow': 'hidden',
+                             'left': x, 'top': y, 'width': '{}px'.format(w), 'height': '{}px'.format(h),
+                             'background-image': 'url({})'.format(img),
+                             'background-position': '{} {}'.format(0, 0),
+                             'background-size': '{}px {}px'.format(w, h)
+                             })
+        # self.style["min-width"], self.style["min-height"] = w, h
+        self.style.update(**style)
+        self.elt = html.DIV(Id=tit + drop, title=tit, style=self.style)
+        self.xy = (-111, -111)
+        #self.scorer = dict(ponto=1, valor=cena.nome, carta=tit or img, casa=self.xy, move=None)
+        #self.scorer.update(score)  
+        # if False:
+        #     self.img = html.IMG(Id="img_" + tit, src=img, title=tit, alt=alt,
+        #                         style=EIMGSTY)  # width=self.style["width"])
+        #     self.elt <= self.img
+        self.elt.onclick = self._click
+        self.c(**kwargs)
+        # _ = Dragger(self.elt) if drag else None
+        # _ = Droppable(self.elt, drop, self.vai) if drop else None
+        _ = self.entra(cena) if cena and (cena != INVENTARIO) else None
+        self.elt.ondragstart = lambda ev: self._drag(ev)
+        self.elt.onmouseover = lambda ev: self._over(ev)
+        self.elt.ondrop = lambda ev: self._drop(ev)
+        self.elt.ondragover = lambda ev: self._dover(ev)
+        # self.img.onmousedown = self.img_prevent
+        self.do_drag(drag)
+        self.do_drop(drop)
+        #Elemento._scorer_()
+    def do_score(self, tit):
+        if tit not in FIX_SCORE:
+            FIX_SCORE[tit] = int(Elemento._score.score_.html) + 1
+            Elemento._score.score_.html = FIX_SCORE[tit]
+    @classmethod
+    def _scorer_(cls):
+        Elemento._scorer_ = lambda *_ : None
+        Elemento._score = scr = Elemento(SCORE)
+        scr.score_ = html.H2("0")
+        scr.elt <= scr.score_
+        scr.entra(INVENTARIO)
+        
 
-def _main():
-    document['pydiv'].html = ""
-    plano_fundo = Cena(img=plano_fundo)
-    plano_fundo.vai()
+    def foi(self):
+        self._do_foi()
 
-class Folha:
-    def __init__(self, bloco, left=0, top=0, ileft=0, itop=0,
-                 size=dict(width="100px", height="100px")):
-        self.suporte = None
-        w, h = int(size['width'][:-2]), int(size['height'][:-2])
-        ileft, itop = "%dpx" % (ileft*w), "%dpx" % (itop*h)
-        style = {'position': 'absolute', 'overflow': 'hidden', 'margin':'1%',
-                'background-image': 'url({})'.format(bloco.img),
-                'background-position': '{} {}'.format(ileft, itop),
-                'background-size': '{}px {}px'.format(400, 400),
-        }
-        image_style = {'position': "relative", 'min-width': '400px',
-        'height': '400px'}  # , 'pointer-events': 'none'}
-        style.update(size)
-        style.update(left="%dpx" % (left*(w+10)), top="%dpx" % (top*(h+10)))
-        #image_style.update(left="%dpx" % (-ileft*w), top="%dpx" % (-itop*h))
-        fid = "folha%d" % (10*top+left)
-        self.folha = html.DIV(Id=fid, style=style, draggable=True)  #este true/false é apenas estético      
-        bloco.folha <= self.folha
-        self.folha.ondragstart = self.drag_start
-        self.folha.onmouseover = self.mouse_over
-        bloco.folhas[fid]=self
-        #self.fo_img.ondragstart = self.img_drag_start
+    def _do_foi(self):
+        style = {'opacity': "inherited", 'width': 30, 'height': "30px", 'min-height': '30px', 'float': 'left',
+                 'position': 'unset', 'overflow': 'hidden',
+                 'background-image': 'url({})'.format(self.img),
+                 'background-position': '{} {}'.format(0, 0),
+                 'background-size': '{}px {}px'.format(30, 20),
+                 }
+        self.do_drag(False)
+        # Texto(self.cena, "Finally,got my correct name: {}".format(self.tit)).vai()
+        _texto = self.texto if self.tit == self.title else CORRECT.format(self.tit)
+        self.vai = Texto(self.cena, _texto).vai
 
-    #def mouse_over(self, ev):
-       # ev.target.style.cursor = "pointer"
-        #return False
+        clone_mic = Elemento(self.img, tit=self.title, drag=True, style=style, cena=INVENTARIO)
+        clone_mic.entra(INVENTARIO)
+        self._do_foi = lambda *_: None
 
-    #def img_drag_start(self, ev):
-        #ev.preventDefault()
-        #ev.stopPropagation()
-        #return False
+    @property
+    def tit(self):
+        return self.elt.title
+
+    @tit.setter
+    def tit(self, texto):
+        self.elt.title = texto
+
+    def img_prevent(self, ev):
+        ev.preventDefault()
+        ev.stopPropagation()
+        return False
+
+    def mouse_over(self, ev):
+        # ev.preventDefault()
+        ev.target.style.cursor = "pointer"
+        return False
+
+    def img_drag_start(self, ev):
+        # ev.preventDefault()
+        ev.stopPropagation()
+        return False
 
     def drag_start(self, ev):
+        # ev.preventDefault()
         ev.stopPropagation()
         ev.data['text'] = ev.target.id
         ev.data.effectAllowed = 'move'
         return False
 
-    def troca(self, suporte):
-        self.folha.style.left = 0
-        self.folha.style.top = 0
-        suporte.recebe(self, self.suporte)
-        self.suporte = suporte
-        self.folha.style.cursor = "auto"
+    def do_drag(self, drag=True):
+        self.elt.draggable = drag
+        if drag:
+            self._drag = self.drag_start
+            self._over = self.mouse_over
+        else:
+            self._drag = self._over = lambda *_: None
 
-
-class Suporte:
-    def __init__(self, bloco, certa, left=0, top=0,
-                 size=dict(width="25%", height="25%")):
-        self.ladrilho = None
-        style = {'position': "absolute", 'overflow': 'hidden',
-                 'border':'1px solid white'}
-        w, h = int(size['width'][:-1]), int(size['height'][:-1])
-        style.update(size)
-        style.update(left="%d%%" % (left*w), top="%d%%" % (top*h))
-        self.certa = certa
-        self.folha = html.DIV(style=style)
-        bloco.suporte <= self.folha
-        self.folha.ondragover = self.drag_over
-        self.folha.ondrop = self.drop
-        self.bloco = bloco
-
-    def recebe(self, folha, suporte):
-        self.folha <= folha.folha
-        suporte.recebe(self.ladrilho, None) if suporte else None
-        self.ladrilho = folha
+    def do_drop(self, drop=""):
+        if drop:
+            self._drop = self.drop
+            self._dover = self.drag_over
+        else:
+            self._drop = self._dover = lambda *_: None
 
     def drag_over(self, ev):
         ev.data.dropEffect = 'move'
@@ -91,43 +145,36 @@ class Suporte:
         ev.preventDefault()
         ev.stopPropagation()
         src_id = ev.data['text']
-        self.bloco.folhas[src_id].troca(self) 
+        tit = doc[src_id].title
+        if tit != self.real:
+            Texto(self.cena, "Hey, this is not my name: {}.".format(tit)).vai()
+            return False
+        self.tit = tit
+        Texto(self.cena, "Finally, my correct name: {}.".format(self.tit)).vai()
+        doc[src_id].remove()
+        self.do_score(tit)
+        self.do_drag(False)
+        # Texto(self.cena, "Finally,got my correct name: {}".format(self.tit)).vai()
+        _texto = self.texto if self.tit == self.title else CORRECT.format(self.tit)
+        self.vai = Texto(self.cena, _texto, foi=self.foi).vai
+        #self._do_foi = lambda *_: None
+
+
+def natureza():
+    fundo = Cena(FUNDO)
+    colmeia = Elemento(COLMEIA, tit = "colmeia", drag= False,
+        x = 610, y = 140, w = 200 , h = 300, drop= " ",
+        cena= fundo)
+    abelha = Elemento(ABELHA, tit = "abelha", drag=True,
+        x = 610, y = 140, w = 80, h = 90, drop="colmeia",
+        cena=colmeia)
+    fundo.vai()
+
+natureza()    
+
+        
+
+
+    
+
    
-
-
-class Bloco:
-    def __init__(self, img):
-        self.img = img
-        self.folhas = {}
-        self.monta = lambda *_: None
-        ordem = ["%02d"%x for x in range(16)]
-        desordem = ordem[:]
-        from random import shuffle
-        shuffle(desordem)
-        self.tela = document["pydiv"]
-        self.suporte = html.DIV(style=dict(position="absolute",
-        left=10, top=20, width=400, height='%dpx'%400, border=1,
-        borderColor="white"))
-        self.folha = html.DIV(style=dict(position="absolute",
-        left=410, top=20, width=450, height='%dpx'%450))
-        self.tela.html = ""
-        self.tela <= self.suporte
-        self.tela <= self.folha
-        self.pecas_colocadas = []
-        #print(list(enumerate(ordem)))
-        for pos, fl in enumerate(ordem):
-            Suporte(self, "folha" + fl, pos//4, pos%4)
-        for pos, tx in enumerate(desordem):
-            Folha(self, pos//4, pos%4, int(tx)//4, int(tx)%4)
-
-   
-
-    def vai(self):
-        self.monta()
-        self.monta = self.nao_monta
-        # self.centro.norte.vai()
-
-
-if __name__ == "__main__":
-    #main()
-    Bloco(FLORESTA)
