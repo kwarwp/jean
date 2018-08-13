@@ -98,3 +98,19 @@ SyntaxError: invalid syntax
     IMG_LIST = [C0_NORTE, C0_LESTE, C0_SUL, C0_OESTE]
 NameError: name 'C0_NORTE' is not defined
 '''},
+{'date': 'Mon Aug 13 2018 14:40:50.451 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 72
+    IMGS = [[MUSEU["C{:01X}{}".format(sala, rosa)] for rosa in ROSA] for sala in range(16)]
+KeyError: CF_NORTE
+'''},
