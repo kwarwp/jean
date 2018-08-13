@@ -165,7 +165,9 @@ class Museu:
         MENSAGENS=[
                   [sala_0.norte ,"Olá! Se prepare, que finalmente chegou o dia de aprender a programar em Python. Vamos embarcar nessa aventura já! Crie uma cena utilizando o código abaixo. ",
                   """from _spy.vitollino.main import Cena
-link_para_uma_imagem = "https://i.imgur.com/IPa06hM.jpg" """],
+link_para_uma_imagem = "https://i.imgur.com/IPa06hM.jpg" 
+uma_cena=Cena(link_para_imagem)
+uma_cena.vai"""],
                   [sala_1.norte ,"Hello",  "if True:print('ooi')"],
                   [sala_1.leste ,"bonju",  "if True:print(':)')"],
                   [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
