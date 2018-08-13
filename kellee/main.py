@@ -163,7 +163,9 @@ class Museu:
        # cod =Codigo(cena=sala_1.sul, topo = "como vai?",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
         
         MENSAGENS=[
-                  [sala_0.norte ,"tendi",  "tamu junto"],
+                  [sala_0.norte ,"Olá! Se prepare, que finalmente chegou o dia de aprender a programar em Python. Vamos embarcar nessa aventura já! Crie uma cena utilizando o código abaixo. ",
+                  """from _spy.vitollino.main import Cena
+                  link_para_uma_imagem = "https://i.imgur.com/IPa06hM.jpg""""],
                   [sala_1.norte ,"Hello",  "if True:print('ooi')"],
                   [sala_1.leste ,"bonju",  "if True:print(':)')"],
                   [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
