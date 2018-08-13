@@ -149,3 +149,10 @@ NameError: name 'NS' is not defined
     a = html.A("×", Class="close", href="#")         
 NameError: name 'html' is not defined
 '''},
+{'date': 'Sun Aug 12 2018 21:26:56.986 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 62
+  from _spy.vitollino.main import Sala, STYLE, Codigo as Code, INVENTARIO, Elemento, NS, 
+                                                                                         ^
+SyntaxError: trailing comma not allowed without surrounding parentheses
+'''},
