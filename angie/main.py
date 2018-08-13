@@ -77,7 +77,7 @@ class Sala3D:
         for direcao, parede in enumerate(img_list):
             parede_ = box(pos=(2*POS[direcao][0], 2*POS[direcao][1], 0), size=(0.2, 2, 2), texture=dict(file=parede, place=["right"]))
             
-            parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,0,1))
+            parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
 
 class Museu:
     def __init__(self):  
