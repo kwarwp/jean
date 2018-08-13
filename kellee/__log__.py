@@ -163,3 +163,23 @@ SyntaxError: trailing comma not allowed without surrounding parentheses
                                                                                              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sun Aug 12 2018 22:52:21.854 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 230
+    Museu()
+  module <module> line 145
+    video=Video(source="https://www.w3schools.com/html/mov_bbb.mp4",width="320", height="240",top=0, left=0)
+  module <module> line 79
+    video=html.VIDEO(width=width, height=heigth,autoplay=True, style=dict(position="absolute", top=top, left=left))
+NameError: name 'heigth' is not defined
+'''},
