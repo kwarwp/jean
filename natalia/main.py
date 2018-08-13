@@ -91,7 +91,8 @@ class Museu:
         
         MENSAGENS=[
                   [sala_0.norte ,"primeiramente para usar a função labirinto do vitollino precisa ter definido as salas",
-                  "depois se usa a função labirinto para 5 salas, ex: labirinto(sala   "tamu junto"],
+                  "depois se usa a função labirinto para 5 salas, ex: labirinto(salaA, sala B, sala C, salaD, sala E), "
+                    "sempre conectando uma sala a outra, exemplo: labirinto(sala E, salaF,salaG,salaH,salaI)"],
                   [sala_1.norte ,"Hello",  "if True:print('ooi')"],
                   [sala_1.leste ,"bonju",  "if True:print(':)')"],
                   [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
