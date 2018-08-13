@@ -40,6 +40,7 @@ class Elemento(Element):
         self.style.update(**style)
         self.elt = html.DIV(Id=tit + drop, title=tit, style=self.style)
         self.xy = (-111, -111)
+        self.scorer= {}
         #self.scorer = dict(ponto=1, valor=cena.nome, carta=tit or img, casa=self.xy, move=None)
         #self.scorer.update(score)  
         # if False:
@@ -140,16 +141,12 @@ class Elemento(Element):
         ev.data.dropEffect = 'move'
         ev.preventDefault()
         return False
-
-    def drop(self, ev):
-        ev.preventDefault()
-        ev.stopPropagation()
-        src_id = ev.data['text']
-        tit = doc[src_id].title
-        if tit != self.real:
+        
+    def dont_drop(src_id):
             Texto(self.cena, "Hey, this is not my name: {}.".format(tit)).vai()
             return False
-        self.tit = tit
+        
+    def do_drop(src_id, x, y):
         Texto(self.cena, "Finally, my correct name: {}.".format(self.tit)).vai()
         doc[src_id].remove()
         self.do_score(tit)
@@ -157,6 +154,18 @@ class Elemento(Element):
         # Texto(self.cena, "Finally,got my correct name: {}".format(self.tit)).vai()
         _texto = self.texto if self.tit == self.title else CORRECT.format(self.tit)
         self.vai = Texto(self.cena, _texto, foi=self.foi).vai
+
+
+    def drop(self, ev):
+        ev.preventDefault()
+        ev.stopPropagation()
+        src_id = ev.data['text']
+        tit = doc[src_id].title
+        if tit != self.real:
+            self.dont_drop(doc[src_id])
+            return False
+        self.tit = tit
+        self.do_drop(doc[src_id], ev.x, ev.y)
         #self._do_foi = lambda *_: None
 
 
@@ -165,9 +174,13 @@ def natureza():
     colmeia = Elemento(COLMEIA, tit = "colmeia", drag= False,
         x = 610, y = 140, w = 200 , h = 300, drop= " ",
         cena= fundo)
+    def reposiciona_abelha(sl, sid, x, y):
+        sid.style.left = x
+        sid.style.top = y
     abelha = Elemento(ABELHA, tit = "abelha", drag=True,
         x = 610, y = 140, w = 80, h = 90, drop="colmeia",
-        cena=colmeia)
+        cena=fundo)
+    abelha.do_drop = reposiciona_abelha
     fundo.vai()
 
 natureza()    
