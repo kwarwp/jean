@@ -72,6 +72,7 @@ class Codigo(Code):
         self.elt<=a
     def _close(self, *_):
         self.elt.style = {"visibility": "hidden", "opacity": 0}
+        self.cena._code_=self
         self.esconde()
 class Museu:
     def __init__(self):        
@@ -124,9 +125,10 @@ class Museu:
         sala_9.sul.meio = sala_8.oeste
         sala_E.oeste.meio = sala_7.norte
         sala_E.sul.meio = sala_D.sul
-        
+        def recobra(_):
+            INVENTARIO.cena._code_.style={"visibility": "visible", "opacity": 1}
         INVENTARIO.inicia()
-        interrogacao = Elemento(interrogacao_,cena= INVENTARIO, tit = "Help", 
+        interrogacao = Elemento(interrogacao_,cena= INVENTARIO, tit = "Help", vai=recobra
         style=dict(left = 100, top = 100, width = 100, height = "100px"))
         interrogacao.entra(INVENTARIO)
         INVENTARIO.bota(interrogacao)
