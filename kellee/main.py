@@ -67,7 +67,7 @@ STYLE["height"] = "650px"
 class Codigo(Code):
     def __init__(self, codigo="", topo="", cena=INVENTARIO, img="", vai=None, style=NS):
         Code.__init__(self, codigo=codigo, topo=topo, cena=cena, img=img, vai=vai, style=style)
-        a = html.A("&times;", Class="close", href="#", style=dict(position="absolute", top="0px", right="0px",fontSize="30px", fontWeight="bold"))  
+        a = html.A("&times;", Class="close", href="#", style=dict(position="absolute", top="0px", right="10px",fontSize="30px", fontWeight="bold"))  
         a.onclick = self._close
         self.elt<=a
     def _close(self, *_):
