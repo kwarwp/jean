@@ -84,9 +84,13 @@ class Sala3D:
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
 
 class Museu:
-    def __init__(self):  
+    def __init__(self):
+        cena = Cena()
+        for i, sala in enumerate(IMGS):
+            for j, prd in enumerate(sala):
+                Elemento(sala, style = dict(left=i*20, top =j*20, width=18, height="18px")).entra(cena)
         pass
-    
+"""    
 # Sala3D(IMG_LIST)
     
 # Sala3D(IMG_LIST1, p=(4, 0))
@@ -94,5 +98,8 @@ Sala3D(IMGS[0])
     
 Sala3D(IMGS[1], p=(0, 4.1))
 Sala3D(IMGS[2], p=(-4.1, 4.1))
-#Sala3D(IMGS[8], p=(-4.1, 0))
+Sala3D(IMGS[8], p=(-4.1, 0))
+Sala3D(IMGS[7], p=(-8.2, 0))
+"""
+Museu()
 
