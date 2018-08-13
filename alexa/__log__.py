@@ -297,3 +297,10 @@ TypeError: 'module' object is not callable
     vdgball = Elemento(ball, tit = "microscope", drag=True,
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Mon Aug 13 2018 18:51:44.773 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 5
+  from amanda.main import Elementofrom _spy.vitollino.main import STYLE, INVENTARIO, Sala, Texto, Cena
+                                           ^
+SyntaxError: trailing comma not allowed without surrounding parentheses
+'''},
