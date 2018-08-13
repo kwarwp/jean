@@ -69,7 +69,7 @@ STYLE["height"] = "650px"
 ROSA = "_NORTE,_LESTE,_SUL,_OESTE".split(",")
 #IMG_LIST = [C0_NORTE, C0_LESTE, C0_SUL, C0_OESTE]
 #IMG_LIST1 = [C1_NORTE, C1_LESTE, C1_SUL, C1_OESTE]
-IMGS = [[MUSEU["C{:01X}{}".format(sala, rosa)] for rosa in ROSA] for sala in range(16)]
+IMGS = [[MUSEU["C{:01X}{}".format(sala, rosa)] for rosa in ROSA] for sala in range(15)]
 
 doc['pydiv'].html = ''
 _gs = Glow('pydiv')
