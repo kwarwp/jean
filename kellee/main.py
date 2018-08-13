@@ -67,7 +67,8 @@ STYLE["height"] = "650px"
 class Codigo(Code):
     def __init__(self, codigo="", topo="", cena=INVENTARIO, img="", vai=None, style=NS):
         Code.__init__(self, codigo=codigo, topo=topo, cena=cena, img=img, vai=vai, style=style)
-        a = html.A("&times;", href="#", style=dict(position="absolute", top="0px", right="10px",fontSize="30px", fontWeight="bold"))  
+        a = html.A("&times;", href="#", style=dict(position="absolute", top="0px", right="10px",
+        fontSize="30px", fontWeight="bold"))  
         a.onclick = self._close
         self.elt<=a
     def _close(self, *_):
@@ -75,8 +76,9 @@ class Codigo(Code):
         self.cena._code_=self
 class Video(Codigo):
     def __init__(self,source, width, height, top, left):
-        Code.__init__(self)
-        video=html.VIDEO(width=width, height=heigth,autoplay=True, style=dict(position="absolute", top=top, left=left))
+        Code.__init__(self,style=dict(position="absolute", top=top,left=left))
+        video=html.VIDEO(width=width, height=height,autoplay=True, style=dict(position="absolute", top=top,
+        left=left))
         video<=html.SOURCE(src=source)
         video.onclick = self._close
         self.elt<=video
@@ -142,9 +144,12 @@ class Museu:
         interrogacao.entra(INVENTARIO)
         INVENTARIO.bota(interrogacao)
         
-        video=html.VIDEO(width="320", height="240",autoplay=True, style=dict(position="absolute", top=0, left=0))
-        video<=html.SOURCE(src="https://www.w3schools.com/html/mov_bbb.mp4")
-        sala_0.norte.elt<=video
+        video=Video(source="https://www.w3schools.com/html/mov_bbb.mp4",width="320", height="240",top=0, 
+        left=0)
+        video.entra(sala_0.norte)
+        #video=html.VIDEO(width="320", height="240",autoplay=True, style=dict(position="absolute", top=0, left=0))
+        #video<=html.SOURCE(src="https://www.w3schools.com/html/mov_bbb.mp4")
+        #sala_0.norte.elt<=video
         
         #sala_0.norte.vai = sala_1.norte.vai()
         sala_0.norte.vai()
