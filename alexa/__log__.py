@@ -311,3 +311,10 @@ SyntaxError: trailing comma not allowed without surrounding parentheses
                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 13 2018 18:52:19.733 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 161
+  colmeia = Cena(img=COLMEIA, nome "colmeia")
+                                    ^
+SyntaxError: invalid syntax
+'''},
