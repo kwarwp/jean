@@ -192,7 +192,7 @@ class Museu:
         [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 
 
-        pedra = Elemento(img=PEDRA, tit="Pedra", style=dict(left=40, top=500, width=200, height=100))
+        pedra = Elemento(img=PEDRA, tit="Pedra", style=dict(left=40, top=380, width=200, height="150px"))
         pedra.entra(sala_7.oeste)
         pedra.vai 
 
