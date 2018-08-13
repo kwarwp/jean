@@ -59,11 +59,18 @@ C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
 interrogacao_="https://publicdomainvectors.org/photos/primary-gnome-question.png"
-from _spy.vitollino.main import Sala, STYLE, Codigo, INVENTARIO, Elemento
+from _spy.vitollino.main import Sala, STYLE, Codigo as Code, INVENTARIO, Elemento
 
 STYLE["width"] = 850
 STYLE["height"] = "650px"
-
+class Codigo(Code):
+    def __init__(self, codigo="", topo="", cena=INVENTARIO, img="", vai=None, style=NS):
+        Code.__init__(self, codigo=codigo, topo=topo, cena=cena, img=img, vai=vai, style=style)
+        a = html.A("&times;", Class="close", href="#")         
+        a.onclick = self._close
+    def _close(self, *_):
+        self.elt.style = {"visibility": "hidden", "opacity": 0}
+        self.esconde()
 class Museu:
     def __init__(self):        
         C_SUL = C1_SUL
