@@ -570,3 +570,10 @@ UnboundLocalError: local variable 'abelha' referenced before assignment
     _ = self.entra(cena) if cena and (cena != INVENTARIO) else None
 NameError: name 'INVENTARIO' is not defined
 '''},
+{'date': 'Mon Aug 13 2018 19:35:23.534 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 163
+  colmeia = Cena(img=COLMEIA, "COLMEIA")
+                                       ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
