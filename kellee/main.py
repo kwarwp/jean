@@ -59,14 +59,15 @@ C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
 interrogacao_="https://publicdomainvectors.org/photos/primary-gnome-question.png"
-from _spy.vitollino.main import Sala, STYLE, Codigo as Code, INVENTARIO, Elemento
+from _spy.vitollino.main import Sala, STYLE, Codigo as Code, INVENTARIO, Elemento, NS
+from browser import html
 
 STYLE["width"] = 850
 STYLE["height"] = "650px"
 class Codigo(Code):
     def __init__(self, codigo="", topo="", cena=INVENTARIO, img="", vai=None, style=NS):
         Code.__init__(self, codigo=codigo, topo=topo, cena=cena, img=img, vai=vai, style=style)
-        a = html.A("×", Class="close", href="#")         
+        a = html.A("×", Class="close", href="#", style=dict(position="absolute", top="0px", right="0px"))  
         a.onclick = self._close
         self.elt<=a
     def _close(self, *_):
