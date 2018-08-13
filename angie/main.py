@@ -73,7 +73,9 @@ scene = canvas()
 class Sala3D:
     def __init__(self, img_list):
         for direcao, parede in enumerate(img_list):
-            box(pos=(direcao*4, 0, 0), size=(4, 4, 0.2), texture=dict(file=parede, place=["right"]))
+            parede_ = box(pos=(direcao*4, 0, 0), size=(0.2, 2, 2), texture=dict(file=parede, place=["right"]))
+            
+            parede_.rrotate(angle=pi/2.0, axiis=vec(
 
 class Museu:
     def __init__(self):  
