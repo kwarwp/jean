@@ -192,10 +192,9 @@ class Museu:
         [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 
 
-        pedra = Elemento(img=PEDRA, tit="Pedra", style=dict(left=150, top=160, width=60, height=200))
-        pedra.entra(sala_7)
-        epedra = Texto(castelo, "O Elemento foi adicionado à cena")
-        pedra.vai = epedra.vai
+        pedra = Elemento(img=PEDRA, tit="Pedra", style=dict(left=150, top=160, width=80, height=200))
+        pedra.entra(sala_7.norte)
+        pedra.vai 
 
 if __name__ == '__main__':
      Museu()
