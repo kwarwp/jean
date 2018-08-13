@@ -138,7 +138,7 @@ class Museu:
                   [sala_1.sul ,"como vai?",  "if True:print('oi')"],
                   [sala_2.norte ,"Bora lá?",  "if True:print('oi')"],
                   [sala_2.leste,"vamos aprender a associar um elemento e um texto? É so seguir as instruçoes",  "A primeira coisa a se fazer é importar do vitollino:Elemento e Texto(caso não tenha no seu código)"
-                  "Vai ficar assim:from _spy.vitollino.main import Elemento, Cena"
+                  "Vai ficar assim:from _spy.vitollino.main import Elemento, Texto"
                   "Se tiver dúvidas sobre como colocar um elemento numa cena, e so procurar no tutorial que tera uma cena explicando!!" 
                   "Apos a definição do elemento para associa-lo a um texto, voce precisa dar um nome ao seu texto(pode ser qualquer nome),no meu caso dei o nome de dinotexto."
                   "Logo depois, voce vai colocar a classe do vitollino Texto"
