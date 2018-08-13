@@ -91,10 +91,11 @@ class Museu:
         
         MENSAGENS=[
                   [sala_0.norte ,"primeiramente para usar a função labirinto do vitollino precisa ter definido as salas",
-                  "depois se usa a função labirinto para 5 salas, ex: labirinto(salaA, sala B, sala C, salaD, sala E), "
-                    " <br> sempre conectando uma sala a outra, exemplo: labirinto(sala E, salaF,salaG,salaH,salaI)"
-                    "<br> ficando assim: Labirinto(sala A, sala B, sala C, sala D, sala E)"
-                                    " <br> Labirinto(sala E, salaF, sala G, sala H, sala I)"],
+              
+"""                  "depois se usa a função labirinto para 5 salas, ex: labirinto(salaA, sala B, sala C, salaD, sala E), "  
+                    " <br> sempre conectando uma sala a outra, exemplo: labirinto(sala E, salaF,salaG,salaH,salaI)"  
+                    "<br> ficando assim: Labirinto(sala A, sala B, sala C, sala D, sala E)"  
+                                    " <br> Labirinto(sala E, salaF, sala G, sala H, sala I)"] """
                   [sala_1.norte ,"Hello",  "if True:print('ooi')"],
                   [sala_1.leste ,"bonju",  "if True:print(':)')"],
                   [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
