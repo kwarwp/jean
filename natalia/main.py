@@ -88,6 +88,15 @@ class Museu:
         Labirinto(sala_8,sala_9,sala_A,sala_B,sala_C)
         Labirinto(sala_C,sala_D,sala_E,sala_0, sala_1)
         sala_0.norte.vai()
+        
+        MENSAGENS=[
+                  [sala_0.norte ,"tendi",  "tamu junto"],
+                  [sala_1.norte ,"Hello",  "if True:print('ooi')"],
+                  [sala_1.leste ,"bonju",  "if True:print(':)')"],
+                  [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
+                  [sala_1.sul ,"como vai?",  "if True:print('oi')"],
+                  [sala_2.norte ,"Bora lá?",  "if True:print('oi')"],
+        
 if __name__ == '__main__':
     Museu()
 
