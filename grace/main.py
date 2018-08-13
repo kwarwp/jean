@@ -157,6 +157,7 @@ class Museu:
                    No final o seu texto aparecera ao clicar no elemento!!
                    Ai e so cair pro abraco
 """],                   
+
                   [sala_2.oeste ,"lest go",  "if True:print('oi')"],
                   [sala_2.sul ,"vamonos",  "if True:print('oi')"],
                   [sala_3.norte ,"como estas?",  "if True:print('oi')"],
