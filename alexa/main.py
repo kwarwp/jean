@@ -147,6 +147,7 @@ class Elemento(Element):
             return False
         
     def doit_drop(src_id, x, y):
+        self.tit = tit
         Texto(self.cena, "Finally, my correct name: {}.".format(self.tit)).vai()
         doc[src_id].remove()
         self.do_score(tit)
@@ -164,23 +165,23 @@ class Elemento(Element):
         if tit != self.real:
             self.dont_drop(doc[src_id])
             return False
-        self.tit = tit
-        self.do_drop(doc[src_id], ev.x, ev.y)
+        x, y = int(self.elt.style.left[:-2]), int(self.elt.style.top[:-2])
+        self.doit_drop(doc[src_id], x + ev.offsetX, y + ev.offsetY)
         #self._do_foi = lambda *_: None
 
 
 def natureza():
     fundo = Cena(FUNDO)
     colmeia = Elemento(COLMEIA, tit = "colmeia", drag= False,
-        x = 610, y = 140, w = 200 , h = 300, drop= " ",
+        x = 610, y = 140, w = 200 , h = 300, drop= "abelha",
         cena= fundo)
-    def reposiciona_abelha(sl, sid, x, y):
+    def reposiciona_abelha(sid, x, y):
         sid.style.left = x
         sid.style.top = y
     abelha = Elemento(ABELHA, tit = "abelha", drag=True,
-        x = 610, y = 140, w = 80, h = 90, drop="colmeia",
+        x = 610, y = 140, w = 80, h = 90, drop="",
         cena=fundo)
-    abelha.doit_drop = reposiciona_abelha
+    colmeia.doit_drop = reposiciona_abelha
     fundo.vai()
 
 natureza()    
