@@ -75,7 +75,7 @@ POS=[(-1,0),(0,1),(1,0),(0,-1),]
 class Sala3D:
     def __init__(self, img_list):
         for direcao, parede in enumerate(img_list):
-            parede_ = box(pos=(2*POS[direcao][0], 0, -2*POS[direcao][1]), size=(0.2, 2, 2), texture=dict(file=parede, place=["right"]))
+            parede_ = box(pos=(2*POS[direcao][0], 0, -2*POS[direcao][1]), size=(0.2, 4, 4), texture=dict(file=parede, place=["right"]))
             
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
 
