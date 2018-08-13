@@ -73,6 +73,15 @@ class Codigo(Code):
     def _close(self, *_):
         self.elt.style = {"visibility": "hidden", "opacity": 0}
         self.cena._code_=self
+class Video(Codigo):
+    def __init__(self,source, width, height, top, left):
+        Code.__init__(self)
+        video=html.VIDEO(width=width, height=heigth,autoplay=True, style=dict(position="absolute", top=top, left=left))
+        video<=html.SOURCE(src=source)
+        video.onclick = self._close
+        self.elt<=video
+           
+        
         
 class Museu:
     def __init__(self):        
