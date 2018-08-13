@@ -60,7 +60,7 @@ C9_NORTE = "https://i.imgur.com/0DAX1Yq.jpg",
 C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg",
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg",
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg")
-from _spy.vitollino.main import Cena, STYLE, Codigo
+from _spy.vitollino.main import Cena, STYLE, Codigo, Elemento
 from _spy.vpython.main import *
 from browser import doc
 from math import pi
@@ -85,7 +85,7 @@ class Sala3D:
 
 class Museu:
     def __init__(self):
-        cena = Cena()
+        cena = Cena(C9_OESTE)
         for i, sala in enumerate(IMGS):
             for j, prd in enumerate(sala):
                 Elemento(prd, style = dict(left=i*20, top =j*20, width=18, height="18px")).entra(cena)
