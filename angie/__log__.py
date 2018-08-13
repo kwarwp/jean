@@ -75,3 +75,10 @@ SyntaxError: non-keyword arg after keyword arg
     local_light(pos=(0,0,4))
 NameError: name 'local_light' is not defined
 '''},
+{'date': 'Mon Aug 13 2018 14:01:21.976 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 2
+  MUSEU = dict(
+                                                                                                             ^
+SyntaxError: invalid syntax
+'''},
