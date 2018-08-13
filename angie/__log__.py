@@ -38,3 +38,9 @@ TypeError: __init__() missing 1 positional argument: ['img_list']
     doc['pydiv'].html = ''
 NameError: name 'doc' is not defined
 '''},
+{'date': 'Mon Aug 13 2018 12:00:53.981 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: origin.equals is not a function
+  module '$exec_1904' line 85
+Sala3D(IMG_LIST)
+'''},
