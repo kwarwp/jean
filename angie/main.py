@@ -62,6 +62,7 @@ C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 from _spy.vitollino.main import Cena, STYLE, Codigo
 from _spy.vpython.main import *
 from browser import doc
+from math import pi
 STYLE["width"] = 850
 STYLE["height"] = "650px"
 IMG_LIST = [C0_NORTE, C0_LESTE, C0_SUL, C0_OESTE]
@@ -73,9 +74,9 @@ scene = canvas()
 class Sala3D:
     def __init__(self, img_list):
         for direcao, parede in enumerate(img_list):
-            parede_ = box(pos=(direcao*4, 0, 0), size=(0.2, 2, 2), texture=dict(file=parede, place=["right"]))
+            parede_ = box(pos=(-2, 0, 0), size=(0.2, 2, 2), texture=dict(file=parede, place=["right"]))
             
-            parede_.rrotate(angle=pi/2.0, axiis=vec(
+            parede_.rotate(angle=pi/2.0,pos=(0, 0, 0), axis=vec(0,0,1))
 
 class Museu:
     def __init__(self):  
