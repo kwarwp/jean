@@ -66,6 +66,7 @@ from math import pi
 STYLE["width"] = 850
 STYLE["height"] = "650px"
 IMG_LIST = [C0_NORTE, C0_LESTE, C0_SUL, C0_OESTE]
+IMG_LIST1 = [C1_NORTE, C1_LESTE, C1_SUL, C1_OESTE]
 
 doc['pydiv'].html = ''
 _gs = Glow('pydiv')
@@ -73,9 +74,9 @@ scene = canvas()
 POS=[(-1,0),(0,1),(1,0),(0,-1),]
 
 class Sala3D:
-    def __init__(self, img_list):
+    def __init__(self, img_list, p=(0,0)):
         for direcao, parede in enumerate(img_list):
-            parede_ = box(pos=(2*POS[direcao][0], 0, -2*POS[direcao][1]), size=(0.2, 4, 4), texture=dict(file=parede, place=["right"]))
+            parede_ = box(pos=(2*POS[direcao][0]+p[0], 0+p[1], -2*POS[direcao][1]), size=(0.2, 4, 4), texture=dict(file=parede, place=["right"]))
             
             parede_.rotate(angle=direcao*pi/2.0, axis=vec(0,-1,0))
 
@@ -84,4 +85,6 @@ class Museu:
         pass
     
 Sala3D(IMG_LIST)
+    
+Sala3D(IMG_LIST1, p=(4, 0))
 
