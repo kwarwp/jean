@@ -1,8 +1,8 @@
 # jean.angie.main.py
-R_NORTE = "https://i.imgur.com/IPa06hM.jpg"
-R_LESTE = "https://i.imgur.com/rHzbmtM.jpg"
-R_SUL = "https://i.imgur.com/NnVA765.jpg"
-R_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
+C0_NORTE = "https://i.imgur.com/IPa06hM.jpg"
+C0_LESTE = "https://i.imgur.com/rHzbmtM.jpg"
+C0_SUL = "https://i.imgur.com/NnVA765.jpg"
+C0_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
 C1_NORTE = "https://i.imgur.com/YYuRyQR.jpg"
 C1_LESTE = "https://i.imgur.com/1fMjUFO.jpg"
 C1_SUL = "https://i.imgur.com/hF4Cmjp.jpg"
@@ -59,11 +59,25 @@ C9_NORTE = "https://i.imgur.com/0DAX1Yq.jpg"
 C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
-from _spy.vitollino.main import Sala, STYLE, Codigo
-
+from _spy.vitollino.main import Cena, STYLE, Codigo
+from _spy.vpython.main import *
+from browser import doc
 STYLE["width"] = 850
 STYLE["height"] = "650px"
+IMG_LIST = [C0_NORTE, C0_LESTE, C0_SUL, C0_OESTE]
+
+doc['pydiv'].html = ''
+_gs = Glow('pydiv')
+scene = canvas()
+
+class Sala3D:
+    def __init__(self, img_list):
+        for direcao, parede in enumerate(img_list):
+            box(pos=(direcao*4, 0, 0), size=(4, 4, 0.2), texture=dict(file=parede, place=["right"]))
 
 class Museu:
-    def __init__(self):        
+    def __init__(self):  
+        pass
+    
+Sala3D(IMG_LIST)
 
