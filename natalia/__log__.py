@@ -114,3 +114,10 @@ AttributeError: 'module' object has no attribute '__setitem__'
     STYLE["width"] = "850"
 AttributeError: 'module' object has no attribute '__setitem__'
 '''},
+{'date': 'Mon Aug 13 2018 19:07:36.246 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 92
+  MENSAGENS=[
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ^
+SyntaxError: invalid syntax
+'''},
