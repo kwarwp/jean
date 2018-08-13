@@ -74,14 +74,17 @@ class Codigo(Code):
     def _close(self, *_):
         self.elt.style = {"visibility": "hidden", "opacity": 0}
         self.cena._code_=self
-class Video(Codigo):
+class Video(Elemento):
     def __init__(self,source, width, height, top, left):
-        Code.__init__(self,style=dict(position="absolute", top=top,left=left))
+        Elemento.__init__(self,style=dict(position="absolute", top=top,left=left))
         video=html.VIDEO(width=width, height=height,autoplay=True, style=dict(position="absolute", top=top,
         left=left))
         video<=html.SOURCE(src=source)
         video.onclick = self._close
         self.elt<=video
+    def _close(self, *_):
+        self.elt.style = {"visibility": "hidden", "opacity": 0}
+        self.cena._video_=self
            
         
         
