@@ -90,7 +90,7 @@ class Museu:
         sala_0.norte.vai()
         
         MENSAGENS=[
-                  [sala_0.norte ,"tendi",  "tamu junto"],
+                  [sala_0.norte ,"primeiramente para usar a função labirinto do vitollino precisa ",  "tamu junto"],
                   [sala_1.norte ,"Hello",  "if True:print('ooi')"],
                   [sala_1.leste ,"bonju",  "if True:print(':)')"],
                   [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
