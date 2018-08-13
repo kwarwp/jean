@@ -38,14 +38,14 @@ class Folha:
         bloco.folhas[fid]=self
         #self.fo_img.ondragstart = self.img_drag_start
 
-    def mouse_over(self, ev):
-        ev.target.style.cursor = "pointer"
-        return False
+    #def mouse_over(self, ev):
+       # ev.target.style.cursor = "pointer"
+        #return False
 
-    def img_drag_start(self, ev):
-        ev.preventDefault()
-        ev.stopPropagation()
-        return False
+    #def img_drag_start(self, ev):
+        #ev.preventDefault()
+        #ev.stopPropagation()
+        #return False
 
     def drag_start(self, ev):
         ev.stopPropagation()
