@@ -117,7 +117,8 @@ class Museu:
         sala_E.sul.meio = sala_D.sul
         
         interrogacao = Elemento(interrogacao_,cena= INVENTARIO, tit = "Help", 
-        x = 460, y = 192, w = 80, h = 90)
+        style=dict(left = 100, top = 100, width = 100, height = "100px"))
+        interrogacao.entra(INVENTARIO)
         
         #sala_0.norte.vai = sala_1.norte.vai()
         sala_0.norte.vai()
