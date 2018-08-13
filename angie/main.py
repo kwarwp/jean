@@ -1,7 +1,7 @@
 # jean.angie.main.py
 MUSEU = dict(
 C0_NORTE = "https://i.imgur.com/IPa06hM.jpg",
-C0_LESTE = "https://i.imgur.com/rHzbmtM.jpg" 
+C0_LESTE = "https://i.imgur.com/rHzbmtM.jpg",
 C0_SUL = "https://i.imgur.com/NnVA765.jpg",
 C0_OESTE = "https://i.imgur.com/XJXjA9r.jpg",
 C1_NORTE = "https://i.imgur.com/YYuRyQR.jpg",
@@ -67,8 +67,8 @@ from math import pi
 STYLE["width"] = 850
 STYLE["height"] = "650px"
 ROSA = "_NORTE,_LESTE,_SUL,_OESTE".split(",")
-IMG_LIST = [C0_NORTE, C0_LESTE, C0_SUL, C0_OESTE]
-IMG_LIST1 = [C1_NORTE, C1_LESTE, C1_SUL, C1_OESTE]
+#IMG_LIST = [C0_NORTE, C0_LESTE, C0_SUL, C0_OESTE]
+#IMG_LIST1 = [C1_NORTE, C1_LESTE, C1_SUL, C1_OESTE]
 IMGS = [["C{:01X}{}".format(sala, rosa) for rosa in ROSA] for sala in range(16)]
 
 doc['pydiv'].html = ''
