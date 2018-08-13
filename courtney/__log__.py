@@ -284,3 +284,10 @@ ValueError: too many values to unpack (expected 3)
     [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 ValueError: too many values to unpack (expected 3)
 '''},
+{'date': 'Mon Aug 13 2018 17:23:21.278 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 157
+  [sala_7.oeste ,"Para inserir um elemento à Cena é necessário escolher uma imagem para ser adicionada e, em seguida, nomeá-la e colocar seu link entre aspas, assim como foi feito com as imagens destinadas a formar as cenas",  "
+                                                                                                                                                                                                                                    ^
+SyntaxError: EOL while scanning string literal
+'''},
