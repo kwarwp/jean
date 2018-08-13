@@ -154,7 +154,7 @@ class Museu:
                   [sala_6.sul ,"hasta la vista",  "if True:print('oi')"],
                   [sala_7.norte ," you say goodbye",  "if True:print('oi')"],
                   [sala_7.leste ,"and say Hello",  "if True:print('oi')"],
-                  [sala_7.oeste ,"acredite em vc",  "if True:print('oi')"],
+                  [sala_7.oeste ,"Para inserir um elemento à Cena é necessário escolher uma imagem para ser adicionada e, em seguida, ajustar a posição e as dimensões da imagem. Código: ",  "if True:print('oi')"],
                   [sala_7.sul ,"vc é capaz",  "if True:print('oi')"],
                   [sala_8.norte ,"don't worry",  "if True:print('oi')"],
                   [sala_8.leste ,"vc é capaz",  "if True:print('oi')"],
@@ -192,7 +192,7 @@ class Museu:
         [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 
 
-        pedra = Elemento(img=PEDRA, tit="Pedra", style=dict(left=40, top=450, width=200, height=200))
+        pedra = Elemento(img=PEDRA, tit="Pedra", style=dict(left=40, top=500, width=200, height=10))
         pedra.entra(sala_7.oeste)
         pedra.vai 
 
