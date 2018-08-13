@@ -88,7 +88,7 @@ class Museu:
         cena = Cena()
         for i, sala in enumerate(IMGS):
             for j, prd in enumerate(sala):
-                Elemento(sala, style = dict(left=i*20, top =j*20, width=18, height="18px")).entra(cena)
+                Elemento(prd, style = dict(left=i*20, top =j*20, width=18, height="18px")).entra(cena)
         pass
 """    
 # Sala3D(IMG_LIST)
