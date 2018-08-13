@@ -133,6 +133,10 @@ class Museu:
         interrogacao.entra(INVENTARIO)
         INVENTARIO.bota(interrogacao)
         
+        video=html.VIDEO(width="320", height="240",autoplay=True, style=dict(position="absolute", top=0, left=0))
+        video<=html.SOURCE(src="https://www.w3schools.com/html/mov_bbb.mp4")
+        sala_0.norte.elt<=video
+        
         #sala_0.norte.vai = sala_1.norte.vai()
         sala_0.norte.vai()
        # cod = Codigo(cena=sala_0.norte ,topo= "ola", codigo = "if True:print('oi')",style = dict(width=400,heigth="250px",left=500,top=100))
