@@ -128,7 +128,7 @@ class Museu:
         def recobra(_):
             INVENTARIO.cena._code_.elt.style={"visibility": "visible", "opacity": 1}
         INVENTARIO.inicia()
-        interrogacao = Elemento(interrogacao_,cena= INVENTARIO, tit = "Help", vai=recobra,
+        interrogacao = Elemento(interrogacao_,cena= INVENTARIO, tit = "Tutorial", vai=recobra,
         style=dict(left = 100, top = 100, width = 100, height = "100px"))
         interrogacao.entra(INVENTARIO)
         INVENTARIO.bota(interrogacao)
