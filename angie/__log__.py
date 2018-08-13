@@ -44,3 +44,9 @@ Exception: origin.equals is not a function
   module '$exec_1904' line 85
 Sala3D(IMG_LIST)
 '''},
+{'date': 'Mon Aug 13 2018 12:06:31.413 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: origin.equals is not a function
+  module '$exec_459' line 85
+Sala3D(IMG_LIST)
+'''},
