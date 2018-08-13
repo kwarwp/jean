@@ -96,7 +96,9 @@ class Museu:
                   [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
                   [sala_1.sul ,"como vai?",  "if True:print('oi')"],
                   [sala_2.norte ,"Bora lá?",  "if True:print('oi')"],
-        
+        ]
+        STYLE = dict(width=400,heigth="250px",left=500,top=100)
+        [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 if __name__ == '__main__':
     Museu()
 
