@@ -154,7 +154,10 @@ class Museu:
                   [sala_6.sul ,"hasta la vista",  "if True:print('oi')"],
                   [sala_7.norte ," you say goodbye",  "if True:print('oi')"],
                   [sala_7.leste ,"and say Hello",  "if True:print('oi')"],
-                  [sala_7.oeste ,"Para inserir um elemento à Cena é necessário escolher uma imagem para ser adicionada e, em seguida, nomeá-la e colocar seu link entre aspas, assim como foi feito com as imagens destinadas a formar as cenas",  "Feito isso, é preciso importar o Elemento do Vitollino usando o código: ",  "if True:print('oi')"],
+                  [sala_7.oeste ,"Para inserir um elemento à Cena é necessário escolher uma imagem para ser adicionada e, em seguida, nomeá-la e colocar seu link entre aspas, assim como foi feito com as imagens destinadas a formar as cenas", 
+  """            Feito isso, é preciso importar o Elemento do Vitollino usando o código: ,  
+                  Para ajustar tamanho e posicionamento do Elemento definimos os valores das dimensões da seguinte maneira:
+  """ ],
                   [sala_7.sul ,"vc é capaz",  "if True:print('oi')"],
                   [sala_8.norte ,"don't worry",  "if True:print('oi')"],
                   [sala_8.leste ,"vc é capaz",  "if True:print('oi')"],
