@@ -109,3 +109,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Aug 15 2018 13:32:27.908 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 191
+  [sala_1.norte ,"Hello",  "if True:print('ooi')"],
+  ^
+IndentationError: unexpected indent
+'''},
