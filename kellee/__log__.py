@@ -208,3 +208,21 @@ SyntaxError: EOL while scanning string literal
     dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200))
 NameError: name 'DINO' is not defined
 '''},
+{'date': 'Wed Aug 15 2018 09:37:50.310 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 247
+    Museu()
+  module <module> line 146
+    dinotexto = Texto(sala_2.leste, "e ai,colega, tudo tranks?")
+NameError: name 'Texto' is not defined
+'''},
