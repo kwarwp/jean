@@ -105,3 +105,10 @@ AttributeError: 'Codigo' object has no attribute 'elf'
                                           ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Aug 15 2018 07:38:12.746 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 69
+  def __init__(self, codigo="", topo="", cena=INVENTARIO, img="", vai=None, style= NS:
+                                                                                      ^
+SyntaxError: invalid syntax
+'''},
