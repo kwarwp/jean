@@ -130,3 +130,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Aug 15 2018 13:34:43.481 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 182
+  [sala_1.norte ,"Agora que você já conseguiu programar sua primeira cena, que tal acrescentar uma nova e poder navegar entre elas com um clique no meio da imagem?",
+  ^
+IndentationError: unexpected indent
+'''},
