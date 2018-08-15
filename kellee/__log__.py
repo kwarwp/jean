@@ -226,3 +226,10 @@ NameError: name 'DINO' is not defined
     dinotexto = Texto(sala_2.leste, "e ai,colega, tudo tranks?")
 NameError: name 'Texto' is not defined
 '''},
+{'date': 'Wed Aug 15 2018 10:54:47.648 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 246
+  STYLE = dict(width=400,heigth="250px",left=400,top=100,"visibility": "hidden", "opacity": 0)
+                                                                      ^
+SyntaxError: invalid syntax
+'''},
