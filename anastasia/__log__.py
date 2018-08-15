@@ -44,3 +44,10 @@ SyntaxError: invalid syntax
     self.elf.style.visibility = "visible" if mostra else "hidden" 
 AttributeError: 'Codigo' object has no attribute 'elf'
 '''},
+{'date': 'Wed Aug 15 2018 06:10:39.436 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 75
+  self.elf.style.visibility = "visible" if mostra = True else "hidden" 
+                                                          ^
+SyntaxError: invalid syntax
+'''},
