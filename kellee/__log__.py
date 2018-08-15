@@ -464,3 +464,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Aug 15 2018 21:58:51.232 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 256
+  def iniciobotao():
+  ^
+IndentationError: unexpected indent
+'''},
