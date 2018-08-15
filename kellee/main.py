@@ -143,7 +143,10 @@ class Museu:
         
         dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200))
         dino.entra(sala_2.leste)
-        dinotexto = Texto(sala_2.leste, "e ai,colega, tudo tranks?")
+
+        def botainventario():
+            INVENTARIO.bota(dino)
+        dinotexto = Texto(sala_2.leste, "e ai,colega, tudo tranks?", foi=botainventario)   
         dino.vai = dinotexto.vai
         
         def recobra(_):
