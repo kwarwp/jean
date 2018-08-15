@@ -208,6 +208,17 @@ quarta_cena.direita = primeira_cena
 primeira_cena.esquerda = quarta_cena
 primeira_cena.vai()
 """],
+                  [sala_0.oeste , "Achou o código para montar o cômodo grande? Saiba que há uma maneira de fazer o mesmo trabalho em poucas linhas, confira testando o código abaixo:",
+                  """from _spy.vitollino.main import Sala
+primeira_cena = "https://i.imgur.com/IPa06hM.jpg"
+segunda_cena = "https://i.imgur.com/rHzbmtM.jpg"
+terceira_cena = "https://i.imgur.com/NnVA765.jpg"
+quarta_cena = "https://i.imgur.com/XJXjA9r.jpg"
+sala = Sala(primeira_cena, segunda_cena, terceira_cena, quarta_cena)
+sala.norte.vai()
+"""],
+
+                  
                   
                   [sala_1.norte ,"Hello",  "if True:print('ooi')"],
                   [sala_1.leste ,"bonju",  "if True:print(':)')"],
