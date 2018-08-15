@@ -1,4 +1,10 @@
 # jean.angie.main.py
+from _spy.vitollino.main import Cena, STYLE, Codigo, Elemento
+from _spy.vpython.main import *
+from browser import doc
+from math import pi
+STYLE["width"] = 1200
+STYLE["height"] = "650px"
 MUSEU = dict(
 C0_NORTE = "https://i.imgur.com/PbNGJ2M.jpg",
 C0_LESTE = "https://i.imgur.com/6RDjzdv.jpg",
@@ -60,12 +66,7 @@ C9_NORTE = "https://i.imgur.com/YJViqyh.jpg",
 C9_LESTE = "https://i.imgur.com/8QcEfJu.jpg",
 C9_SUL = "https://i.imgur.com/evAHwNH.jpg",
 C9_OESTE = "https://i.imgur.com/SJ5c9tV.jpg")
-from _spy.vitollino.main import Cena, STYLE, Codigo, Elemento
-from _spy.vpython.main import *
-from browser import doc
-from math import pi
-STYLE["width"] = 850
-STYLE["height"] = "650px"
+
 ROSA = "_NORTE,_LESTE,_SUL,_OESTE".split(",")
 #IMG_LIST = [C0_NORTE, C0_LESTE, C0_SUL, C0_OESTE]
 #IMG_LIST1 = [C1_NORTE, C1_LESTE, C1_SUL, C1_OESTE]
@@ -90,7 +91,7 @@ class Museu:
             for j, prd in enumerate(sala):
                 Elemento(prd, style = dict(left=i*110, top =j*110, width=100, height="80px")).entra(cena)
         cena.vai()
-"""    
+    
 # Sala3D(IMG_LIST)
     
 # Sala3D(IMG_LIST1, p=(4, 0))
@@ -100,6 +101,6 @@ Sala3D(IMGS[1], p=(0, 4.1))
 Sala3D(IMGS[2], p=(-4.1, 4.1))
 Sala3D(IMGS[8], p=(-4.1, 0))
 Sala3D(IMGS[7], p=(-8.2, 0))
-"""
+
 Museu()
 
