@@ -154,13 +154,11 @@ class Museu:
                   [sala_6.sul ,"hasta la vista",  "if True:print('oi')"],
                   [sala_7.norte ," you say goodbye",  "if True:print('oi')"],
                   [sala_7.leste ,"and say Hello",  "if True:print('oi')"],
-                  [sala_7.oeste ,"Para inserir um elemento à Cena é necessário escolher uma imagem para ser adicionada e, em seguida, nomeá-la e colocar seu link entre aspas, assim como foi feito com as imagens destinadas a formar as cenas", 
-  """            Feito isso, é preciso importar o Elemento do Vitollino usando o código:  from _spy.vitollino.main import Elemento. 
-                 Em seguida, definimos um nome para o Elemento.
-                 Para ajustar tamanho e posicionamento do Elemento definimos os valores das dimensões da seguinte maneira: "nome" = Elemento(img=PEDRA, style=dict(left=x, top=x, width=x, height=x))
-                 Por fim, damos o comando para o Elemento aparecer na sala desejada, usando o "nome" que foi dado ao Elemento, o nome sa sala e a parede na qual ele deve ficar:
-                 nome.entra(sala_x.direção)
-                 nome.vai
+                  [sala_7.oeste ,"Para inserir um Elemento à cena é preciso escolher uma imagem e  importar o Elemento do Vitollino. Em seguida, ajustar as dimensões da imagem e seu posicionamento. Por fim, dar o comando para o Elemento aparecer na sala desejada. Código:", 
+"""        from _spy.vitollino.main import Elemento
+  pedra = Elemento(img=PEDRA, tit="Pedra", style=dict(left=40, top=380, width=200, height="150px"))
+        pedra.entra(sala_7.oeste)
+        pedra.vai 
 """ ],
                   [sala_7.sul ,"vc é capaz",  "if True:print('oi')"],
                   [sala_8.norte ,"don't worry",  "if True:print('oi')"],
