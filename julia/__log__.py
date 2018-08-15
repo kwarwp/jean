@@ -17,3 +17,10 @@
     [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 ValueError: need more than 2 values to unpack
 '''},
+{'date': 'Wed Aug 15 2018 12:26:07.285 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 191
+  [sala_1.norte ,"Hello",  "if True:print('ooi')"],
+  ^
+IndentationError: unexpected indent
+'''},
