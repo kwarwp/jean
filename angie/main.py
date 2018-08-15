@@ -16,7 +16,6 @@ CA_NORTE = "https://i.imgur.com/usame91.jpg",
 CA_LESTE = "https://i.imgur.com/6Sd0NJC.jpg",
 CA_SUL = "https://i.imgur.com/Xj8FuaR.jpg",
 CA_OESTE = "https://i.imgur.com/o6qbGZw.jpg",
-
 C3_NORTE = "https://i.imgur.com/E3IEnQm.jpg",
 C3_LESTE = "https://i.imgur.com/hwq1aEk.jpg",
 C3_SUL = "https://i.imgur.com/hwq1aEk.jpg",
