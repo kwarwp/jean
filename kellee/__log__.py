@@ -450,3 +450,10 @@ UnboundLocalError: local variable 'MENSAGENS' referenced before assignment
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Aug 15 2018 21:57:47.242 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 256
+  def iniciobotao(self, *_):
+  ^
+IndentationError: unexpected indent
+'''},
