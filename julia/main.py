@@ -178,8 +178,8 @@ class Museu:
                   """from _spy.vitollino.main import Cena
 link_para_uma_imagem = "https://i.imgur.com/IPa06hM.jpg" 
 uma_cena=Cena(link_para_imagem)
-uma_cena.vai""",
-                  sala_1.leste ,"Agora que você já conseguiu programar sua primeira cena, que tal acrescentar uma nova e poder navegar entre elas com um clique no meio da imagem?",
+uma_cena.vai"""],
+                  [sala_1.norte ,"Agora que você já conseguiu programar sua primeira cena, que tal acrescentar uma nova e poder navegar entre elas com um clique no meio da imagem?",
                   """from _spy.vitollino.main import Cena
 link_para_primeira_imagem = "https://i.imgur.com/IPa06hM.jpg"
 link_para_segunda_imagem = "https://i.imgur.com/rHzbmtM.jpg"
@@ -188,7 +188,7 @@ segunda_cena=Cena(link_para_segunda_imagem)
 primeira_cena.direita = segunda_cena
 primeira_cena.vai()
 """],
-                  [sala_1.norte ,"Hello",  "if True:print('ooi')"],
+                  #[sala_1.norte ,"Hello",  "if True:print('ooi')"],
                   [sala_1.leste ,"bonju",  "if True:print(':)')"],
                   [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
                   [sala_1.sul ,"como vai?",  "if True:print('oi')"],
