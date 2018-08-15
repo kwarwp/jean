@@ -168,3 +168,10 @@ NameError: name 'Elemento' is not defined
     cena = Cena(C9_OESTE)
 NameError: name 'C9_OESTE' is not defined
 '''},
+{'date': 'Wed Aug 15 2018 11:44:04.757 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 105
+  CD_LESTE = "https://i.imgur.com/dtzdhIy.jpgâ,
+                                                 ^
+SyntaxError: EOL while scanning string literal
+'''},
