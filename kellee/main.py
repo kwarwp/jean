@@ -149,6 +149,7 @@ class Museu:
         dinotexto = Texto(sala_2.leste, "e ai,colega, tudo tranks?", foi=botainventario)   
         dino.vai = dinotexto.vai
         
+        
         def recobra(_):
             INVENTARIO.cena._code_.elt.style={"visibility": "visible", "opacity": 1}
         INVENTARIO.inicia()
@@ -242,7 +243,7 @@ uma_cena.vai"""],
                   
                   
         ]
-        STYLE = dict(width=400,heigth="250px",left=500,top=100)
+        STYLE = dict(width=400,heigth="250px",left=400,top=100, visibility= "hidden", opacity= 0)
         [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 if __name__ == '__main__':
 
