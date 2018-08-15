@@ -17,3 +17,10 @@
     _code_.STYLE["visibility"] = "hidden"
 NameError: name '_code_' is not defined
 '''},
+{'date': 'Wed Aug 15 2018 12:09:24.121 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 75
+  self.elf.style.visibility = "hidden" if mostra = FALSE else self.elf.style.visibility = "visible" 
+                                                          ^
+SyntaxError: invalid syntax
+'''},
