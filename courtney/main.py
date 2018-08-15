@@ -155,10 +155,11 @@ class Museu:
                   [sala_7.norte ," you say goodbye",  "if True:print('oi')"],
                   [sala_7.leste ,"and say Hello",  "if True:print('oi')"],
                   [sala_7.oeste ,"Para inserir um Elemento à cena é preciso escolher uma imagem e  importar o Elemento do Vitollino. Em seguida, ajustar as dimensões da imagem e seu posicionamento. Por fim, dar o comando para o Elemento aparecer na sala desejada. Código:", 
-"""        from _spy.vitollino.main import Elemento
-  pedra = Elemento(img=PEDRA, tit="Pedra", style=dict(left=40, top=380, width=200, height="150px"))
-        pedra.entra(sala_7.oeste)
-        pedra.vai 
+"""from _spy.vitollino.main import Elemento
+pedra = Elemento(img=PEDRA, tit="Pedra", 
+style=dict(left=40, top=380, width=200, height="150px"))
+pedra.entra(sala_7.oeste)
+pedra.vai 
 """ ],
                   [sala_7.sul ,"vc é capaz",  "if True:print('oi')"],
                   [sala_8.norte ,"don't worry",  "if True:print('oi')"],
