@@ -67,3 +67,10 @@ TypeError: 'Cena' object is not iterable
     [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 TypeError: 'Cena' object is not iterable
 '''},
+{'date': 'Wed Aug 15 2018 13:25:14.574 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 191
+  [sala_1.norte ,"Hello",  "if True:print('ooi')"],
+  ^
+IndentationError: unexpected indent
+'''},
