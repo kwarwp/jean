@@ -98,3 +98,10 @@ AttributeError: 'Codigo' object has no attribute 'elf'
     self.elf.style.visibility = "visible" if mostra else "hidden" 
 AttributeError: 'Codigo' object has no attribute 'elf'
 '''},
+{'date': 'Wed Aug 15 2018 06:15:44.746 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 69
+  def __init__(self, codigo="", topo="", '''mostra = True''', cena=INVENTARIO, img="", vai=None, style=dict(visibility = "visible", opacity = 0)):
+                                          ^
+SyntaxError: invalid syntax
+'''},
