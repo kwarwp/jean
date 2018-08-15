@@ -66,13 +66,13 @@ from browser import html
 STYLE["width"] = 850
 STYLE["height"] = "650px"
 class Codigo(Code):
-    def __init__(self, codigo="", topo="", mostra = True, cena=INVENTARIO, img="", vai=None, style=NS):
+    def __init__(self, codigo="", topo="", cena=INVENTARIO, img="", vai=None, style=dict(visibility = "visible", opacity = 0)):
         Code.__init__(self, codigo=codigo, topo=topo, cena=cena, img=img, vai=vai, style=style)
         a = html.A("×", href="#", style=dict(position="absolute", top="0px", right="10px",
         fontSize="30px", fontWeight="bold"))  
         a.onclick = self._close
         self.elt<=a
-        self.elf.style.visibility = "visible" if mostra else "hidden" 
+        #self.elf.style.visibility = "visible" if mostra else "hidden" 
     def _close(self, *_):
         self.elt.style = {"visibility": "hidden", "opacity": 0}
         self.cena._code_=self
@@ -245,7 +245,7 @@ uma_cena.vai"""],
                   
         ]
         STYLE = dict(width=400,heigth="250px",left=400,top=100)
-        [Codigo(cena = a,topo = b ,codigo= c, mostra = False, style= STYLE) for a, b , c in MENSAGENS]
+        [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 if __name__ == '__main__':
 
 
