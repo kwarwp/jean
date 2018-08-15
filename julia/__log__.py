@@ -24,3 +24,10 @@ ValueError: need more than 2 values to unpack
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Aug 15 2018 13:17:11.738 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 190
+  [sala_1.norte ,"Hello",  "if True:print('ooi')"],
+  ^
+IndentationError: unexpected indent
+'''},
