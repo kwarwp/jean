@@ -88,3 +88,10 @@ IndentationError: unexpected indent
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Aug 15 2018 13:27:18.962 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 182
+  [sala_1.leste ,"Agora que você já conseguiu programar sua primeira cena, que tal acrescentar uma nova e poder navegar entre elas com um clique no meio da imagem?",
+  ^
+IndentationError: unexpected indent
+'''},
