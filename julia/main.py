@@ -179,7 +179,7 @@ class Museu:
                   """from _spy.vitollino.main import Cena
 link_para_uma_imagem = "https://i.imgur.com/IPa06hM.jpg" 
 uma_cena=Cena(link_para__uma_imagem)
-uma_cena.vai"""],
+uma_cena.vai()"""],
                   [sala_1.norte ,"Hello",  "if True:print('ooi')"],
                   [sala_1.leste ,"bonju",  "if True:print(':)')"],
                   [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
