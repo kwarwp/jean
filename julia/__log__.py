@@ -74,3 +74,10 @@ TypeError: 'Cena' object is not iterable
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Aug 15 2018 13:25:47.10 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 191
+  [sala_1.norte ,"Hello",  "if True:print('ooi')"],
+  ^
+IndentationError: unexpected indent
+'''},
