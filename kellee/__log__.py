@@ -443,3 +443,10 @@ Traceback (most recent call last):
     self.onclick= MENSAGENS._open
 UnboundLocalError: local variable 'MENSAGENS' referenced before assignment
 '''},
+{'date': 'Wed Aug 15 2018 21:47:44.287 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 257
+  INVENTARIO.inicia()
+  ^
+IndentationError: unexpected indent
+'''},
