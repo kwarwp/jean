@@ -175,3 +175,10 @@ NameError: name 'C9_OESTE' is not defined
                                                  ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Wed Aug 15 2018 11:50:26.83 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 44
+  CD_LESTE = "https://i.imgur.com/dtzdhIy.jpgâ,
+                                                 ^
+SyntaxError: EOL while scanning string literal
+'''},
