@@ -58,8 +58,9 @@ C9_NORTE = "https://i.imgur.com/0DAX1Yq.jpg"
 C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
+DINO = "http://imagem.ongame.com.br/pb/blog/stingrr.png"
 interrogacao_="https://publicdomainvectors.org/photos/primary-gnome-question.png"
-from _spy.vitollino.main import Sala, STYLE, Codigo as Code, INVENTARIO, Elemento, NS
+from _spy.vitollino.main import Sala, STYLE, Codigo as Code, INVENTARIO, Elemento, NS,Texto
 from browser import html
 
 STYLE["width"] = 850
@@ -67,7 +68,7 @@ STYLE["height"] = "650px"
 class Codigo(Code):
     def __init__(self, codigo="", topo="", cena=INVENTARIO, img="", vai=None, style=NS):
         Code.__init__(self, codigo=codigo, topo=topo, cena=cena, img=img, vai=vai, style=style)
-        a = html.A("&times;", href="#", style=dict(position="absolute", top="0px", right="10px",
+        a = html.A("×", href="#", style=dict(position="absolute", top="0px", right="10px",
         fontSize="30px", fontWeight="bold"))  
         a.onclick = self._close
         self.elt<=a
@@ -139,6 +140,12 @@ class Museu:
         sala_9.sul.meio = sala_8.oeste
         sala_E.oeste.meio = sala_7.norte
         sala_E.sul.meio = sala_D.sul
+        
+        dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200))
+        dino.entra(sala_2.leste)
+        dinotexto = Texto(sala_2.leste, "e ai,colega, tudo tranks?")
+        dino.vai = dinotexto.vai
+        
         def recobra(_):
             INVENTARIO.cena._code_.elt.style={"visibility": "visible", "opacity": 1}
         INVENTARIO.inicia()
