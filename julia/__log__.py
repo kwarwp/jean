@@ -81,3 +81,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Wed Aug 15 2018 13:26:45.703 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 177
+  MENSAGENS=[sala_0.norte ,"Olá! Se prepare, que finalmente chegou o dia de aprender a programar em Python. Vamos embarcar nessa aventura já! Crie uma cena utilizando o código abaixo. ",
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ^
+SyntaxError: invalid syntax
+'''},
