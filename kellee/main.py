@@ -59,7 +59,7 @@ C9_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 C9_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
 DINO = "http://imagem.ongame.com.br/pb/blog/stingrr.png"
-interrogacao_="https://publicdomainvectors.org/photos/primary-gnome-question.png"
+interrogacao_="https://i.imgur.com/umcmPnb.png"
 from _spy.vitollino.main import Sala, STYLE, Codigo as Code, INVENTARIO, Elemento, NS,Texto
 from browser import html
 
