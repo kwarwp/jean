@@ -83,3 +83,10 @@ NameError: name 'Mapa' is not defined
     Mapa()
 NameError: name 'Mapa' is not defined
 '''},
+{'date': 'Thu Aug 16 2018 05:11:44.319 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  self.cena_mapa = Cena(img = MAPA)
+  ^
+IndentationError: expected an indented block
+'''},
