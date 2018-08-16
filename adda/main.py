@@ -13,10 +13,8 @@ class Museu:
         
         MAPA.vai()
 
-                  
-        ]
-        STYLE = dict(width=400,heigth="250px",left=500,top=100)
-        [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
+             
+        
 if __name__ == '__main__':
     #Mapa()
     Museu()
