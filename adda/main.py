@@ -1,6 +1,6 @@
 R_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
 R_LESTE = "https://i.imgur.com/rHzbmtM.jpg"
-R_NORTE = "https://i.imgur.com/d9YNdTu.png"
+R_NORTE = "https://i.imgur.com/d9YNdTu.png" #coloquei o mapa aqui pois não estou conseguindo colocar ele por fora :(
 R_SUL = "https://i.imgur.com/NnVA765.jpg"
 C1_NORTE = "https://i.imgur.com/YYuRyQR.jpg"
 C1_SUL = "https://i.imgur.com/hF4Cmjp.jpg"
