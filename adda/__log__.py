@@ -353,3 +353,7 @@ AttributeError: 'module' object has no attribute '__setitem__'
     STYLE["height"] = "650px"
 AttributeError: 'module' object has no attribute '__setitem__'
 '''},
+{'date': 'Thu Aug 16 2018 05:44:59.383 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: Cannot read property '$methods' of undefined>
+'''},
