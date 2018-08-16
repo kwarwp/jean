@@ -63,8 +63,8 @@ interrogacao_="https://i.imgur.com/umcmPnb.png"
 from _spy.vitollino.main import Sala, STYLE, Codigo as Code, INVENTARIO, Elemento, NS,Texto
 from browser import html
 
-STYLE["width"] = 850
-STYLE["height"] = "650px"
+STYLE["width"] = 812
+STYLE["height"] = "559px"
 class Codigo(Code):
     def __init__(self, codigo="", topo="", cena=INVENTARIO, img="", vai=None, style=NS):
         Code.__init__(self, codigo=codigo, topo=topo, cena=cena, img=img, vai=vai, style=style)
