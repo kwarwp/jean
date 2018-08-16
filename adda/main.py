@@ -9,10 +9,10 @@ STYLE["height"] = "650px"
 
 class Mapa:
     def __init__(self):
-    self.cena_mapa = Cena(img = MAPA)
+        self.cena_mapa = Cena(img = MAPA)
         
-    self.cena_mapa.meio = Cena(vai=self.vai_importar)
-    self.cena_mapa.vai()
+        self.cena_mapa.meio = Cena(vai=self.vai_importar)
+        self.cena_mapa.vai()
 
 def vai(self, *_):
     self.cena_mapa.vai()
