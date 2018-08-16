@@ -90,3 +90,10 @@ NameError: name 'Mapa' is not defined
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu Aug 16 2018 05:12:57.168 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 23
+  from Jean.Kellee.main import Museu
+  ^
+IndentationError: expected an indented block
+'''},
