@@ -15,11 +15,11 @@ class Museu:
 
              
         
-if __name__ == '__main__':
+'''if __name__ == '__main__':
     #Mapa()
     Museu()
     
-'''class Mapa:
+class Mapa:
     def __init__(self, c=NADA, n=NADA, l=NADA, s=NADA, o=NADA):
         self.salas = [sala for sala in [c, n, l, s, o]]
         self.centro, self.norte, self.leste, self.sul, self.oeste = self.salas
