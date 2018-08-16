@@ -20,13 +20,13 @@ def vai(self, *_):
     
     
     def vai_importar(self, *_):
-        from Jean.Kellee.main import Museu
+        from Jean.main import Museu
         Museu()
     
-def vai_CenaTutorialInterativo():
-    cenaImporta = CenaTutorialInterativo()
+def vai_CenaMAPA():
+    cenaImporta = Mapa()
     cenaImporta.vai()
 
 if __name__ == "__main__":
-	vai_CenaTutorialInterativo()
+	vai_CenaMAPA()
                            
