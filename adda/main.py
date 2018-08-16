@@ -3,7 +3,7 @@ MAPA = "https://i.imgur.com/d9YNdTu.png"
 
 from _spy.vitollino.main import Sala, STYLE, Cena, Labirinto
 
-STYLE['width'] = 812
+STYLE["width"] = 812
 STYLE["height"] = "559px"
 
 
