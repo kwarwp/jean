@@ -20,8 +20,8 @@ def vai(self, *_):
     
     
     def vai_importar(self, *_):
-    from Jean.Kellee.main import Museu
-    Museu()
+        from Jean.Kellee.main import Museu
+        Museu()
     
 def vai_CenaTutorialInterativo():
     cenaImporta = CenaTutorialInterativo()
