@@ -3,8 +3,7 @@ MAPA = "https://i.imgur.com/d9YNdTu.png"
 
 from _spy.vitollino.main import Sala, STYLE, Cena, Labirinto
 
-STYLE["width"] = 850
-STYLE["height"] = "650px"
+STYLE["height"] = "560px"
 
 
 class Mapa:
@@ -14,8 +13,8 @@ class Mapa:
         self.cena_mapa.meio = Cena(vai=self.vai_importar)
         self.cena_mapa.vai()
 
-def vai(self, *_):
-    self.cena_mapa.vai()
+    def vai(self, *_):
+        self.cena_mapa.vai()
     
     
     
