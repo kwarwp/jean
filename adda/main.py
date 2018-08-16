@@ -11,7 +11,7 @@ class Museu:
 
     def __init__(self):  
         
-        MAPA.vai()
+        MAPA()
 
              
         
