@@ -681,3 +681,10 @@ NameError: name 'sala_0' is not defined
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu Aug 16 2018 23:43:28.691 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 156
+  INVENTARIO.inicia()
+  ^
+IndentationError: expected an indented block
+'''},
