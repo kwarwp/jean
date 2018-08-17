@@ -76,6 +76,9 @@ class Codigo(Code):
     def _close(self, *_):
         self.elt.style = {"visibility": "hidden", "opacity": 0}
         self.cena._code_=self
+    def _open(self,*_):
+        self.elt.stye = {"visibility": "visible", "opacity": 1}
+        self.cena._code_=self
 class Video(Elemento):
     def __init__(self,source, width, height, top, left):
         Elemento.__init__(self,style=dict(position="absolute", top=top,left=left))
