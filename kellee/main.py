@@ -143,7 +143,7 @@ class Museu:
         
         dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200))
         dino.entra(sala_2.leste)
-
+        
         def botainventario():
             INVENTARIO.bota(dino)
         dinotexto = Texto(sala_2.leste, "e ai,colega, tudo tranks?", foi=botainventario)   
@@ -244,6 +244,7 @@ uma_cena.vai"""],
                   
         ]
         STYLE = dict(width=400,heigth="250px",left=400,top=100, visibility= "hidden", opacity= 0)
+        #STYLE = dict(width=400,heigth="250px",left=400,top=100, visibility= "visible", opacity= 1)
         [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
 if __name__ == '__main__':
 
