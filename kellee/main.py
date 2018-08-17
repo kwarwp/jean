@@ -72,6 +72,7 @@ class Codigo(Code):
         fontSize="30px", fontWeight="bold"))  
         a.onclick = self._close
         self.elt<=a
+        #self.elt.style = {"visibility": "hidden", "opacity": 0}
     def _close(self, *_):
         self.elt.style = {"visibility": "hidden", "opacity": 0}
         self.cena._code_=self
@@ -151,6 +152,7 @@ class Museu:
         
         
         def recobra(_):
+            #return
             INVENTARIO.cena._code_.elt.style={"visibility": "visible", "opacity": 1}
         INVENTARIO.inicia()
         interrogacao = Elemento(interrogacao_,cena= INVENTARIO, tit = "Tutorial", vai=recobra,
@@ -172,7 +174,7 @@ class Museu:
        # cod = Codigo(cena=sala_1.leste, topo = "Bonju",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
        # cod = Codigo(cena=sala_1.oeste, topo = "Buenos dias",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
        # cod =Codigo(cena=sala_1.sul, topo = "como vai?",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
-class MSG():      
+
         MENSAGENS=[
                   [sala_0.norte ,"Olá! Se prepare, que finalmente chegou o dia de aprender a programar em Python. Vamos embarcar nessa aventura já! Crie uma cena utilizando o código abaixo. ",
                   """from _spy.vitollino.main import Cena
@@ -245,7 +247,9 @@ uma_cena.vai"""],
         ]
         STYLE = dict(width=400,heigth="250px",left=400,top=100, visibility= "visible", opacity= 1)
         #STYLE = dict(width=400,heigth="250px",left=400,top=100, visibility= "visible", opacity= 1)
-        [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
+        [Codigo(cena = a,topo = b ,codigo= c, style= STYLE, vai=recobra) for a, b , c in MENSAGENS]
+        
+        
 if __name__ == '__main__':
 
 
