@@ -72,13 +72,12 @@ class Codigo(Code):
         fontSize="30px", fontWeight="bold"))  
         a.onclick = self._close
         self.elt<=a
+        self._close()
         #self.elt.style = {"visibility": "hidden", "opacity": 0}
     def _close(self, *_):
         self.elt.style = {"visibility": "hidden", "opacity": 0}
         self.cena._code_=self
-    def _open(self,*_):
-        self.elt.stye = {"visibility": "visible", "opacity": 1}
-        self.cena._code_=self
+
 class Video(Elemento):
     def __init__(self,source, width, height, top, left):
         Elemento.__init__(self,style=dict(position="absolute", top=top,left=left))
@@ -87,6 +86,7 @@ class Video(Elemento):
         video<=html.SOURCE(src=source)
         video.onclick = self._close
         self.elt<=video
+
     def _close(self, *_):
         self.elt.style = {"visibility": "hidden", "opacity": 0}
         self.cena._video_=self
@@ -248,7 +248,7 @@ uma_cena.vai"""],
                   
                   
         ]
-        STYLE = dict(width=400,heigth="250px",left=400,top=100, visibility= "visible", opacity= 1)
+        STYLE = dict(width=400,heigth="250px",left=400,top=100, visibility= "hidden", opacity= 0)
         #STYLE = dict(width=400,heigth="250px",left=400,top=100, visibility= "visible", opacity= 1)
         [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
         
