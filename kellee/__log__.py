@@ -649,3 +649,10 @@ AttributeError: 'list' object has no attribute 'vai'
     MENSAGENS.vai=STYLE = dict(width=400,heigth="250px",left=400,top=100, visibility= "visible", opacity= 1)
 AttributeError: 'list' object has no attribute 'vai'
 '''},
+{'date': 'Thu Aug 16 2018 22:39:09.196 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 175
+  class MSG()        
+                      ^
+SyntaxError: invalid syntax
+'''},
