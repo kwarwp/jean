@@ -674,3 +674,10 @@ SyntaxError: invalid syntax
     MENSAGENS=[
 NameError: name 'sala_0' is not defined
 '''},
+{'date': 'Thu Aug 16 2018 22:41:30.720 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 177
+  MENSAGENS=[
+  ^
+IndentationError: expected an indented block
+'''},
