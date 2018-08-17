@@ -688,3 +688,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Fri Aug 17 2018 00:05:24.775 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 157
+  INVENTARIO.inicia()
+  ^
+IndentationError: expected an indented block
+'''},
