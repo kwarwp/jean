@@ -223,12 +223,7 @@ sala = Sala(primeira_cena, segunda_cena, terceira_cena, quarta_cena)
 sala.norte.vai()
 """],
 
-                  [sala_1.norte ,"primeiramente para usar a função labirinto do vitollino precisa ter definido as salas," 
-                  "depois se usa a função labirinto para 5 salas, ex: labirinto(salaA, sala B, sala C, salaD, sala E),"  
-                      "sempre conectando uma sala a outra, exemplo: labirinto(sala E, salaF,salaG,salaH,salaI)",
-             """   
-       ficando assim: Labirinto(sala A, sala B, sala C, sala D, sala E) 
-"""],
+                  [sala_1.norte ,"bonju",  "if True:print(':)')"],
                   [sala_1.leste ,"bonju",  "if True:print(':)')"],
                   [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
                   [sala_1.sul ,"como vai?",  "if True:print('oi')"],
