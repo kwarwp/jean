@@ -182,7 +182,7 @@ class Museu:
                   [sala_0.norte ,"Olá! Se prepare, que finalmente chegou o dia de aprender a programar em Python. Vamos embarcar nessa aventura já! Crie uma cena utilizando o código abaixo. ",
                   """from _spy.vitollino.main import Cena
 link_para_uma_imagem = "https://i.imgur.com/IPa06hM.jpg" 
-uma_cena=Cena(link_para_uma_imagem)
+uma_cena=Cena(link_para_imagem)
 uma_cena.vai"""],
 [sala_0.leste ,"Agora que você já conseguiu programar sua primeira cena, que tal acrescentar uma nova e poder navegar entre elas com um clique à direita da imagem?",
                   """from _spy.vitollino.main import Cena
@@ -263,7 +263,12 @@ sala.norte.vai()
                   [sala_9.norte,"você esta vencendo seus medos",  "if True:print('oi')"],
                   [sala_9.leste ,"está se superando",  "if True:print('oi')"],
                   [sala_9.oeste ,"respire",  "if True:print('oi')"],
-                  [sala_9.sul ,"comemore, pois vc venceu",  "if True:print('oi')"],
+                  [sala_9.sul ,"primeiramente para usar a função labirinto do vitollino precisa ter definido as salas," 
+                  "depois se usa a função labirinto para 5 salas, ex: labirinto(salaA, sala B, sala C, salaD, sala E),"  
+                      "sempre conectando uma sala a outra, exemplo: labirinto(sala E, salaF,salaG,salaH,salaI)",
+"""   
+       ficando assim: Labirinto(sala A, sala B, sala C, sala D, sala E) 
+"""],
                   [sala_A.norte ,"tudo vai bem",  "if True:print('oi')"],
                   [sala_A.leste ,"não desista",  "if True:print('oi')"],
                   [sala_A.oeste ,"não é tão complicado",  "if True:print('oi')"],
