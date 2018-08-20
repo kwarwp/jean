@@ -184,6 +184,45 @@ class Museu:
 link_para_uma_imagem = "https://i.imgur.com/IPa06hM.jpg" 
 uma_cena=Cena(link_para_imagem)
 uma_cena.vai"""],
+[sala_0.leste ,"Agora que você já conseguiu programar sua primeira cena, que tal acrescentar uma nova e poder navegar entre elas com um clique à direita da imagem?",
+                  """from _spy.vitollino.main import Cena
+link_para_primeira_imagem = "https://i.imgur.com/IPa06hM.jpg"
+link_para_segunda_imagem = "https://i.imgur.com/rHzbmtM.jpg"
+primeira_cena=Cena(link_para_primeira_imagem)
+segunda_cena=Cena(link_para_segunda_imagem)
+primeira_cena.direita = segunda_cena
+primeira_cena.vai()
+"""],
+                  [sala_0.sul ,"Depois de aprender a acrescentar uma nova cena, você agora pode criar um cômodo completo! Utilize o código abaixo para criar as quatro cenas que formarão um cômodo inteiro.",
+                  """from _spy.vitollino.main import Cena
+link_para_primeira_imagem = "https://i.imgur.com/IPa06hM.jpg"
+link_para_segunda_imagem = "https://i.imgur.com/rHzbmtM.jpg"
+link_para_terceira_imagem = "https://i.imgur.com/NnVA765.jpg"
+link_para_quarta_imagem = "https://i.imgur.com/XJXjA9r.jpg"
+primeira_cena=Cena(link_para_primeira_imagem)
+segunda_cena=Cena(link_para_segunda_imagem)
+terceira_cena=Cena(link_para_terceira_imagem)
+quarta_cena=Cena(link_para_quarta_imagem)
+primeira_cena.direita = segunda_cena
+segunda_cena.esquerda = primeira_cena
+segunda_cena.direita = terceira_cena
+terceira_cena.esquerda = segunda_cena
+terceira_cena.direita = quarta_cena
+quarta_cena.esquerda = terceira_cena
+quarta_cena.direita = primeira_cena
+primeira_cena.esquerda = quarta_cena
+primeira_cena.vai()
+"""],
+                  [sala_0.oeste , "Achou o código para montar o cômodo grande? Saiba que há uma maneira de fazer o mesmo trabalho em poucas linhas, através da função Sala. Confira testando o código abaixo:",
+                  """from _spy.vitollino.main import Sala
+primeira_cena = "https://i.imgur.com/IPa06hM.jpg"
+segunda_cena = "https://i.imgur.com/rHzbmtM.jpg"
+terceira_cena = "https://i.imgur.com/NnVA765.jpg"
+quarta_cena = "https://i.imgur.com/XJXjA9r.jpg"
+sala = Sala(primeira_cena, segunda_cena, terceira_cena, quarta_cena)
+sala.norte.vai()
+"""],
+
                   [sala_1.norte ,"Hello",  "if True:print('ooi')"],
                   [sala_1.leste ,"bonju",  "if True:print(':)')"],
                   [sala_1.oeste ,"Buenos dias",  "if True:print('oi')"],
