@@ -1,4 +1,4 @@
-from _spy.vitollino.main import Cena
+from _spy.vitollino.main import Cena, STYLE
 
 MAPA = "https://i.imgur.com/d9YNdTu.png"
 
