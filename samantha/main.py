@@ -7,6 +7,7 @@ from browser import html, doc
 STYLE["width"] = 800
 STYLE["height"] = "600px"
 
+FUNDO = "https://imagens.simplo7.net/static/2497/sku/thumb_tricoline-100-algodao-lisa-tricoline-100-algodao-lisa-branca-1474467553683.jpg"
 BACKG = "https://imgur.com/a/UdDTlZW"
 Q1 = "https://imgur.com/a/t1XM4vJ"
 Q2 = "https://imgur.com/a/kMgC4FZ"
@@ -16,16 +17,16 @@ Q5 = "https://imgur.com/a/4mwAKzS"
 
 def natureza():
     fundo = Cena(FUNDO)
-    colmeia = Elemento(COLMEIA, tit = "colmeia", drag= False,
-        x = 10, y = 40, w = 200 , h = 300, drop= "abelha",
+    background = Elemento(BACKG, tit = "backg", drag= False,
+        x = 10, y = 40, w = 200 , h = 300, drop= "q1,q2,q3,q4,q5",
         cena= fundo)
-    def reposiciona_abelha(sid, x, y):
+    def reposiciona_quadros(sid, x, y):
         sid.style.left = x
         sid.style.top = y
-    abelha = Elemento(ABELHA, tit = "abelha", drag=True,
+    q1 = Elemento(Q1, tit = "quadro", drag=True,
         x = 10, y = 40, w = 80, h = 90, drop="",
         cena=fundo)
-    colmeia.doit_drop = reposiciona_abelha
+    background.doit_drop = reposiciona_quadros
     fundo.vai()
 
 natureza()    
