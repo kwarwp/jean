@@ -7,11 +7,11 @@ from browser import html, doc
 STYLE["width"] = 800
 STYLE["height"] = "600px"
 
-COLMEIA = 'https://i.ytimg.com/vi/TUlH5-1qs8I/hqdefault.jpg'
-ABELHA = 'http://www.baldoni.com.br/images/abelha.png'
-FUNDO = "https://imagens.simplo7.net/static/2497/sku/thumb_tricoline-100-algodao-lisa-tricoline-100-algodao-lisa-branca-1474467553683.jpg"
-NDCT = {}
-FIX_COUNT = {}
+BACKG = "https://imgur.com/a/UdDTlZW"
+Q1 = ""
+Q2 = ""
+Q3 = ""
+Q4 = ""
 
 def natureza():
     fundo = Cena(FUNDO)
