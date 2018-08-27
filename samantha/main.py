@@ -173,13 +173,13 @@ class Elemento(Element):
 def natureza():
     fundo = Cena(FUNDO)
     colmeia = Elemento(COLMEIA, tit = "colmeia", drag= False,
-        x = 610, y = 140, w = 200 , h = 300, drop= "abelha",
+        x = 10, y = 40, w = 200 , h = 300, drop= "abelha",
         cena= fundo)
     def reposiciona_abelha(sid, x, y):
         sid.style.left = x
         sid.style.top = y
     abelha = Elemento(ABELHA, tit = "abelha", drag=True,
-        x = 610, y = 140, w = 80, h = 90, drop="",
+        x = 10, y = 40, w = 80, h = 90, drop="",
         cena=fundo)
     colmeia.doit_drop = reposiciona_abelha
     fundo.vai()
