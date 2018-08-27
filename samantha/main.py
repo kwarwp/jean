@@ -11,8 +11,8 @@ BACKG = "https://imgur.com/a/UdDTlZW"
 Q1 = "https://imgur.com/a/t1XM4vJ"
 Q2 = "https://imgur.com/a/kMgC4FZ"
 Q3 = "https://imgur.com/a/3FPynY3"
-Q4 = ""
-Q5 = ""
+Q4 = "https://imgur.com/a/g4NqoHD"
+Q5 = "https://imgur.com/a/4mwAKzS"
 
 def natureza():
     fundo = Cena(FUNDO)
