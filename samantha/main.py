@@ -10,8 +10,9 @@ STYLE["height"] = "600px"
 BACKG = "https://imgur.com/a/UdDTlZW"
 Q1 = "https://imgur.com/a/t1XM4vJ"
 Q2 = "https://imgur.com/a/kMgC4FZ"
-Q3 = ""
+Q3 = "https://imgur.com/a/3FPynY3"
 Q4 = ""
+Q5 = ""
 
 def natureza():
     fundo = Cena(FUNDO)
