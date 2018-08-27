@@ -279,6 +279,8 @@ pedra.vai
         sala_C = Sala(CC_NORTE, CC_LESTE, CC_SUL, CC_OESTE)
         sala_D = Sala(CD_NORTE, CD_LESTE, CD_SUL, CD_OESTE)
         sala_E = Sala(CE_NORTE, CE_LESTE,CE_SUL, CE_OESTE)
+       
+        
 """],
                   [sala_9.oeste ,"respire",  "if True:print('oi')"],
                   [sala_9.sul ,"primeiramente para usar a função labirinto do vitollino precisa ter definido as salas,essa função serve para juntar as salas, criando uma ponte entre as salas, para criar um caminho ,depois se usa a função labirinto para 5 salas, ex: labirinto(salaA, sala B, sala C, salaD, sala E),sempre conectando uma sala a outra, exemplo: labirinto(sala E, salaF,salaG,salaH,salaI)",
