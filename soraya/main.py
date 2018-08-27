@@ -183,7 +183,7 @@ class Museu:
                   [sala_0.norte ,"Olá! Se prepare, que finalmente chegou o dia de aprender a programar em Python. Vamos embarcar nessa aventura já! Crie uma cena utilizando o código abaixo. ",
                   """from _spy.vitollino.main import Cena
 link_para_uma_imagem = "https://i.imgur.com/IPa06hM.jpg" 
-uma_cena=Cena(link_para_imagem)
+uma_cena=Cena(link_para_uma_imagem)
 uma_cena.vai"""],
 [sala_0.leste ,"Agora que você já conseguiu programar sua primeira cena, que tal acrescentar uma nova e poder navegar entre elas com um clique à direita da imagem?",
                   """from _spy.vitollino.main import Cena
