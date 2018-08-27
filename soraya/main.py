@@ -314,8 +314,10 @@ pedra.vai
                   [sala_E.norte ,"tudo vai bem",  "if True:print('oi')"],
                   [sala_E.leste ,"não desista",  "if True:print('oi')"],
                   [sala_E.oeste ,"não é tão complicado",  "if True:print('oi')"],
-                  [sala_E.sul ,"avai sim",  "if True:print('oi')"]
-
+                  [sala_E.sul ,"Agora para seu jogo funcionar vc precisa fechar a função que fez no inicio , é como se vc dissesse para o código que agora ele pode rodar",  
+"""if __name__ == '__main__':
+        Museu()
+"""],
 
 
 
