@@ -263,7 +263,7 @@ pedra.vai
                   [sala_8.oeste ," be free",  "if True:print('oi')"],
                   [sala_8.sul,"está quase acabando",  "if True:print('oi')"],
                   [sala_9.norte,"você esta vencendo seus medos",  "if True:print('oi')"],
-                  [sala_9.leste ,"Agora precisa definir cada sala que tem 4 cenas ou paredes, para dfinir cada sala se utliza cenas,Essas salas servem para vc ter um cômodo onde se olha todas as paredes,por exemplo,salaA(Cena1, Cena2,Cena3,Cena4), sala B( Cena5,Cena6,Cena7, Cena8), sala C(Cena9, Cena10, Cena11, Cena12) e assim vai secessivamente ate criar a quantidade de salas que achar necessário, para criar seu jogo"
+                  [sala_9.leste ,"Agora precisa definir cada sala que tem 4 cenas ou paredes, para dfinir cada sala se utliza cenas,Essas salas servem para vc ter um cômodo onde se olha todas as paredes,por exemplo,salaA(Cena1, Cena2,Cena3,Cena4), sala B( Cena5,Cena6,Cena7, Cena8), sala C(Cena9, Cena10, Cena11, Cena12) e assim vai secessivamente ate criar a quantidade de salas que achar necessário, para criar seu jogo",
     """ sala_0 = Sala(R_NORTE, R_LESTE, R_SUL, R_OESTE)
         sala_1 = Sala(C1_NORTE, C1_LESTE, C_SUL, C1_OESTE)
         sala_2 = Sala(C2_NORTE, C2_LESTE, C2_SUL, C2_OESTE)
