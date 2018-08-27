@@ -17,3 +17,9 @@
     colmeia = Elemento(COLMEIA, tit = "colmeia", drag= False,
 NameError: name 'Elemento' is not defined
 '''},
+{'date': 'Mon Aug 27 2018 14:10:23.916 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: bases[i].$dict is undefined
+  module '$exec_459' line 17
+class Elemento(Element):
+'''},
