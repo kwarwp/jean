@@ -283,7 +283,11 @@ pedra.vai
         
 """],
                   [sala_9.oeste ,"respire",  "if True:print('oi')"],
-                  [sala_9.sul ,"primeiramente para usar a função labirinto do vitollino precisa ter definido as salas,essa função serve para juntar as salas, criando uma ponte entre as salas, para criar um caminho ,depois se usa a função labirinto para 5 salas, ex: labirinto(salaA, sala B, sala C, salaD, sala E),sempre conectando uma sala a outra, exemplo: labirinto(sala E, salaF,salaG,salaH,salaI)",
+                  [sala_9.sul ,"""Primeiramente, para usar a função 
+                  labirinto do vitollino precisa ter definido as salas
+                  para que seja possível juntá-las, criando uma ponte entre elas.
+                  Assim, pode-se criar um caminho, depois de usar a função 
+                  labirinto para 5 salas. """,
 """   
         Labirinto(sala A, sala B, sala C, sala D, sala E)
         Labirinto(sala E, sala F, sala G, sala H, sala I)
