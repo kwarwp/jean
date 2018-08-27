@@ -173,7 +173,7 @@ class Elemento(Element):
 def natureza():
     fundo = Cena(FUNDO)
     colmeia = Elemento(COLMEIA, tit = "colmeia", drag= False,
-        x = 50, y = 140, w = 200 , h = 300, drop= "abelha",
+        x = 50, y = 140, w = 300 , h = 500, drop= "abelha",
         cena= fundo)
     def reposiciona_abelha(sid, x, y):
         sid.style.left = x
