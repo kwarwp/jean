@@ -8,8 +8,8 @@ STYLE["width"] = 800
 STYLE["height"] = "600px"
 
 BACKG = "https://imgur.com/a/UdDTlZW"
-Q1 = ""
-Q2 = ""
+Q1 = "https://imgur.com/a/t1XM4vJ"
+Q2 = "https://imgur.com/a/kMgC4FZ"
 Q3 = ""
 Q4 = ""
 
