@@ -6,3 +6,10 @@
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Aug 28 2018 16:01:27.554 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  C2_SUL = C1_LESTE
+  ^
+IndentationError: unexpected indent
+'''},
