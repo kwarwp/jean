@@ -8,7 +8,7 @@ MAPA = "https://i.imgur.com/d9YNdTu.png"
 R_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
 
 def inventario():
-    mapa = Elemento(img=MAPA,tit= "Mapa",style=dict(left=50, top=160, width=200, height=200))
+    mapa = Elemento(img=MAPA,tit= "Mapa",style=dict(left=50, top=160, width=200, height="200px"))
     
     INVENTARIO.bota(mapa)
     r_oeste =Cena(img=R_OESTE)
