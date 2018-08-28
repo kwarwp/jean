@@ -1,5 +1,5 @@
 # jean.kathryn.main.py
-from _spy.vitollino.main import Mapa, Sala, STYLE, Codigo as Code, INVENTARIO, Elemento, NS,Texto
+from _spy.vitollino.main import Labirinto, Sala, STYLE, Codigo as Code, INVENTARIO, Elemento, NS,Texto
 from browser import html
 from _spy.vitollino.main import INVENTARIO as inv 
 
@@ -87,7 +87,7 @@ class Museu:
         sala_C = Sala(CC_NORTE, CC_LESTE, CC_SUL, CC_OESTE)
         sala_D = Sala(CD_NORTE, CD_LESTE, CD_SUL, CD_OESTE)
         sala_E = Sala(CE_NORTE, CE_LESTE,CE_SUL, CE_OESTE)
-        Mapa = (sala_0, sala_1, sala_2, sala_3, sala_4, sala_5, sala_6, sala_7, sala_8, sala_9, sala_A, sala_B, sala_C, sala_D, Sala_E)
+        labirinto.m  (sala_0, sala_1, sala_2, sala_3, sala_4, sala_5, sala_6, sala_7, sala_8, sala_9, sala_A, sala_B, sala_C, sala_D, Sala_E)
         
         
 if __name__ == '__main__':
