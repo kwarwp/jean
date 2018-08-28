@@ -67,3 +67,28 @@ C9_SUL = "https://i.imgur.com/pIRvnJS.jpg"
 DINO = "http://imagem.ongame.com.br/pb/blog/stingrr.png"
 PEDRA = "https://i.imgur.com/81XKpgM.jpg"
 interrogacao_="https://i.imgur.com/umcmPnb.png"
+
+class Museu:
+    def __init__(self):        
+        C_SUL = C1_SUL
+        C2_SUL = C1_LESTE
+        sala_0 = Sala(R_NORTE, R_LESTE, R_SUL, R_OESTE)
+        sala_1 = Sala(C1_NORTE, C1_LESTE, C_SUL, C1_OESTE)
+        sala_2 = Sala(C2_NORTE, C2_LESTE, C2_SUL, C2_OESTE)
+        sala_3 = Sala(C3_NORTE, C3_LESTE, C3_SUL , C3_OESTE)
+        sala_4 = Sala(C4_NORTE,C4_LESTE, C4_SUL, C4_OESTE)
+        sala_5 = Sala(C5_NORTE, C5_LESTE, C5_SUL, C5_OESTE) 
+        sala_6 = Sala(C6_NORTE, C6_LESTE, C6_SUL, C6_OESTE)
+        sala_7 = Sala(C7_NORTE, C7_LESTE, C7_SUL , C7_OESTE)
+        sala_8 = Sala(C8_NORTE, C8_LESTE, C8_SUL, C8_OESTE)
+        sala_9 = Sala(C9_NORTE,C9_LESTE, C9_SUL,C9_OESTE)
+        sala_A = Sala(CA_NORTE,CA_LESTE,CA_SUL, CA_OESTE)
+        sala_B = Sala(CB_NORTE, CB_LESTE, CB_SUL, CB_OESTE)
+        sala_C = Sala(CC_NORTE, CC_LESTE, CC_SUL, CC_OESTE)
+        sala_D = Sala(CD_NORTE, CD_LESTE, CD_SUL, CD_OESTE)
+        sala_E = Sala(CE_NORTE, CE_LESTE,CE_SUL, CE_OESTE)
+        Mapa = (sala_0, sala_1, sala_2, sala_3, sala_4, sala_5, sala_6, sala_7, sala_8, sala_9, sala_A, sala_B, sala_C, sala_D, Sala_E)
+        
+        
+if __name__ == '__main__':
+    Museu()
