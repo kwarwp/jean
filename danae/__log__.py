@@ -209,3 +209,9 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Aug 28 2018 20:39:33.417 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: x is undefined
+  module '$exec_2035' line 68
+inventario()
+'''},
