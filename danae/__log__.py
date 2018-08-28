@@ -117,3 +117,10 @@ AttributeError: 'method' object has no attribute 'elemento'
                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 28 2018 20:18:47.348 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 59
+  for x, tit in enumerate(SALAS)]
+                                ^
+SyntaxError: invalid syntax
+'''},
