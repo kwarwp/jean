@@ -7,8 +7,8 @@ STYLE["height"] = "650px"
 MAPA = "https://i.imgur.com/d9YNdTu.png"
 
 def inventario():
-    mapa = Cena(img=MAPA)
-    mapa(INVENTARIO)
+    mapa = Elemento(img=MAPA,tit "Mapa"style=dict(left=50, top=160, width=200, height=200))
+    INVENTARIO.bota.elemento
     
     mapa.vai()
 inventario()
