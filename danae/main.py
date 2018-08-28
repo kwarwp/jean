@@ -11,6 +11,8 @@ def inventario():
     mapa = Elemento(img=MAPA,tit= "Mapa",style=dict(left=50, top=160, width=200, height=200))
     mapa.entra(INVENTARIO)
     INVENTARIO.bota(MAPA)
+    r_oeste =Cena(img=R_OESTE)
+    
     
     
     mapa.vai()
