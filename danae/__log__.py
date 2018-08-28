@@ -71,3 +71,10 @@ AttributeError: 'Inventario' object has no attribute 'mapa'
     mapa(INVENTARIO)
 TypeError: __call__() takes 1 positional argument but more were given
 '''},
+{'date': 'Tue Aug 28 2018 18:59:02.118 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  mapa = Elemento(img=MAPA,tit "Mapa"style=dict(left=50, top=160, width=200, height=200))
+                                ^
+SyntaxError: invalid syntax
+'''},
