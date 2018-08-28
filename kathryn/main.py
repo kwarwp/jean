@@ -1,7 +1,7 @@
 # jean.kathryn.main.py
-from spy.vitollino.main import Mapa, Sala, STYLE, Codigo as Code, INVENTARIO, Elemento, NS,Texto
+from _spy.vitollino.main import Mapa, Sala, STYLE, Codigo as Code, INVENTARIO, Elemento, NS,Texto
 from browser import html
-from spy.vitollino.main import INVENTARIO as inv 
+from _spy.vitollino.main import INVENTARIO as inv 
 
 MAPA = "https://i.imgur.com/d9YNdTu.png"
 R_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
