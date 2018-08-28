@@ -131,3 +131,10 @@ SyntaxError: invalid syntax
                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 28 2018 20:25:04.715 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 59
+  marcadores= [Elemento (img= SALAS, tit=tit, style=dict(
+  ^
+IndentationError: unexpected indent
+'''},
