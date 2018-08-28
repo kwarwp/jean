@@ -163,3 +163,21 @@ NameError: name 'Labirinto' is not defined
     Labirinto(sala_0, none, sala_1, sala_12, none)
 NameError: name 'none' is not defined
 '''},
+{'date': 'Tue Aug 28 2018 20:29:58.784 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 93
+    Museu()
+  module <module> line 83
+    Labirinto(sala_2, sala_1, sala_3, none, None)
+NameError: name 'none' is not defined
+'''},
