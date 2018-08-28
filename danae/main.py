@@ -5,11 +5,13 @@ from browser import html
 STYLE["width"] = 850
 STYLE["height"] = "650px"
 MAPA = "https://i.imgur.com/d9YNdTu.png"
+R_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
 
 def inventario():
     mapa = Elemento(img=MAPA,tit= "Mapa",style=dict(left=50, top=160, width=200, height=200))
     mapa.entra(INVENTARIO)
     INVENTARIO.bota(MAPA)
+    
     
     mapa.vai()
 inventario()
