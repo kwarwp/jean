@@ -202,3 +202,10 @@ NameError: name 'sala' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Tue Aug 28 2018 20:36:44.424 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 75
+  r_oeste.vai()
+  ^
+IndentationError: unexpected indent
+'''},
