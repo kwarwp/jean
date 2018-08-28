@@ -1,5 +1,5 @@
 # jean.danae.main.py
-from _spy.vitollino.main import Sala, STYLE, Codigo as Code, INVENTARIO, Elemento, NS,Texto
+from _spy.vitollino.main import Sala, STYLE, Cena, Codigo as Code, INVENTARIO, Elemento, NS,Texto
 from browser import html
 
 STYLE["width"] = 850
