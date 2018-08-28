@@ -32,10 +32,13 @@ def inventario():
     cmapa= Cena(img=MAPA)
     mapa.vai = cmapa.vai
     dx, dy = 850//6, 650//2
-    marcadores= [Elemento (img= CIRCULOB, tit=tit, style=dict(left=dx*(x%6), top=dy*(x//6), width=dx, height="325px"))
+    marcadores= [Elemento (img= CIRCULOB, tit=tit, style=dict(
+        left=dx*(x%6), top=dy*(x//6), width=dx, height="325px", opacity=0.01,
+        ))
     for x, tit in enumerate (CENAS)]
     for marcador in marcadores :
         marcador.entra(cmapa)
+        #marcador.vai 
     
     
     
