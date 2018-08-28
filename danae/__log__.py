@@ -53,3 +53,21 @@ AttributeError: 'Inventario' object has no attribute 'mapa'
     INVENTARIO.mapa.vai
 AttributeError: 'Inventario' object has no attribute 'mapa'
 '''},
+{'date': 'Tue Aug 28 2018 18:57:01.870 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 14
+    inventario()
+  module <module> line 11
+    mapa(INVENTARIO)
+TypeError: __call__() takes 1 positional argument but more were given
+'''},
