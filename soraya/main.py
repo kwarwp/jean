@@ -360,17 +360,31 @@ if __name__ == '__main__':
         
 """],
                   [sala_9.oeste ,"respire",  "if True:print('oi')"],
-                  [sala_9.sul ,"""Você deve ter observado que só a primeira sala ficou visível no jogo. Agora você tem que usar a função labiritno do vitollino para que seja possível juntá-las criando uma ponte, possibilitando a navegação entre elas.
+                  [sala_9.sul ,"""Você deve ter observado que só a primeira sala ficou visível no jogo. 
+                  Agora você tem que usar a função labiritno do vitollino para que seja possível juntá-las criando uma ponte
+                  , possibilitando a navegação entre elas.
                   Assim, pode-se criar um caminho, depois de usar a função 
-                  labirinto para 5 salas. """,
+                  labirinto para 5 salas. Para isso, insira a função Labirinto no topo do seu código.
+                  
+                  """,
+                    
 """   
-        Labirinto(sala_0, sala_1, sala_2, sala_3, sala_4)
-        Labirinto(sala_4, sala_5, sala_6, sala_7, sala_7A)
-        Labirinto(sala_5, sala_6, sala_7, sala_7A, sala_7B)
-        Labirinto(sala_7, sala_8, sala_9, sala_10, sala_11)
-        Labirinto(sala_9, sala_10, sala_11, sala_12, sala_0)
+from _spy.vitollino.main import Sala, Labirinto    
 """],
-                  [sala_A.norte ,"tudo vai bem",  "if True:print('oi')"],
+                  [sala_A.norte ,"""É importante saber que a função labirinto é uma função que liga salas em forma 
+                  de cruz na qual a pirmeira sala é o centro desta cruz e a segunda sala é o topo. As seguintes salas 
+                  seguem o sentido horário. O termo
+                  "None" é utilizado para uma parte da cruz que não tem sala.Para que a função labirinto funcione
+                  insira a palavra Labirinto """,  """   
+        Labirinto(sala_0, None, sala_1, sala_12, None)
+        Labirinto(sala_2, sala_1, sala_3, None, None)
+        Labirinto(sala_4, None, sala_5, sala_3, None)
+        Labirinto(sala_6, None, sala_7, None, sala_5)
+        Labirinto(sala_7A, None, None, sala_7B, sala_7)
+        Labirinto(sala_8, sala_7, None, None, sala_9)
+        Labirinto(sala_10, None, sala_9, None, sala_11)
+        Labirinto(sala_11, None, sala_10, None, sala_12)
+"""],
                   [sala_A.leste ,"não desista",  "if True:print('oi')"],
                   [sala_A.oeste ,"não é tão complicado",  "if True:print('oi')"],
                   [sala_A.sul ,"avai sim",  "if True:print('oi')"],
