@@ -360,14 +360,15 @@ if __name__ == '__main__':
         
 """],
                   [sala_9.oeste ,"respire",  "if True:print('oi')"],
-                  [sala_9.sul ,"""Primeiramente, para usar a função 
-                  labirinto do vitollino precisa ter definido as salas
-                  para que seja possível juntá-las, criando uma ponte entre elas.
+                  [sala_9.sul ,"""Você deve ter observado que só a primeira sala ficou visível no jogo. Agora você tem que usar a função labiritno do vitollino para que seja possível juntá-las criando uma ponte, possibilitando a navegação entre elas.
                   Assim, pode-se criar um caminho, depois de usar a função 
                   labirinto para 5 salas. """,
 """   
-        Labirinto(sala A, sala B, sala C, sala D, sala E)
-        Labirinto(sala E, sala F, sala G, sala H, sala I)
+        Labirinto(sala_0, sala_1, sala_2, sala_3, sala_4)
+        Labirinto(sala_4, sala_5, sala_6, sala_7, sala_7A)
+        Labirinto(sala_5, sala_6, sala_7, sala_7A, sala_7B)
+        Labirinto(sala_7, sala_8, sala_9, sala_10, sala_11)
+        Labirinto(sala_9, sala_10, sala_11, sala_12, sala_0)
 """],
                   [sala_A.norte ,"tudo vai bem",  "if True:print('oi')"],
                   [sala_A.leste ,"não desista",  "if True:print('oi')"],
