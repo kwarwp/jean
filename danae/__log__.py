@@ -195,3 +195,10 @@ NameError: name 'sala' is not defined
     sala.vai = csala.vai  
 NameError: name 'sala' is not defined
 '''},
+{'date': 'Tue Aug 28 2018 20:36:22.101 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 60
+  """ csalas= Cena(img= SALAS)
+  ^
+IndentationError: unexpected indent
+'''},
