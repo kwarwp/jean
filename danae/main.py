@@ -5,3 +5,10 @@ from browser import html
 STYLE["width"] = 850
 STYLE["height"] = "650px"
 MAPA = "https://i.imgur.com/d9YNdTu.png"
+
+def inventario():
+    mapa = Cena(img=MAPA)
+    INVENTARIO.mapa.vai
+    
+    mapa.vai()
+inventario()
