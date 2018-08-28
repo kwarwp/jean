@@ -8,7 +8,7 @@ MAPA = "https://i.imgur.com/d9YNdTu.png"
 
 def inventario():
     mapa = Cena(img=MAPA)
-    INVENTARIO.mapa.vai
+    mapa(INVENTARIO)
     
     mapa.vai()
 inventario()
