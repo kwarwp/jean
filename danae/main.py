@@ -9,7 +9,7 @@ MAPA = "https://i.imgur.com/d9YNdTu.png"
 def inventario():
     mapa = Elemento(img=MAPA,tit= "Mapa",style=dict(left=50, top=160, width=200, height=200))
     mapa.entra(INVENTARIO)
-    INVENTARIO.bota.elemento
+    INVENTARIO.bota(MAPA)
     
     mapa.vai()
 inventario()
