@@ -18,10 +18,9 @@ Colocar elementos na cena
 Associar um Texto e uma Cena (ao entrar ou sair)
 Associar um Texto e um elemento
 Associar uma ação ao fechamento do Texto
-Uso do Elemento no Inventário
-Drag and drop do Elemento para a cena
-""".split("\n")
+Uso do Elemento no Inventário""".split("\n")
 #Drag and drop do Elemento para outro elemento
+ #Drag and drop do Elemento para a cena
 SALAS = dict (R_OESTE = "https://i.imgur.com/XJXjA9r.jpg",
 CA_OESTE = "https://i.imgur.com/ozE3Qhg.jpg",
 C3_SUL = "https://i.imgur.com/gIvRKAJ.jpg",
@@ -53,9 +52,9 @@ def inventario():
         ))
        
     for x, tit in enumerate (CENAS)]
-    for marcador in marcadores :
+    for  x, marcador in enumerate (marcadores) :
         marcador.entra(cmapa)
-        marcador.vai
+        marcador.vai= cenas[x].vai
         
         
 
