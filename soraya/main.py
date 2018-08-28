@@ -295,12 +295,7 @@ pedra.vai
         Labirinto(sala A, sala B, sala C, sala D, sala E)
         Labirinto(sala E, sala F, sala G, sala H, sala I)
 """],
-                  [sala_A.norte ,"Para facilitar mais e não precisar conectar uma sala a outra vc usa a função Labirito.m e coloca "[" entre 4 salas que assim irá juntar todas as salas do labirinto como se fosse um mapa",  
-"""
-Labirinto.m  ([[sala_0, sala_1, sala_2, sala_3],[ sala_4, sala_5, sala_6, sala_7],
-               [ sala_8, sala_9, sala_A, sala_B],[ sala_C, sala_D, sala_E]])
-        
-"""],
+                  [sala_A.norte ,"tudo vai bem",  "if True:print('oi')"],
                   [sala_A.leste ,"não desista",  "if True:print('oi')"],
                   [sala_A.oeste ,"não é tão complicado",  "if True:print('oi')"],
                   [sala_A.sul ,"avai sim",  "if True:print('oi')"],
