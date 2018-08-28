@@ -13,6 +13,8 @@ def inventario():
     mapa.entra(r_oeste)
     INVENTARIO.inicia()
     INVENTARIO.bota(mapa)
+    cmapa= Cena(img=MAPA)
+    mapa.vai = cmapa.vai
     
     
     
