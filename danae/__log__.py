@@ -145,3 +145,10 @@ IndentationError: unexpected indent
                                                                                                                                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 28 2018 20:25:39.423 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 59
+  marcadores= [Cena (img= SALAS, tit=tit, style=dict(
+                                                                                                                                            ^
+SyntaxError: invalid syntax
+'''},
