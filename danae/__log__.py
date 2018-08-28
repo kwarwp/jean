@@ -78,3 +78,10 @@ TypeError: __call__() takes 1 positional argument but more were given
                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 28 2018 19:00:02.430 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  mapa = Elemento(img=MAPA,tit "Mapa",style=dict(left=50, top=160, width=200, height=200))
+                                ^
+SyntaxError: invalid syntax
+'''},
