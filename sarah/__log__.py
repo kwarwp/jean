@@ -102,3 +102,10 @@ NameError: name 'sala_0' is not defined
     C_SUL = C1_SUL
 NameError: name 'C1_SUL' is not defined
 '''},
+{'date': 'Tue Aug 28 2018 20:00:28.586 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 85
+  if __name__ == '__main__':
+                            ^
+IndentationError: expected an indented block
+'''},
