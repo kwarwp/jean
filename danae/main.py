@@ -16,9 +16,10 @@ def inventario():
     INVENTARIO.bota(mapa)
     cmapa= Cena(img=MAPA)
     mapa.vai = cmapa.vai
-    dx, dy = 850/6, 650/2
-    marcadores= [Elemento (img= CIRCULOB,style=dict(left=50, top=160, width=200, height="200px")) for x in range (12)]
-    
+    dx, dy = 850//6, 650//2
+    marcadores= [Elemento (img= CIRCULOB,style=dict(left=dx*(x%6), top=dy*(x//6), width=dx, height="325px")) for x in range (12)]
+    for marcador in marcadores :
+        marcador.entra(cmapa)
     
     
     
