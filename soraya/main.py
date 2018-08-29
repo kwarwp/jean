@@ -244,10 +244,14 @@ sala.norte.vai()
                   [sala_4.leste ,"parabéns",  "if True:print('oi')"],
                   [sala_4.oeste ,"você chegou até aqui!",  "if True:print('oi')"],
                   [sala_4.sul ,"tenha muito orgulho de vc",  "if True:print('oi')"],
-                  [sala_5.norte ,"temos que comemorara pequenas vitórias",  "if True:print('oi')"],
-                  [sala_5.leste ,"está indo muito bem",  "if True:print('oi')"],
-                  [sala_5.oeste ,"tudo que fizer coloque amor",  "if True:print('oi')"],
-                  [sala_5.sul ,"se ame",  "if True:print('oi')"],
+                  [sala_5.norte ,"""Vamos aprender a criar um Elemento! O primeiro passo é inserir ele na primeira linha do código.""",
+                  """from _spy.vitollino.main import Sala, Labirinto, Elemento"""],
+                  [sala_5.leste ,"""Insira a imagem do elemento abaixo de onde você nomeou e colocou os links das cenas""",  
+                  """S1_SUL = "https://i.imgur.com/pIRvnJS.jpg"
+DINO = "http://imagem.ongame.com.br/pb/blog/stingrr.png" """],
+                  [sala_5.oeste ,"Agora, só falta pedir para ele rodar.",  """dino.entra(sala_7.norte)"""],
+                  [sala_5.sul ,"Logo abaixo da última linha do Labirinto no código",  """dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200))
+        """],
                   [sala_6.norte ,"se cuide",  "if True:print('oi')"],
                   [sala_6.leste ,"hoje o dia esta lindo",  "if True:print('oi')"],
                   [sala_6.oeste ,"deixe a chuva lavar a alma",  "if True:print('oi')"],
