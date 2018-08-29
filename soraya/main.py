@@ -264,7 +264,10 @@ pedra.vai
                   [sala_7.sul ,"vc é capaz",  "if True:print('oi')"],
                   [sala_8.norte ,"don't worry",  "if True:print('oi')"],
                   [sala_8.leste ,"vc é capaz",  "if True:print('oi')"],
-                  [sala_8.oeste ," be free",  "if True:print('oi')"],
+                  [sala_8.oeste ,"É importante saber que  para seu jogo funcionar você precisa chamar a função que fez no inicio , é como se vc dissesse para o código que agora ele pode rodar.",  
+"""if __name__ == '__main__':
+        Museu()
+"""],
                   [sala_8.sul,"está quase acabando",  "if True:print('oi')"],
                   [sala_9.sul,"Antes de criar as próximas salas você precisa iniciar uma função inserir as salas. É como se fosse uma casa com vários cômodos, pois sem casa não é possível ter cômodos...O mesmo ocorre com o código abaixo, ele mostra onde as salas têm que estar inseridas.", 
 """class Museu:
@@ -388,6 +391,7 @@ from _spy.vitollino.main import Sala, Labirinto
         Labirinto(sala_10, None, sala_9, None, sala_11)
         Labirinto(sala_11, None, sala_10, None, sala_12)
 """],
+                  [sala_A.norte ,"não desista",  "if True:print('oi')"],
                   [sala_A.leste ,"não desista",  "if True:print('oi')"],
                   [sala_A.oeste ,"não é tão complicado",  "if True:print('oi')"],
                   [sala_A.sul ,"avai sim",  "if True:print('oi')"],
@@ -406,10 +410,7 @@ from _spy.vitollino.main import Sala, Labirinto
                   [sala_E.norte ,"tudo vai bem",  "if True:print('oi')"],
                   [sala_E.leste ,"não desista",  "if True:print('oi')"],
                   [sala_E.oeste ,"não é tão complicado",  "if True:print('oi')"],
-                  [sala_E.sul ,"É importante saber que  para seu jogo funcionar você precisa chamar a função que fez no inicio , é como se vc dissesse para o código que agora ele pode rodar",  
-"""if __name__ == '__main__':
-        Museu()
-"""],
+                  [sala_E.sul ,"não é tão complicado",  "if True:print('oi')"],
 
 
 
