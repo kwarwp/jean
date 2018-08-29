@@ -170,7 +170,7 @@ class Elemento(Element):
         #self._do_foi = lambda *_: None
 
 
-def natureza():
+"""def natureza():
     fundo = Cena(FUNDO)
     colmeia = Elemento(COLMEIA, tit = "colmeia", drag= False,
         x = 50, y = 140, w = 300 , h = 500, drop= "abelha",
@@ -184,7 +184,7 @@ def natureza():
     colmeia.doit_drop = reposiciona_abelha
     fundo.vai()
 
-natureza()    
+natureza()    """
 
         
 
