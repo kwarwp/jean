@@ -155,7 +155,7 @@ class Museu:
         
         def botainventario():
             INVENTARIO.bota(dino)
-        dinotexto = Texto(sala_2.leste, "e ai,colega, tudo tranks?", foi=botainventario)   
+        dinotexto = Texto(sala_5.norte, "e ai,colega, tudo tranks?", foi=botainventario)   
         dino.vai = dinotexto.vai
         
         
