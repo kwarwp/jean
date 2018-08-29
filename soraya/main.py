@@ -151,7 +151,7 @@ class Museu:
         sala_E.sul.meio = sala_D.sul
         
         dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200))
-        dino.entra(sala_2.leste)
+        dino.entra(sala_5.norte)
         
         def botainventario():
             INVENTARIO.bota(dino)
