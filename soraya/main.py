@@ -272,9 +272,41 @@ pedra.vai
      
      
 """],
-                  [sala_9.norte,"Agora você precisa definir as 4 cenas de cada sala. Essas salas servem para você ter criar cômodo onde se olha todas as paredes, assim , como foi feito no Tutorial Cena do jogo.Você pode criar quantas salas forem necessárias para o seu jogo.",
+                  [sala_9.oeste,"Agora você precisa definir as 4 cenas de cada sala. Essas salas servem para você criar cômodo onde se olha todas as paredes, assim , como foi feito no Tutorial Cena do jogo.Você pode criar quantas salas forem necessárias para o seu jogo.",
 """from _spy.vitollino.main import Sala
-S0_NORTE = "https://i.imgur.com/XJXjA9r.jpg"
+
+
+class Museu:
+    def __init__(self):        
+        
+        sala_0 = Sala(S0_NORTE, S0_LESTE, S0_SUL, S0_OESTE)
+        sala_1 = Sala(S1_NORTE, S1_LESTE, S1_SUL, S1_OESTE)
+        sala_2 = Sala(S2_NORTE, S2_LESTE, S2_SUL, S2_OESTE)
+        sala_3 = Sala(S3_NORTE, S3_LESTE, S3_SUL , S3_OESTE)
+        sala_4 = Sala(S4_NORTE, S4_LESTE, S4_SUL, S4_OESTE)
+        sala_5 = Sala(S5_NORTE, S5_LESTE, S5_SUL, S5_OESTE) 
+        sala_6 = Sala(S6_NORTE, S6_LESTE, S6_SUL, S6_OESTE)
+        sala_7 = Sala(S7_NORTE, S7_LESTE, S7_SUL , S7_OESTE)
+        sala_7A = Sala(S7A_NORTE, S7A_LESTE, S7A_SUL, S7A_OESTE)
+        sala_7B = Sala(S7B_NORTE, S7B_LESTE, S7B_SUL,S7B_OESTE)
+        sala_8 = Sala(S8_NORTE, S8_LESTE, S8_SUL, S8_OESTE)
+        sala_9 = Sala(S9_NORTE, S9_LESTE, S9_SUL, S9_OESTE)
+        sala_10 = Sala(S10_NORTE, S10_LESTE, S10_SUL, S10_OESTE)
+        sala_S11 = Sala(S11_NORTE, S11_LESTE, S11_SUL, S11_OESTE)
+        sala_S12 = Sala(S12_NORTE, S12_LESTE, S12_SUL, S12_OESTE)
+
+        
+
+        sala_0.leste.vai()
+if __name__ == '__main__':
+
+
+     Museu()
+        
+"""],
+                  [sala_9.norte ,""""O primeiro passo agora é listar todas as cenas do museu nomeando 
+                  e indicando os seus links.""",  
+                  """S0_NORTE = "https://i.imgur.com/XJXjA9r.jpg"
 S0_SUL = "https://i.imgur.com/rHzbmtM.jpg"
 S0_LESTE = "https://i.imgur.com/IPa06hM.jpg"
 S0_OESTE = "https://i.imgur.com/NnVA765.jpg"
@@ -334,36 +366,7 @@ S1_NORTE = "https://i.imgur.com/0DAX1Yq.jpg"
 S1_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 S1_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 S1_SUL = "https://i.imgur.com/pIRvnJS.jpg"
-
-class Museu:
-    def __init__(self):        
-        
-        sala_0 = Sala(S0_NORTE, S0_LESTE, S0_SUL, S0_OESTE)
-        sala_1 = Sala(S1_NORTE, S1_LESTE, S1_SUL, S1_OESTE)
-        sala_2 = Sala(S2_NORTE, S2_LESTE, S2_SUL, S2_OESTE)
-        sala_3 = Sala(S3_NORTE, S3_LESTE, S3_SUL , S3_OESTE)
-        sala_4 = Sala(S4_NORTE, S4_LESTE, S4_SUL, S4_OESTE)
-        sala_5 = Sala(S5_NORTE, S5_LESTE, S5_SUL, S5_OESTE) 
-        sala_6 = Sala(S6_NORTE, S6_LESTE, S6_SUL, S6_OESTE)
-        sala_7 = Sala(S7_NORTE, S7_LESTE, S7_SUL , S7_OESTE)
-        sala_7A = Sala(S7A_NORTE, S7A_LESTE, S7A_SUL, S7A_OESTE)
-        sala_7B = Sala(S7B_NORTE, S7B_LESTE, S7B_SUL,S7B_OESTE)
-        sala_8 = Sala(S8_NORTE, S8_LESTE, S8_SUL, S8_OESTE)
-        sala_9 = Sala(S9_NORTE, S9_LESTE, S9_SUL, S9_OESTE)
-        sala_10 = Sala(S10_NORTE, S10_LESTE, S10_SUL, S10_OESTE)
-        sala_S11 = Sala(S11_NORTE, S11_LESTE, S11_SUL, S11_OESTE)
-        sala_S12 = Sala(S12_NORTE, S12_LESTE, S12_SUL, S12_OESTE)
-
-        
-
-        sala_0.leste.vai()
-if __name__ == '__main__':
-
-
-     Museu()
-        
-"""],
-                  [sala_9.oeste ,"respire",  "if True:print('oi')"],
+                  """],
                   [sala_9.sul ,"""Você deve ter observado que só a primeira sala ficou visível no jogo. 
                   Agora você tem que usar a função labiritno do vitollino para que seja possível juntá-las criando uma ponte
                   , possibilitando a navegação entre elas.
