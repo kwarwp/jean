@@ -59,10 +59,6 @@ def inventario():
         
 
     
-    
-    
-    
-    
     r_oeste.vai()
 inventario()
 
