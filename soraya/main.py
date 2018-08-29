@@ -68,12 +68,16 @@ STYLE["width"] = 850
 STYLE["height"] = "650px"
 class Codigo(Code):
     def __init__(self, codigo="", topo="", cena=INVENTARIO, img="", vai=None, style=NS):
+        style.update({"height":"550px"})
         Code.__init__(self, codigo=codigo, topo=topo, cena=cena, img=img, vai=vai, style=style)
         a = html.A("×", href="#", style=dict(position="absolute", top="0px", right="10px",
         fontSize="30px", fontWeight="bold"))  
         a.onclick = self._close
         self.elt<=a
         self._close()
+        self._area.style.overflow="scroll"
+        self._area.style.height="400px"
+        self.elt.style.maxHeight="550px"
         #self.elt.style = {"visibility": "hidden", "opacity": 0}
     def _close(self, *_):
         self.elt.style = {"visibility": "hidden", "opacity": 0}
