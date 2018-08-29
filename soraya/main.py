@@ -266,18 +266,14 @@ pedra.vai
                   [sala_8.leste ,"vc é capaz",  "if True:print('oi')"],
                   [sala_8.oeste ," be free",  "if True:print('oi')"],
                   [sala_8.sul,"está quase acabando",  "if True:print('oi')"],
-                  [sala_9.leste,"Antes de criar as próximas salas você precisa iniciar uma função inserir as salas. É como se fosse uma casa com vários cômodos, pois sem casa não é possível ter cômodos...O mesmo ocorre com o código abaixo, ele mostra onde as salas têm que estar inseridas.", 
+                  [sala_9.sul,"Antes de criar as próximas salas você precisa iniciar uma função inserir as salas. É como se fosse uma casa com vários cômodos, pois sem casa não é possível ter cômodos...O mesmo ocorre com o código abaixo, ele mostra onde as salas têm que estar inseridas.", 
 """class Museu:
      def __init__(self):
      
      
 """],
                   [sala_9.oeste,"Agora você precisa definir as 4 cenas de cada sala. Essas salas servem para você criar cômodo onde se olha todas as paredes, assim , como foi feito no Tutorial Cena do jogo.Você pode criar quantas salas forem necessárias para o seu jogo.",
-"""from _spy.vitollino.main import Sala
-
-
-class Museu:
-    def __init__(self):        
+"""        
         
         sala_0 = Sala(S0_NORTE, S0_LESTE, S0_SUL, S0_OESTE)
         sala_1 = Sala(S1_NORTE, S1_LESTE, S1_SUL, S1_OESTE)
@@ -304,7 +300,7 @@ if __name__ == '__main__':
      Museu()
         
 """],
-                  [sala_9.norte ,""""O primeiro passo agora é listar todas as cenas do museu nomeando 
+                  [sala_9.leste ,""""O primeiro passo agora é listar todas as cenas do museu nomeando 
                   e indicando os seus links.""",  
                   """S0_NORTE = "https://i.imgur.com/XJXjA9r.jpg"
 S0_SUL = "https://i.imgur.com/rHzbmtM.jpg"
@@ -378,11 +374,11 @@ S1_SUL = "https://i.imgur.com/pIRvnJS.jpg"
 """   
 from _spy.vitollino.main import Sala, Labirinto    
 """],
-                  [sala_A.norte ,"""É importante saber que a função labirinto é uma função que liga salas em forma 
+                  [sala_9.norte ,"""É importante saber que a função labirinto é uma função que liga salas em forma 
                   de cruz na qual a pirmeira sala é o centro desta cruz e a segunda sala é o topo. As seguintes salas 
                   seguem o sentido horário. O termo
-                  "None" é utilizado para uma parte da cruz que não tem sala.Para que a função labirinto funcione
-                  insira a palavra Labirinto """,  """   
+                  "None" é utilizado para uma parte da cruz que não tem sala. """,  
+                  """   
         Labirinto(sala_0, None, sala_1, sala_12, None)
         Labirinto(sala_2, sala_1, sala_3, None, None)
         Labirinto(sala_4, None, sala_5, sala_3, None)
@@ -410,7 +406,7 @@ from _spy.vitollino.main import Sala, Labirinto
                   [sala_E.norte ,"tudo vai bem",  "if True:print('oi')"],
                   [sala_E.leste ,"não desista",  "if True:print('oi')"],
                   [sala_E.oeste ,"não é tão complicado",  "if True:print('oi')"],
-                  [sala_E.sul ,"Agora para seu jogo funcionar vc precisa fechar a função que fez no inicio , é como se vc dissesse para o código que agora ele pode rodar",  
+                  [sala_E.sul ,"É importante saber que  para seu jogo funcionar você precisa chamar a função que fez no inicio , é como se vc dissesse para o código que agora ele pode rodar",  
 """if __name__ == '__main__':
         Museu()
 """],
