@@ -272,8 +272,8 @@ pedra.vai
      
      
 """],
-                  [sala_9.norte,"Agora você precisa definir as 4 cenas de cada sala. Essas salas servem para você ter criar cômodo onde se olha todas as paredes, assim , como foi feito no Tutorial Cena do jogo.Você pode criar quantas salas forem necessárias para o seu jogo",
-""" from _spy.vitollino.main import Sala
+                  [sala_9.norte,"Agora você precisa definir as 4 cenas de cada sala. Essas salas servem para você ter criar cômodo onde se olha todas as paredes, assim , como foi feito no Tutorial Cena do jogo.Você pode criar quantas salas forem necessárias para o seu jogo.",
+"""from _spy.vitollino.main import Sala
 S0_NORTE = "https://i.imgur.com/XJXjA9r.jpg"
 S0_SUL = "https://i.imgur.com/rHzbmtM.jpg"
 S0_LESTE = "https://i.imgur.com/IPa06hM.jpg"
