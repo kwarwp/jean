@@ -217,3 +217,21 @@ NameError: name 'Elemento' is not defined
     dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200))
 NameError: name 'DINO' is not defined
 '''},
+{'date': 'Tue Aug 28 2018 23:17:28.454 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 103
+    Museu()
+  module <module> line 97
+    dinotexto = Texto(sala_5.norte, "e ai,colega, tudo tranks?", foi=botainventario)   
+NameError: name 'Texto' is not defined
+'''},
