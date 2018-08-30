@@ -13,3 +13,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Thu Aug 30 2018 15:08:35.537 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 67
+  sala_0 = Sala(S0_NORTE, S0_LESTE, S0_SUL, S0_OESTE)
+  ^
+IndentationError: unexpected indent
+'''},
