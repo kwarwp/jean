@@ -329,3 +329,10 @@ NameError: name 'Elemento' is not defined
     q1 = Elemento(Q1, tit = "quadro", drag=True,
 NameError: name 'Elemento' is not defined
 '''},
+{'date': 'Thu Aug 30 2018 20:30:52.149 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 248
+  MENSAGENS=[[fundo,"Aprendendo o arrasta-solta!","tal tal tal"
+                                                                                                          ^
+SyntaxError: invalid syntax
+'''},
