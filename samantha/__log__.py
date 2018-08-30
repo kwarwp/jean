@@ -336,3 +336,10 @@ NameError: name 'Elemento' is not defined
                                                                                                           ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Aug 30 2018 20:34:36.63 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 249
+  STYLE = dict(width=500,heigth="3000px",left=500,top=100)
+  ^
+IndentationError: unexpected indent
+'''},
