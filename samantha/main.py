@@ -202,13 +202,13 @@ def movimento():
         sid.style.left = x
         sid.style.top = y
         
-    seta = Elemento(VAR2, tit = "Mova-me", drag=True,
+    movel = Elemento(VAR2, tit = "Mova-me", drag=True,
         x = 310, y = 160, w = 80, h = 90, drop="",
     cena=camada1)
     camada2.doit_drop = reposiciona_figura
     camada1.vai()
 
-teste() """],
+movimento() """],
     STYLE = dict(width=700,heigth="500px",left=500,top=100)
     c=[Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
     Codigo=c[0]
