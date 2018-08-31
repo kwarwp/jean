@@ -172,7 +172,7 @@ SETA = 'https://trabalhodigitalinfo.files.wordpress.com/2016/01/seta-vermelha-2p
 FUNDO = "https://imagens.simplo7.net/static/2497/sku/thumb_tricoline-100-algodao-lisa-tricoline-100-algodao-lisa-branca-1474467553683.jpg"
 
 
-def natureza():
+def teste():
     fundo = Cena(FUNDO)
     background = Elemento(BACKG, tit = "background", drag= False,
         x = 0, y = 0, w = 800 , h = 600, drop= "Mova-me",
@@ -192,7 +192,7 @@ def natureza():
     background.doit_drop = reposiciona_figura
     fundo.vai()
 
-natureza()  
+teste()  
         
 
 
