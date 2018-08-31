@@ -185,11 +185,19 @@ def teste():
         x = 310, y = 160, w = 80, h = 90, drop="",
         cena=fundo)
         
-    MENSAGENS=[fundo, "<p><center><strong><big>WELCOME TO DRAG and DROP!<big></center><br><center><small> Mexe a seta ai, Moçe!!</small></center></p><br><center><small>Vamos para o que interessa: Como implementar?</small></center><br> ",  """def teste():
+    MENSAGENS=[fundo, "<p><center><strong><big>WELCOME TO DRAG and DROP!<big></center><br><center><small> Mexe a seta ai, Moçe!!</small></center></p><br><center><small>Vamos para o que interessa: Como implementar?</small></center><br> ",  """
+
+
+VAR1 = 'https://i.imgur.com/vb4zrA0.jpg'
+VAR2 = 'https://trabalhodigitalinfo.files.wordpress.com/2016/01/seta-vermelha-2png.png'
+VAR3 = "https://imagens.simplo7.net/static/2497/sku/thumb_tricoline-100-algodao-lisa-tricoline-100-algodao-lisa-branca-1474467553683.jpg"
+
+def movimento():
     fundo = Cena(FUNDO)
     background = Elemento(BACKG, tit = "background", drag= False,
         x = 0, y = 0, w = 800 , h = 600, drop= "Mova-me",
         cena= fundo)
+        
     def reposiciona_figura(sid, x, y):
         sid.style.left = x
         sid.style.top = y
