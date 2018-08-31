@@ -185,10 +185,27 @@ def teste():
         x = 310, y = 160, w = 80, h = 90, drop="",
         cena=fundo)
         
-    """MENSAGENS=[fundo, "tendi",  "tamu junto"],
-    STYLE = dict(width=400,heigth="250px",left=500,top=100)
-    [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]"""
+    MENSAGENS=[fundo, "<p><center><strong><big>WELCOME TO DRAG and DROP!<big></center><br><center><small> Mexe a seta ai, Moçe!!</small></center></p><br><center><small>Vamos para o que interessa: Como implementar?</small></center><br> ",  """def teste():
+    fundo = Cena(FUNDO)
+    background = Elemento(BACKG, tit = "background", drag= False,
+        x = 0, y = 0, w = 800 , h = 600, drop= "Mova-me",
+        cena= fundo)
+    def reposiciona_figura(sid, x, y):
+        sid.style.left = x
+        sid.style.top = y
         
+    seta = Elemento(SETA, tit = "Mova-me", drag=True,
+        x = 310, y = 160, w = 80, h = 90, drop="",
+        cena=fundo)background.doit_drop = reposiciona_figura
+    fundo.vai()
+
+teste() """],
+    STYLE = dict(width=700,heigth="500px",left=500,top=100)
+    c=[Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
+    Codigo=c[0]
+    Codigo._area.style.overflow="scroll"
+    Codigo._area.style.height="400px"
+    
     background.doit_drop = reposiciona_figura
     fundo.vai()
 
