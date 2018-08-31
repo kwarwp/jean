@@ -350,3 +350,10 @@ IndentationError: unexpected indent
                                                                ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Thu Aug 30 2018 21:01:29.796 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 273
+  c=[Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]{
+                                                                                   ^
+SyntaxError: invalid syntax
+'''},
