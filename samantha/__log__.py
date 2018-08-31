@@ -357,3 +357,10 @@ SyntaxError: EOL while scanning string literal
                                                                                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Aug 30 2018 21:04:52.967 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 273
+  c=[Codigo(cena = a,topo = b ,codigo= c, codigo =d, style= STYLE) for a, b , c in MENSAGENS]
+                                                 ^
+SyntaxError: keyword argument repeated
+'''},
