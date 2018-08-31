@@ -1,4 +1,5 @@
 from _spy.vitollino.main import Cena, Texto, STYLE, PSTYLE, EIMGSTY, Cena
+from _spy.vitollino.main import Codigo
 from _spy.vitollino.main import Elemento as Element
 from _spy.vitollino.main import INVENTARIO
 from browser import html, doc
@@ -181,6 +182,11 @@ def natureza():
     abelha = Elemento(ABELHA, tit = "abelha", drag=True,
         x = 610, y = 140, w = 80, h = 90, drop="",
         cena=fundo)
+        
+    MENSAGENS=[fundo, "tendi",  "tamu junto"],
+    STYLE = dict(width=400,heigth="250px",left=500,top=100)
+    [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
+        
     colmeia.doit_drop = reposiciona_abelha
     fundo.vai()
 
