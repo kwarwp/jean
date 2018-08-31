@@ -193,26 +193,27 @@ VAR2 = 'https://trabalhodigitalinfo.files.wordpress.com/2016/01/seta-vermelha-2p
 VAR3 = "https://imagens.simplo7.net/static/2497/sku/thumb_tricoline-100-algodao-lisa-tricoline-100-algodao-lisa-branca-1474467553683.jpg"
 
 def movimento():
-    fundo = Cena(FUNDO)
-    background = Elemento(BACKG, tit = "background", drag= False,
+    camada1 = Cena(VAR3)
+    camada2 = Elemento(VAR1, tit = "segunda camada", drag= False,
         x = 0, y = 0, w = 800 , h = 600, drop= "Mova-me",
-        cena= fundo)
+        cena= camada1)
         
     def reposiciona_figura(sid, x, y):
         sid.style.left = x
         sid.style.top = y
         
-    seta = Elemento(SETA, tit = "Mova-me", drag=True,
+    seta = Elemento(VAR2, tit = "Mova-me", drag=True,
         x = 310, y = 160, w = 80, h = 90, drop="",
-        cena=fundo)background.doit_drop = reposiciona_figura
-    fundo.vai()
+    cena=camada1)
+    camada2.doit_drop = reposiciona_figura
+    camada1.vai()
 
 teste() """],
     STYLE = dict(width=700,heigth="500px",left=500,top=100)
     c=[Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
     Codigo=c[0]
     Codigo._area.style.overflow="scroll"
-    Codigo._area.style.height="400px"
+    Codigo._area.style.height="250px"
     
     background.doit_drop = reposiciona_figura
     fundo.vai()
