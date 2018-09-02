@@ -250,8 +250,11 @@ sala.norte.vai()
                   """S1_SUL = "https://i.imgur.com/pIRvnJS.jpg"
 DINO = "http://imagem.ongame.com.br/pb/blog/stingrr.png" """],
                   [sala_5.oeste ,"Agora, só falta pedir para ele rodar.",  """dino.entra(sala_7.norte)"""],
-                  [sala_5.sul ,"Logo abaixo da última linha do Labirinto no código",  """dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200))
-        """],
+        
+                  [sala_5.sul ,"Logo abaixo da última linha do Labirinto no código",  
+       """dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200))
+       """],
+        
                   [sala_6.norte ,"se cuide",  "if True:print('oi')"],
                   [sala_6.leste ,"hoje o dia esta lindo",  "if True:print('oi')"],
                   [sala_6.oeste ,"deixe a chuva lavar a alma",  "if True:print('oi')"],
