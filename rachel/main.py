@@ -385,7 +385,7 @@ from _spy.vitollino.main import Sala, Labirinto
         Labirinto(sala_11, None, sala_10, None, sala_12)
 """],
                   [sala_A.norte ,"não desista",  "if True:print('oi')"],
-                  [sala_A.leste ,"não desista",  
+                  [sala_A.leste ,"Agora par ficar mais divertido temos como movimentos elementos dentro da Cena, essa função chamamos de Drag and Drop",  
 """
 VAR1 = 'https://i.imgur.com/vb4zrA0.jpg'
 VAR2 = 'https://trabalhodigitalinfo.files.wordpress.com/2016/01/seta-vermelha-2png.png'
