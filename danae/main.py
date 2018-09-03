@@ -13,14 +13,15 @@ Ligar uma cena a outra
 Formar um cômodo com quatro cenas
 Usar a função Sala para formar um cômodo
 Usar a função labirinto para conectar cinco salas
-Usar a função Mapa para conectar  diversas salas
 Colocar elementos na cena
 Associar um Texto e uma Cena (ao entrar ou sair)
 Associar um Texto e um elemento
 Associar uma ação ao fechamento do Texto
-Uso do Elemento no Inventário""".split("\n")
+Uso do Elemento no Inventário
+Drag and drop do Elemento para a cena""".split("\n")
 #Drag and drop do Elemento para outro elemento
- #Drag and drop do Elemento para a cena
+#Usar a função Mapa para conectar  diversas salas
+ 
 SALAS = dict (R_OESTE = "https://i.imgur.com/XJXjA9r.jpg",
 CA_OESTE = "https://i.imgur.com/ozE3Qhg.jpg",
 C3_SUL = "https://i.imgur.com/gIvRKAJ.jpg",
