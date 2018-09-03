@@ -1,6 +1,7 @@
 # jean.danae.main.py
 from _spy.vitollino.main import Sala, STYLE, Cena, Codigo as Code, INVENTARIO, Elemento, NS,Texto
 from browser import html
+from rachel.main import Museu
 
 STYLE["width"] = 850
 STYLE["height"] = "650px"
@@ -62,6 +63,7 @@ def inventario():
     
     r_oeste.vai()
 inventario()
+Museu()
 
 
 """ csalas= Cena(img= SALAS)
