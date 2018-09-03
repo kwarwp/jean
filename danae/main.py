@@ -40,11 +40,11 @@ C8_OESTE = "https://i.imgur.com/R3FtDb2.jpg",
 
 
 def inventario():
+    INVENTARIO.inicia()
     museu = Museu()
     mapa = Elemento(img=MAPA,tit= "Mapa",style=dict(left=50, top=160, width=200, height="200px"))
     r_oeste =Cena(img=R_OESTE)
     mapa.entra(r_oeste)
-    INVENTARIO.inicia()
     INVENTARIO.bota(mapa)
     cmapa= Cena(img=MAPA)
     mapa.vai = cmapa.vai
