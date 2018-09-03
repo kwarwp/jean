@@ -399,7 +399,29 @@ from _spy.vitollino.main import Sala, Labirinto
         Labirinto(sala_11, None, sala_10, None, sala_12)
 """],
                   [sala_A.norte ,"não desista",  "if True:print('oi')"],
-                  [sala_A.leste ,"não desista",  "if True:print('oi')"],
+                  [sala_A.leste ,"Agora para ficar mais divertido temos como mexer os elementos na Cena, chamamos ",  
+"""  VAR1 = 'https://i.imgur.com/vb4zrA0.jpg'
+VAR2 = 'https://trabalhodigitalinfo.files.wordpress.com/2016/01/seta-vermelha-2png.png'
+VAR3 = "https://imagens.simplo7.net/static/2497/sku/thumb_tricoline-100-algodao-lisa-tricoline-100-algodao-lisa-branca-1474467553683.jpg"
+
+def movimento():
+    camada1 = Cena(VAR3)
+    camada2 = Elemento(VAR1, tit = "segunda camada", drag= False,
+        x = 0, y = 0, w = 800 , h = 600, drop= "Mova-me",
+        cena= camada1)
+        
+    def reposiciona_figura(sid, x, y):
+        sid.style.left = x
+        sid.style.top = y
+        
+    movel = Elemento(VAR2, tit = "Mova-me", drag=True,
+        x = 310, y = 160, w = 80, h = 90, drop="",
+    cena=camada1)
+    camada2.doit_drop = reposiciona_figura
+    camada1.vai()
+
+movimento() 
+"""],
                   [sala_A.oeste ,"não é tão complicado",  "if True:print('oi')"],
                   [sala_A.sul ,"avai sim",  "if True:print('oi')"],
                   [sala_B.norte ,"tudo vai bem",  "if True:print('oi')"],
