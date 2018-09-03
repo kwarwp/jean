@@ -408,7 +408,7 @@ def movimento():
     camada1.vai()
 
 movimento() 
-                  """],,
+"""],
                   [sala_A.oeste ,"não é tão complicado",  "if True:print('oi')"],
                   [sala_A.sul ,"avai sim",  "if True:print('oi')"],
                   [sala_B.norte ,"tudo vai bem",  "if True:print('oi')"],
