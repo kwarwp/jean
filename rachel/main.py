@@ -91,21 +91,21 @@ class Museu:
     def __init__(self):        
         C_SUL = C1_SUL
         C2_SUL = C1_LESTE
-        sala_0 = Sala(R_NORTE, R_LESTE, R_SUL, R_OESTE)
-        sala_1 = Sala(C1_NORTE, C1_LESTE, C_SUL, C1_OESTE)
-        sala_2 = Sala(C2_NORTE, C2_LESTE, C2_SUL, C2_OESTE)
-        sala_3 = Sala(C3_NORTE, C3_LESTE, C3_SUL , C3_OESTE)
-        sala_4 = Sala(C4_NORTE,C4_LESTE, C4_SUL, C4_OESTE)
-        sala_5 = Sala(C5_NORTE, C5_LESTE, C5_SUL, C5_OESTE) 
-        sala_6 = Sala(C6_NORTE, C6_LESTE, C6_SUL, C6_OESTE)
-        sala_7 = Sala(C7_NORTE, C7_LESTE, C7_SUL , C7_OESTE)
-        sala_8 = Sala(C8_NORTE, C8_LESTE, C8_SUL, C8_OESTE)
-        sala_9 = Sala(C9_NORTE,C9_LESTE, C9_SUL,C9_OESTE)
-        sala_A = Sala(CA_NORTE,CA_LESTE,CA_SUL, CA_OESTE)
-        sala_B = Sala(CB_NORTE, CB_LESTE, CB_SUL, CB_OESTE)
-        sala_C = Sala(CC_NORTE, CC_LESTE, CC_SUL, CC_OESTE)
-        sala_D = Sala(CD_NORTE, CD_LESTE, CD_SUL, CD_OESTE)
-        sala_E = Sala(CE_NORTE, CE_LESTE,CE_SUL, CE_OESTE)
+        self.sala_0=sala_0 =  Sala(R_NORTE, R_LESTE, R_SUL, R_OESTE)
+        self.sala_1=sala_1 =  Sala(C1_NORTE, C1_LESTE, C_SUL, C1_OESTE)
+        self.sala_2=sala_2 =  Sala(C2_NORTE, C2_LESTE, C2_SUL, C2_OESTE)
+        self.sala_3=sala_3 =  Sala(C3_NORTE, C3_LESTE, C3_SUL , C3_OESTE)
+        self.sala_4=sala_4 =  Sala(C4_NORTE,C4_LESTE, C4_SUL, C4_OESTE)
+        self.sala_5=sala_5 =  Sala(C5_NORTE, C5_LESTE, C5_SUL, C5_OESTE) 
+        self.sala_6=sala_6 =  Sala(C6_NORTE, C6_LESTE, C6_SUL, C6_OESTE)
+        self.sala_7=sala_7 =  Sala(C7_NORTE, C7_LESTE, C7_SUL , C7_OESTE)
+        self.sala_8=sala_8 =  Sala(C8_NORTE, C8_LESTE, C8_SUL, C8_OESTE)
+        self.sala_9=sala_9 =  Sala(C9_NORTE,C9_LESTE, C9_SUL,C9_OESTE)
+        self.sala_A=sala_A =  Sala(CA_NORTE,CA_LESTE,CA_SUL, CA_OESTE)
+        self.sala_B=sala_B =  Sala(CB_NORTE, CB_LESTE, CB_SUL, CB_OESTE)
+        self.sala_C=sala_C =  Sala(CC_NORTE, CC_LESTE, CC_SUL, CC_OESTE)
+        self.sala_D=sala_D =  Sala(CD_NORTE, CD_LESTE, CD_SUL, CD_OESTE)
+        self.sala_E=sala_E =  Sala(CE_NORTE, CE_LESTE,CE_SUL, CE_OESTE)
         # TEM DOIS SUL DA C9 QUE NA VERDADE ERA PARA SER C8
         sala_0.norte.meio = sala_9.leste
         sala_0.leste.meio = sala_1.norte
@@ -436,7 +436,7 @@ movimento()
         ]
         STYLE = dict(width=400,heigth="250px",left=400,top=100, visibility= "hidden", opacity= 0)
         #STYLE = dict(width=400,heigth="250px",left=400,top=100, visibility= "visible", opacity= 1)
-        [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
+        self.salas = [Codigo(cena = a,topo = b ,codigo= c, style= STYLE) for a, b , c in MENSAGENS]
         
         pedra = Elemento(img=PEDRA, tit="Pedra", style=dict(left=40, top=380, width=200, height="150px"))
         pedra.entra(sala_7.oeste)
