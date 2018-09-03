@@ -49,7 +49,8 @@ def inventario():
     cmapa= Cena(img=MAPA)
     mapa.vai = cmapa.vai
     #cenas= [Cena(img=cena) for cena in SALAS.values()]
-    cenas = [museu.sala_0.norte,sala_0.leste,sala_0.sul,sala_0.oeste, sala_5.norte,sala_5.leste, sala_7.oeste,sala_9.leste,sala_9.sul ,sala_9.sul ,sala_A.leste]
+    cenas = [museu.sala_0.norte, museu.sala_0.leste,museu.sala_0.sul,museu.sala_0.oeste, museu.sala_5.norte,
+    museu.sala_5.leste, museu.sala_7.oeste,museu.sala_9.leste,museu.sala_9.sul ,museu.sala_9.sul ,museu.sala_A.leste]
     dx, dy = 850//6, 650//2
     marcadores= [Elemento (img= CIRCULOB, tit=tit, style=dict(
         left=dx*(x%6), top=dy*(x//6), width=dx, height="325px", opacity=0.01,
