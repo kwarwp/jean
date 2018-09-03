@@ -40,6 +40,7 @@ C8_OESTE = "https://i.imgur.com/R3FtDb2.jpg",
 
 
 def inventario():
+    museu = Museu()
     mapa = Elemento(img=MAPA,tit= "Mapa",style=dict(left=50, top=160, width=200, height="200px"))
     r_oeste =Cena(img=R_OESTE)
     mapa.entra(r_oeste)
@@ -47,7 +48,8 @@ def inventario():
     INVENTARIO.bota(mapa)
     cmapa= Cena(img=MAPA)
     mapa.vai = cmapa.vai
-    cenas= [Cena(img=cena) for cena in SALAS.values()]
+    #cenas= [Cena(img=cena) for cena in SALAS.values()]
+    cenas = [museu.sala_0.norte,sala_0.leste,sala_0.sul,sala_0.oeste, sala_5.norte,sala_5.leste, sala_7.oeste,sala_9.oeste,sala_9.norte,sala_9.leste,sala_9.sul ,sala_A.leste]
     dx, dy = 850//6, 650//2
     marcadores= [Elemento (img= CIRCULOB, tit=tit, style=dict(
         left=dx*(x%6), top=dy*(x//6), width=dx, height="325px", opacity=0.01,
@@ -63,7 +65,7 @@ def inventario():
     
     #r_oeste.vai()
 
-Museu()
+
 inventario()
 
 
