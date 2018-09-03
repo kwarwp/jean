@@ -61,9 +61,10 @@ def inventario():
         
 
     
-    r_oeste.vai()
-inventario()
+    #r_oeste.vai()
+
 Museu()
+inventario()
 
 
 """ csalas= Cena(img= SALAS)
