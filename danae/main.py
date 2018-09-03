@@ -8,8 +8,7 @@ STYLE["height"] = "650px"
 MAPA = "https://i.imgur.com/d9YNdTu.png"
 R_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
 CIRCULOB = "https://images.emojiterra.com/twitter/512px/26aa.png"
-CENAS = """Criar uma cena
-Criar uma Segunda cena
+CENAS = """Criar uma Segunda cena
 Ligar uma cena a outra
 Formar um cômodo com quatro cenas
 Usar a função Sala para formar um cômodo
@@ -19,7 +18,8 @@ Associar um Texto e uma Cena (ao entrar ou sair)
 Associar um Texto e um elemento
 Associar uma ação ao fechamento do Texto
 Uso do Elemento no Inventário
-Drag and drop do Elemento para a cena""".split("\n")
+Drag and drop do Elemento para a cena
+Criar uma cena""".split("\n")
 #Drag and drop do Elemento para outro elemento
 #Usar a função Mapa para conectar  diversas salas
  
@@ -49,8 +49,9 @@ def inventario():
     cmapa= Cena(img=MAPA)
     mapa.vai = cmapa.vai
     #cenas= [Cena(img=cena) for cena in SALAS.values()]
-    cenas = [museu.sala_0.norte, museu.sala_0.leste,museu.sala_0.sul,museu.sala_0.oeste, museu.sala_5.norte,
-    museu.sala_5.leste, museu.sala_7.oeste,museu.sala_9.leste,museu.sala_9.sul ,museu.sala_9.sul ,museu.sala_A.leste]
+    cenas = [museu.sala_0.leste,museu.sala_0.sul,museu.sala_0.oeste, museu.sala_5.norte,
+    museu.sala_5.leste, museu.sala_7.oeste,museu.sala_9.leste,
+    museu.sala_9.sul ,museu.sala_9.sul ,museu.sala_A.leste ,museu.sala_B.leste, museu.sala_0.norte]
     dx, dy = 850//6, 650//2
     marcadores= [Elemento (img= CIRCULOB, tit=tit, style=dict(
         left=dx*(x%6), top=dy*(x//6), width=dx, height="325px", opacity=0.01,
