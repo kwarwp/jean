@@ -331,3 +331,10 @@ NameError: name 'sala_7' is not defined
     sala_1 = Sala(S1_NORTE, S1_LESTE, S1_SUL, S1_OESTE)
 UnboundLocalError: local variable 'S1_SUL' referenced before assignment
 '''},
+{'date': 'Mon Sep 24 2018 17:20:01.252 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 115
+  PEDRA = "https://i.imgur.com/pIRvnJS.jpg
+                                          ^
+SyntaxError: EOL while scanning string literal
+'''},
