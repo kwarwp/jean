@@ -352,3 +352,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Sep 24 2018 17:21:13.51 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 116
+  pedra = Elemento(img=PEDRA, tit="Pedra",style=dict(left=40, top=380, width=200, height="150px")
+                                                                                                   ^
+SyntaxError: invalid syntax
+'''},
