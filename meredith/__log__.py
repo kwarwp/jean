@@ -41,3 +41,10 @@ IndentationError: unexpected indent
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Sep 24 2018 15:45:59.230 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 77
+  sala_0 = Sala(S0_NORTE, S0_LESTE, S0_SUL, S0_OESTE)
+  ^
+IndentationError: unexpected indent
+'''},
