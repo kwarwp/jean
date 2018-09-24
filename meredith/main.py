@@ -86,7 +86,7 @@ sala.norte.vai()
 
                   
 
-from _spy.vitollino.main import Sala, Labirinto
+from _spy.vitollino.main import Sala, Labirinto, Elemento
 def Museu():
         sala_0 = Sala(S0_NORTE, S0_LESTE, S0_SUL, S0_OESTE)
         sala_1 = Sala(S1_NORTE, S1_LESTE, S1_SUL, S1_OESTE)
@@ -112,6 +112,7 @@ def Museu():
         Labirinto(sala_8, sala_7, None, None, sala_9)
         Labirinto(sala_10, None, sala_9, None, sala_S11)
         Labirinto(sala_S11, None, sala_10, None, sala_S12)
+       
 
 
         
@@ -120,7 +121,9 @@ def Museu():
 if __name__ == '__main__':
 
     Museu()
-    VAR1 = 'https://i.imgur.com/vb4zrA0.jpg'
+    
+from _spy.vitollino.main import Sala, Labirinto, Elemento   
+VAR1 = 'https://i.imgur.com/vb4zrA0.jpg'
 VAR2 = 'https://trabalhodigitalinfo.files.wordpress.com/2016/01/seta-vermelha-2png.png'
 VAR3 = "https://imagens.simplo7.net/static/2497/sku/thumb_tricoline-100-algodao-lisa-tricoline-100-algodao-lisa-branca-1474467553683.jpg"
 
@@ -141,6 +144,11 @@ def movimento():
     camada1.vai()
 
 movimento() 
+from _spy.vitollino.main import Sala, Labirinto, Elemento
+S1_SUL = "https://i.imgur.com/pIRvnJS.jpg"
+DINO = "http://imagem.ongame.com.br/pb/blog/stingrr.png" 
+dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200))
+dino.entra(sala_7.norte)
 
     
        
