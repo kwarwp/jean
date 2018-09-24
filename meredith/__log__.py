@@ -410,3 +410,10 @@ IndentationError: unexpected indent
     dino.entra(sala_7.norte)
 NameError: name 'sala_7' is not defined
 '''},
+{'date': 'Mon Sep 24 2018 18:51:59.427 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 121
+  sala_0.leste.vai()
+  ^
+IndentationError: unexpected indent
+'''},
