@@ -375,14 +375,14 @@ from _spy.vitollino.main import Sala, Labirinto
                   seguem o sentido horário. O termo
                   "None" é utilizado para uma parte da cruz que não tem sala. """,  
                   """   
-        Labirinto(sala_0, None, sala_1, sala_12, None)
+        Labirinto(sala_0, None, sala_1, sala_S12, None)
         Labirinto(sala_2, sala_1, sala_3, None, None)
         Labirinto(sala_4, None, sala_5, sala_3, None)
         Labirinto(sala_6, None, sala_7, None, sala_5)
         Labirinto(sala_7A, None, None, sala_7B, sala_7)
         Labirinto(sala_8, sala_7, None, None, sala_9)
-        Labirinto(sala_10, None, sala_9, None, sala_11)
-        Labirinto(sala_11, None, sala_10, None, sala_12)
+        Labirinto(sala_10, None, sala_9, None, sala_S11)
+        Labirinto(sala_S11, None, sala_10, None, sala_S12)
 """],
                   [sala_A.norte ,"não desista",  "if True:print('oi')"],
                   [sala_A.leste ,"Agora par ficar mais divertido temos como movimentos elementos dentro da Cena, essa função chamamos de Drag and Drop",  
