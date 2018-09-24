@@ -366,3 +366,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Sep 24 2018 17:22:58.730 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 116
+  dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200)
+                                                                                             ^
+SyntaxError: invalid syntax
+'''},
