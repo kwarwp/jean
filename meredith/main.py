@@ -10,6 +10,10 @@ cena_1=Cena(link_para_imagem_1)
 cena_2=Cena(link_para_imagem_2)
 cena_1.direita = cena_2
 cena_1.vai()
+
+
+
+
 S0_NORTE = "https://i.imgur.com/XJXjA9r.jpg"
 S0_SUL = "https://i.imgur.com/rHzbmtM.jpg"
 S0_LESTE = "https://i.imgur.com/IPa06hM.jpg"
@@ -78,6 +82,8 @@ cena_3 = "https://i.imgur.com/NnVA765.jpg"
 cena_4 = "https://i.imgur.com/XJXjA9r.jpg"
 sala = Sala(cena_1, cena_2, cena_3, cena_4)
 sala.norte.vai()
+
+
                   
 
 from _spy.vitollino.main import Sala, Labirinto
@@ -114,6 +120,28 @@ def Museu():
 if __name__ == '__main__':
 
     Museu()
+    VAR1 = 'https://i.imgur.com/vb4zrA0.jpg'
+VAR2 = 'https://trabalhodigitalinfo.files.wordpress.com/2016/01/seta-vermelha-2png.png'
+VAR3 = "https://imagens.simplo7.net/static/2497/sku/thumb_tricoline-100-algodao-lisa-tricoline-100-algodao-lisa-branca-1474467553683.jpg"
+
+def movimento():
+    camada1 = Cena(VAR3)
+    camada2 = Elemento(VAR1, tit = "segunda camada", drag= False,
+        x = 0, y = 0, w = 800 , h = 600, drop= "Mova-me",
+        cena= camada1)
+        
+    def reposiciona_figura(sid, x, y):
+        sid.style.left = x
+        sid.style.top = y
+        
+    movel = Elemento(VAR2, tit = "Mova-me", drag=True,
+        x = 310, y = 160, w = 80, h = 90, drop="",
+    cena=camada1)
+    camada2.doit_drop = reposiciona_figura
+    camada1.vai()
+
+movimento() 
+
     
        
         
