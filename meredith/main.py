@@ -114,11 +114,10 @@ def Museu():
         Labirinto(sala_S11, None, sala_10, None, sala_S12)
 DINO = "http://imagem.ongame.com.br/pb/blog/stingrr.png" 
 dino = Elemento(img=DINO, tit="Dino", style=dict(left=50, top=160, width=200, height=200))
-dino.entra(sala_7.norte)
+dino.entra(S7_NORTE)
 dino.vai()
-        
-
-        sala_0.leste.vai()
+    
+sala_0.leste.vai()
 if __name__ == '__main__':
 
     Museu()
