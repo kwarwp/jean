@@ -70,6 +70,14 @@ S1_NORTE = "https://i.imgur.com/0DAX1Yq.jpg"
 S1_LESTE = "https://i.imgur.com/Clwe0iK.jpg"
 S1_OESTE = "https://i.imgur.com/cOVZAln.jpg"
 S1_SUL = "https://i.imgur.com/pIRvnJS.jpg"
+
+from _spy.vitollino.main import Sala
+cena_1 = "https://i.imgur.com/IPa06hM.jpg"
+cena_2 = "https://i.imgur.com/rHzbmtM.jpg"
+cena_3 = "https://i.imgur.com/NnVA765.jpg"
+cena_4 = "https://i.imgur.com/XJXjA9r.jpg"
+sala = Sala(cena_1, cena_2, cena_3, cena_4)
+sala.norte.vai()
                   
 
 from _spy.vitollino.main import Sala, Labirinto
