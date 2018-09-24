@@ -270,7 +270,7 @@ pedra.vai
 """],
                   [sala_9.oeste,"Agora você precisa definir as 4 cenas de cada sala. Essas salas servem para você criar cômodo onde se olha todas as paredes, assim , como foi feito no Tutorial Cena do jogo.Você pode criar quantas salas forem necessárias para o seu jogo.",
 """        
-        
+def Museu(): 
         sala_0 = Sala(S0_NORTE, S0_LESTE, S0_SUL, S0_OESTE)
         sala_1 = Sala(S1_NORTE, S1_LESTE, S1_SUL, S1_OESTE)
         sala_2 = Sala(S2_NORTE, S2_LESTE, S2_SUL, S2_OESTE)
