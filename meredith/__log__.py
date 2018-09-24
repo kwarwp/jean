@@ -274,3 +274,10 @@ IndentationError: expected an indented block
     camada2 = Elemento(VAR1, tit = "segunda camada", drag= False,
 NameError: name 'Elemento' is not defined
 '''},
+{'date': 'Mon Sep 24 2018 16:59:24.598 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 140
+  sala_0.leste.vai()
+  ^
+IndentationError: unexpected indent
+'''},
