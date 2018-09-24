@@ -127,3 +127,10 @@ NameError: name 'sala_12' is not defined
     Labirinto(sala_0, None, sala_1, sala_12, None)
 NameError: name 'sala_12' is not defined
 '''},
+{'date': 'Mon Sep 24 2018 15:58:21.223 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 93
+  """ Labirinto(sala_0, None, sala_1, sala_12, None)
+  ^
+IndentationError: unexpected indent
+'''},
