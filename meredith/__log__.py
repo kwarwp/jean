@@ -387,3 +387,10 @@ SyntaxError: invalid syntax
                                                                                              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 24 2018 18:36:42.397 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 121
+  sala_0.leste.vai()
+  ^
+IndentationError: unexpected indent
+'''},
