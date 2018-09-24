@@ -249,3 +249,10 @@ NameError: name 'sala_12' is not defined
     Labirinto(sala_10, None, sala_9, None, sala_11)
 NameError: name 'sala_11' is not defined
 '''},
+{'date': 'Mon Sep 24 2018 16:47:03.497 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 77
+  from _spy.vitollino.main import Cena
+  ^
+IndentationError: expected an indented block
+'''},
