@@ -338,3 +338,10 @@ UnboundLocalError: local variable 'S1_SUL' referenced before assignment
                                           ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Mon Sep 24 2018 17:20:09.167 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 116
+  pedra = Elemento(img=PEDRA, tit="Pedra", 
+  ^
+IndentationError: unexpected indent
+'''},
