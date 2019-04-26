@@ -163,3 +163,27 @@ TypeError: '<=' not supported between instances of 'Museu' and 'Codigo'
     cena <= self
 TypeError: '<=' not supported between instances of 'Museu' and 'Codigo'
 '''},
+{'date': 'Fri Apr 26 2019 08:45:00.747 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 3
+    Museu()
+  module stacy.main line 97
+    entrada.vai()
+  module stacy.main line 104
+    Museu.CUR.instrumenta(self)
+  module stacy.main line 100
+    self.cod.entra(cena)
+  module _spy.vitollino.main line 465
+    cena <= self
+TypeError: '<=' not supported between instances of 'Museu' and 'Codigo'
+'''},
