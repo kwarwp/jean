@@ -57,3 +57,10 @@ AttributeError: 'Elemento' object has no attribute 'tit'
     nome = nome_item.tit or nome_item
 AttributeError: 'Elemento' object has no attribute 'tit'
 '''},
+{'date': 'Wed Oct 02 2019 14:04:50.589 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 65
+  from _spy.vitollino.main import Sala, STYLE, Codigo as Code, INVENTARIO, """Elemento""", NS,Texto
+                                                                            ^
+SyntaxError: invalid syntax
+'''},
