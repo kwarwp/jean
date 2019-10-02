@@ -64,3 +64,10 @@ AttributeError: 'Elemento' object has no attribute 'tit'
                                                                             ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Oct 02 2019 14:06:13.263 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 65
+  from _spy.vitollino.main import Sala, STYLE, Codigo as Code, INVENTARIO, """Elemento""", NS,Texto
+                                                                            ^
+SyntaxError: invalid syntax
+'''},
