@@ -39,7 +39,7 @@ C8_OESTE = "https://i.imgur.com/R3FtDb2.jpg",
 
 
 
-def inventario():
+def main():
     INVENTARIO.inicia()
     museu = Museu()
     mapa = Elemento(img=MAPA,tit= "Mapa",style=dict(left=50, top=160, width=200, height="200px"))
@@ -66,9 +66,9 @@ def inventario():
 
     
     #r_oeste.vai()
+if __name__ == "__main__":
 
-
-inventario()
+    main()
 
 
 """ csalas= Cena(img= SALAS)
