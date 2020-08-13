@@ -163,11 +163,11 @@ class Museu:
         
         #sala_0.norte.vai = sala_1.norte.vai()
         sala_0.norte.vai()
-       # cod = Codigo(cena=sala_0.norte ,topo= "ola", codigo = "if True:print('oi')",style = dict(width=400,heigth="250px",left=500,top=100))
-       # cod = Codigo(cena=sala_1.norte, topo = "hello",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
-       # cod = Codigo(cena=sala_1.leste, topo = "Bonju",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
-       # cod = Codigo(cena=sala_1.oeste, topo = "Buenos dias",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
-       # cod =Codigo(cena=sala_1.sul, topo = "como vai?",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
+        # cod = Codigo(cena=sala_0.norte ,topo= "ola", codigo = "if True:print('oi')",style = dict(width=400,heigth="250px",left=500,top=100))
+        # cod = Codigo(cena=sala_1.norte, topo = "hello",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
+        # cod = Codigo(cena=sala_1.leste, topo = "Bonju",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
+        # cod = Codigo(cena=sala_1.oeste, topo = "Buenos dias",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
+        # cod =Codigo(cena=sala_1.sul, topo = "como vai?",codigo = "if True:print('ooi')",style = dict(width=400,heigth="250px",left=500,top=100))
 
         MENSAGENS=[
                   [sala_0.norte ,"Olá! Se prepare, que finalmente chegou o dia de aprender a programar em Python. Vamos embarcar nessa aventura já! Crie uma cena utilizando o código abaixo. ",
