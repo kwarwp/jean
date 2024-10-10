@@ -2,6 +2,7 @@
 from _spy.vitollino.main import Labirinto, Sala, STYLE, Codigo as Code, INVENTARIO, Elemento, NS,Texto
 from browser import html
 from _spy.vitollino.main import INVENTARIO as inv 
+STYLE.update(width=1200, height="650px")
 
 MAPA = "https://i.imgur.com/d9YNdTu.png"
 R_OESTE = "https://i.imgur.com/XJXjA9r.jpg"
